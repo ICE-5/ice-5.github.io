@@ -1,0 +1,52 @@
+---
+layout: default
+title: Home | Yuning Wu
+header-bgimg: assets/img/home-bg.jpg
+header-title: Yuning Wu
+header-subtitle: Fascinated by the society of robots.
+---
+
+<div class="container text-left">
+    <div class="row">
+        <div class="col-xl-10 offset-md-0 offset-xl-1">
+            <h3>About Me</h3>
+            <p>
+                I'm a first-year Ph.D. CD, M.S. ML student at&nbsp;<a href="https://www.cmu.edu">Carnegie Mellon
+                    University</a>.&nbsp;My research interest is mainly in multi-agent robotic system,
+                robotic learning, reinforcement learning and collective robotic
+                construction. Constantly fascinated by elegant system architectures, I
+                long for creating intelligent robot "society" with various
+                <strong>hierarchical organization</strong>,
+                <strong>collective behaviour</strong>,
+                <strong>seamless local / global communication</strong>, and
+                <strong>interaction with human</strong>.
+            </p>
+            <p>
+                Besides that, I enjoy experiencing every aspects of design, creation and
+                construction, partly because of my background in architecture,
+                mechanical engineering and digital fabrication. For more information
+                about my <a href="CV.html">bio/CV</a>,
+                <a href="research.html">research</a>,
+                <a href="architecture.html">projects</a> and
+                <a href="blog-post-list.html">blogs</a>, feel free to explore this site!
+            </p>
+            <h3>News</h3>
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                {% for item in site.data.news %}
+                <li style="padding: 10px;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ item.title }}</h4>
+                            <h6 class="text-muted card-subtitle mb-2">{{ item.subtitle }}</h6>
+                            <p class="card-text">{{ item.text }}</p>
+                            <a class="card-link" href="{{ item.doc-link }}">project documentation</a>
+                            <a class="card-link" href="{{ item.pub-link }}">publication</a>
+                            <a class="card-link" href="{{ item.cod-link }}">code</a>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

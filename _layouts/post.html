@@ -1,0 +1,20 @@
+---
+layout: base
+---
+{% include header-lite.html %}
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+                <p>{{ page.date | date_to_string }}, by {{ page.author }}</p>
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</article>
+
+<style>
+    body {
+        margin-top: 80px;
+    }
+</style>
