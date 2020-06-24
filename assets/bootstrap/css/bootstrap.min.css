@@ -86,23 +86,23 @@ hr {
 	overflow: visible;
 }
 h1{
-	margin-top: 0;
+	margin-top: 5px;
 	margin-bottom: 0;
 }
 h2{
-	margin-top: 0;
+	margin-top: 5px;
 	margin-bottom: 0;
 }
 h3 {
-	margin-top: 0;
+	margin-top: 20px;
 	margin-bottom: 0;
 }
 h4 {
-	margin-top: 0;
+	margin-top: 5px;
 	margin-bottom: 0;
 }
 h5 {
-	margin-top: 0;
+	margin-top: 5px;
 	margin-bottom: 0;
 }
 h6 {
@@ -9441,7 +9441,7 @@ body {
 }
 p {
 	line-height: 1.5;
-	margin: 30px 0;
+	margin: 5px 0;
 }
 p a {
 	text-decoration: underline;
