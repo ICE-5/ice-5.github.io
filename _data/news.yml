@@ -1,6 +1,6 @@
-- title: multi-drone construction framework released
+- title: "Our work \"An Architectural Framework for Semi-Autonomous Construction: Using Reinforcement Learning to Support Multi-Drone Construction in Dynamic Environments\" has been published!"
   subtitle: CoDe Lab, CMU
-  text: Wonderful news!
+  text: As states in title, we use multi-agent RL (MADDPG) to form the foundation of a solid and robust framework in real world construction scenario.
   doc-link: \#
   pub-link: \#
   cod-link: \#
