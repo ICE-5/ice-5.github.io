@@ -1,27 +1,14 @@
-- title: "ACADIA 2020. Our work \"An Architectural Framework for Semi-Autonomous Construction: Using Reinforcement Learning to Support Multi-Drone Construction in Dynamic Environments\" has been accepted!"
-  subtitle: CoDe Lab, CMU
-  text: As states in title, we use multi-agent RL (MADDPG) to form the foundation of a solid and robust framework in real world construction scenario.
-  doc-link: \#
-  pub-link: \#
-  cod-link: \#
+- title: "REVA: A Multi-Agent RL Framework for Collective Construction"
+  subtitle: ACADIA 2020
+  img: "../assets/img/post-bg.jpg"
+  link: \#
 
-- title: "CoRL 2020. Consensus-MADDPG: Distilling Collective Insterest in Multi-Agent System"
-  subtitle: Intelligent Control Lab, CMU
-  text: Compared with MADDPG (R. Lowe 2017), our work propose a new actor-critic model that enforces shared collective interest among agents.
-  doc-link: \#
-  pub-link: \#
-  cod-link: \#
+- title: "From 2D to 3D: A Parametric Approach for Neural Architecture"
+  subtitle: WIP
+  img: "../assets/img/home-bg.jpg"
+  link: \#
 
-- title: Distilling common goal from multi-agent RL from CoRL 2019 
-  subtitle: Robotics Institute, CMU
-  text: Wonderful news!
-  doc-link: \#
-  pub-link: \#
-  cod-link: \#
-
-- title: Distilling common goal from multi-agent RL from CoRL 2019 
-  subtitle: Robotics Institute, CMU
-  text: Wonderful news!
-  doc-link: \#
-  pub-link: \#
-  cod-link: \#
+- title: "Consensus-MADDPG: Distilling Collective Insterest in Multi-Agent System"
+  subtitle: WIP
+  img: "../assets/img/post-bg.jpg"
+  link: \#
