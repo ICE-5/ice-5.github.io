@@ -132,6 +132,7 @@ hgroup,
 main,
 nav,
 section {
+	margin: 1rem;
 	display: block;
 }
 body {
@@ -4476,7 +4477,7 @@ input[type="submit"].btn-block {
 	word-wrap: break-word;
 	background-color: #fff;
 	background-clip: border-box;
-	border: 1px solid rgba(0, 0, 0, 0.25);
+	border: 1px solid var(--gray-dark);
 	border-radius: 0.25rem;
 }
 .card > hr {
@@ -4535,9 +4536,9 @@ input[type="submit"].btn-block {
 	border-top: 0;
 }
 .card-footer {
-	padding: 0.75rem 1.25rem;
+	padding: 0.5rem 1rem;
 	background-color: rgba(0, 0, 0, 0.03);
-	border-top: 1px solid rgba(0, 0, 0, 0.125);
+	/* border-top: 1px solid rgba(0, 0, 0, 0.125); */
 }
 .card-footer:last-child {
 	border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
@@ -4651,7 +4652,7 @@ input[type="submit"].btn-block {
 		column-count: 3;
 		-webkit-column-gap: 1.25rem;
 		-moz-column-gap: 1.25rem;
-		column-gap: 1.25rem;
+		column-gap: 0.75rem;
 		orphans: 1;
 		widows: 1;
 	}
@@ -9505,8 +9506,8 @@ body {
 	color: #212529;
 }
 p {
-	line-height: 1.35;
-	margin: 0.5rem 0;
+	line-height: 1.25;
+	margin: 0.75rem 0;
 }
 p a {
 	text-decoration: underline;

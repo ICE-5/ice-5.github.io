@@ -9,57 +9,64 @@ header-subtitle: Fascinated by the society of robots.
 <div class="container text-left">
   <div class="row">
     <div class="col-xl-10 offset-md-0 offset-xl-1">
-      <h4>About Me</h4>
-      <div style="margin: 0.5rem 0">
-        <button class="btn">CV</button>
-        <button class="btn">RESEARCH</button>
-        <button class="btn">PUBLICATION</button>
-        <button class="btn">PORTFOLIO</button>
-      </div>
-      <p>
-        I'm a 2nd year Ph.D. CD, M.S. ML student at&nbsp;
-        <a href="https://www.cmu.edu">Carnegie Mellon University</a>
-        .&nbsp;My research interest is mainly in multi-agent robotic system,
-        robotic learning, reinforcement learning and collective robotic
-        construction. Constantly fascinated by elegant system architectures, I
-        long for creating intelligent robot "society" with various
-        <strong>hierarchical organization</strong>
-        ,
-        <strong>collective behaviour</strong>
-        ,
-        <strong>seamless local / global communication</strong>
-        , and
-        <strong>interaction with human</strong>
-        . Besides that, I enjoy experiencing every aspects of design, creation
-        and construction, partly because of my background in architecture and
-        mechanical engineering.
-      </p>
-      <p>
-        I can be reached at
-        <strong>yuningw</strong>
-        [at]
-        <strong>andrew</strong>
-        [dot]
-        <strong>cmu</strong>
-        [dot]
-        <strong>edu</strong>
-        .
-      </p>
+      <section>
+        <h4>About Me</h4>
+        <div style="margin: 0.5rem 0">
+          <button class="btn">CV</button>
+          <button class="btn">RESEARCH</button>
+          <button class="btn">PUBLICATION</button>
+          <button class="btn">PORTFOLIO</button>
+        </div>
+        <p>
+          I'm a 2nd year Ph.D. CD, M.S. ML student at&nbsp;
+          <a href="https://www.cmu.edu">Carnegie Mellon University</a>
+          .&nbsp;My research interest is mainly in multi-agent robotic system,
+          robotic learning, reinforcement learning and collective robotic
+          construction. Constantly fascinated by elegant system architectures, I
+          long for creating intelligent robot "society" with various
+          <strong>hierarchical organization</strong>
+          ,
+          <strong>collective behaviour</strong>
+          ,
+          <strong>seamless local / global communication</strong>
+          , and
+          <strong>interaction with human</strong>
+          . Besides that, I enjoy experiencing every aspects of design, creation
+          and construction, partly because of my background in architecture and
+          mechanical engineering.
+        </p>
+        <p>
+          I can be reached at
+          <strong>yuningw</strong>
+          [at]
+          <strong>andrew</strong>
+          [dot]
+          <strong>cmu</strong>
+          [dot]
+          <strong>edu</strong>
+          .
+        </p>
+      </section>
 
       <section>
         <h4>Highlight</h4>
         <div class="card-columns" style="margin: 10px 0">
           {% for item in site.data.news %}
-          <div class="card bg-dark text-white">
+
+          <div class="card">
             <img
               class="card-img-top"
               src="{{ item.img }}"
               alt="Card image cap"
             />
-            <div class="card-img-overlay">
-              <p class="card-title">{{ item.title }}</p>
-              <p class="card-text">{{ item.subtitle }}</p>
+            <div class="card-img-overlay text-white">
+              <div class="overlay"></div>
+              <h6 class="card-title">{{ item.title }}</h6>
+              <small class="card-text">{{ item.subtitle }}</small>
             </div>
+            <!-- <div class="card-footer">
+              <small>{{ item.subtitle }}</small>
+            </div> -->
           </div>
           {% endfor %}
         </div>
@@ -68,7 +75,15 @@ header-subtitle: Fascinated by the society of robots.
       <section>
         <h4>Selected Publication</h4>
         <div>
-            <p>Z. Fang, <strong>Y. Wu</strong>, A. Hassonjee, A. Bidgoli, D.C. Llach. An Architectural Framework for Distributed Semi-Autonomous Construction: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments. Conference of the Association for Computer Aided Design in Architecture (ACADIA). 2020. </p>
+          <p>
+            Z. Fang,
+            <strong>Y. Wu</strong>
+            , A. Hassonjee, A. Bidgoli, D.C. Llach. An Architectural Framework
+            for Distributed Semi-Autonomous Construction: Using Reinforcement
+            Learning to Support Scalable Multi-Drone Construction in Dynamic
+            Environments. Conference of the Association for Computer Aided
+            Design in Architecture (ACADIA). 2020.
+          </p>
         </div>
       </section>
     </div>
