@@ -4559,6 +4559,8 @@ input[type="submit"].btn-block {
 	bottom: 0;
 	left: 0;
 	padding: 1rem;
+	/* border: 1px solid var(--gray-dark);
+	border-radius: 0.125rem; */
 }
 .card-img,
 .card-img-bottom,
