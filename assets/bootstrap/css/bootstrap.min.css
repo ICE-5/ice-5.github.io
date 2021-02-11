@@ -9650,7 +9650,7 @@ img::-moz-selection {
 	}
 	#mainNav.is-fixed {
 		position: fixed;
-		top: -67px;
+		top: -72px;
 		transition: -webkit-transform 0.2s;
 		transition: transform 0.2s;
 		transition: transform 0.2s, -webkit-transform 0.2s;
