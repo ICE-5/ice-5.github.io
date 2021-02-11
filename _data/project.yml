@@ -1,6 +1,6 @@
 - title: Rethinking Automation in Construction (RAiC)
   subtitle: Learning-Based Collective Robotic Construction
-  img: "../assets/img/drone/sim.gif"
+  img: "../assets/img/drone/square.gif"
   pub:
     - title: "Towards a Distributed, Robotically-Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments"
       author: Zhihao Fang, Yuning Wu, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach
@@ -10,9 +10,9 @@
       code: https://github.com/c0deLab/RAiC
   link: \#
 
-- title: "How to Play LEGO Smart"
+- title: WIP • How to Play LEGO Smart
   subtitle: Learning Efficient 3D Assembly Sequences Under Dynamic Physical Constraints
-  img: "../assets/img/lego/main.jpg"
+  img: "../assets/img/lego/square.jpg"
   pub:
   link: \#
 
