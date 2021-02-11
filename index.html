@@ -37,7 +37,7 @@ header-subtitle: Driven by a graceful cyber-future.
           {% for item in site.data.news %}
           <li>
             <span style="color: #a71933">{{ item.time }}</span>
-            .
+            -
             <span>{{ item.content }}</span>
           </li>
           {% endfor %}
@@ -54,7 +54,7 @@ header-subtitle: Driven by a graceful cyber-future.
                 <img src="{{ item.img }}" alt="cover" width="250" />
               </td>
               <td>
-                <h5>{{ item.title }}</h5>
+                <h5 style="text-decoration: underline;"><a href="{{ item.link }}">{{ item.title }}</a></h5>
                 <p style="margin: 0">{{ item.subtitle }}</p>
 
                 {% if item.pub %}
