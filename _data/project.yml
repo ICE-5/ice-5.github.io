@@ -1,0 +1,18 @@
+- title: Rethinking Automation in Construction
+  subtitle: Learning-Driven Collective Robotic Construction
+  img: "../assets/img/drone/sim.gif"
+  pub:
+    - title: "Towards a Distributed, Robotically-Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments"
+      author: Zhihao Fang, Yuning Wu, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach
+      conference: ACADIA 2020
+      paper: \#
+      video: https://www.youtube.com/watch?v=oe1T1j5nVqM&feature=youtu.be
+      code: https://github.com/c0deLab/RAiC
+  link: \#
+
+- title: "How to Play LEGO Smart"
+  subtitle: Learning Efficient 3D Assembly Sequences Under Dynamic Physical Constraints
+  img: "../assets/img/lego/main.jpg"
+  pub:
+  link: \#
+

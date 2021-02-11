@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Home | Yuning Wu
-header-bgimg: assets/img/home-bg.jpg
-header-title: Site under construction ...
-header-subtitle: Fascinated by the society of robots.
+title: Yuning Wu
+header-bgimg: assets/img/home-bg.png
+header-title: Yuning Wu
+header-subtitle: Driven by a graceful cyber-future.
 ---
 
 <div class="container text-left">
@@ -11,32 +11,18 @@ header-subtitle: Fascinated by the society of robots.
     <div class="col-xl-10 offset-md-0 offset-xl-1">
       <section>
         <h4>About Me</h4>
-        <div style="margin: 0.5rem 0">
-          <button class="btn">CV</button>
-          <button class="btn">RESEARCH</button>
-          <button class="btn">PUBLICATION</button>
-          <button class="btn">PORTFOLIO</button>
-        </div>
         <p>
-          I'm a 2nd year Ph.D. CD, M.S. ML student at&nbsp;
+          I'm a Ph.D. student at&nbsp;
           <a href="https://www.cmu.edu">Carnegie Mellon University</a>
-          .&nbsp;My research interest is mainly in multi-agent robotic system,
-          robotic learning, reinforcement learning and collective robotic
-          construction. Constantly fascinated by elegant system architectures, I
-          long for creating intelligent robot "society" with various
-          <strong>hierarchical organization</strong>
-          ,
-          <strong>collective behaviour</strong>
-          ,
-          <strong>seamless local / global communication</strong>
-          , and
-          <strong>interaction with human</strong>
-          . Besides that, I enjoy experiencing every aspects of design, creation
-          and construction, partly because of my background in architecture and
+          . I've also earned my M.S. in Machine Learning here. My research
+          interest is mainly in robotics, reinforcement learning, multi-agent
+          system, and collective robotic construction. Besides that, I enjoy
+          experiencing every aspects of design, creation and hands-on making,
+          partly because of my interdisciplinary background in architecture and
           mechanical engineering. I can be reached at
           <strong>yuningw</strong>
           [at]
-          <strong>andrew</strong>
+          <strong>cs</strong>
           [dot]
           <strong>cmu</strong>
           [dot]
@@ -46,30 +32,61 @@ header-subtitle: Fascinated by the society of robots.
       </section>
 
       <section>
-        <h4>Highlight</h4>
-        <div class="card-columns" style="margin: 10px 0">
+        <h4>Recent News</h4>
+        <ul style="padding-inline-start: 20px; margin-top: 0.75rem">
           {% for item in site.data.news %}
-
-          <div class="card">
-            <img
-              class="card-img-top card-img-bottom"
-              src="{{ item.img }}"
-              alt="Card image cap"
-            />
-            <div class="card-img-overlay text-white">
-              <div class="overlay"></div>
-              <h6 class="card-title">{{ item.title }}</h6>
-              <small class="card-text">{{ item.subtitle }}</small>
-            </div>
-            <!-- <div class="card-footer">
-              <small>{{ item.subtitle }}</small>
-            </div> -->
-          </div>
+          <li>
+            <span style="color: #a71933">{{ item.time }}</span>
+            .
+            <span>{{ item.content }}</span>
+          </li>
           {% endfor %}
-        </div>
+        </ul>
       </section>
 
       <section>
+        <h4>Highlights</h4>
+        <table class="table" style="margin: 1rem 0">
+          <tbody>
+            {% for item in site.data.project %}
+            <tr>
+              <td>
+                <img src="{{ item.img }}" alt="cover" width="250" />
+              </td>
+              <td>
+                <h5>{{ item.title }}</h5>
+                <p style="margin: 0">{{ item.subtitle }}</p>
+
+                {% if item.pub %}
+                <ul style="padding-inline-start: 20px; margin-top: 0.75rem">
+                  {% for pubitem in item.pub %}
+                  <li>
+                    <p><strong>{{ pubitem.title }}</strong></p>
+                    <p style="color: gray">{{ pubitem.author }}</p>
+                    <p>
+                      <span style="color: #a71933">
+                        {{ pubitem.conference }}
+                      </span>
+                      {% if pubitem.paper %} /
+                      <a href="{{ pubitem.paper }}">paper</a>
+                      {% endif %} {% if pubitem.video %} /
+                      <a href="{{ pubitem.video }}">video</a>
+                      {% endif %} {% if pubitem.code %} /
+                      <a href="{{ pubitem.code }}">code</a>
+                      {% endif %}
+                    </p>
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+
+      <!-- <section>
         <h4>Selected Publication</h4>
         <div>
           <p>
@@ -82,7 +99,7 @@ header-subtitle: Fascinated by the society of robots.
             Design in Architecture (ACADIA). 2020.
           </p>
         </div>
-      </section>
+      </section> -->
     </div>
   </div>
 </div>

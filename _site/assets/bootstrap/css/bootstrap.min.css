@@ -132,7 +132,7 @@ hgroup,
 main,
 nav,
 section {
-	margin: 1rem;
+	margin: 0;
 	display: block;
 }
 body {
@@ -1740,7 +1740,7 @@ pre code {
 }
 .table td,
 .table th {
-	padding: 0.75rem;
+	padding: 0.75rem 0;
 	vertical-align: top;
 	border-top: 1px solid #dee2e6;
 }
@@ -9508,8 +9508,8 @@ body {
 	color: #212529;
 }
 p {
-	line-height: 1.25;
-	margin: 0.75rem 0;
+	line-height: 1.15;
+	margin: 0.25rem 0;
 }
 p a {
 	text-decoration: underline;
@@ -9529,7 +9529,9 @@ a {
 }
 a:focus,
 a:hover {
-	color: #007bff;
+	color: white;
+	background-color: #a71933;
+	/* font-weight: bold; */
 }
 blockquote {
 	font-style: italic;
@@ -9623,7 +9625,7 @@ img::-moz-selection {
 		background: transparent;
 	}
 	#mainNav .navbar-brand {
-		padding: 10px 20px;
+		padding: 10px;
 		color: #fff;
 	}
 	#mainNav .navbar-brand:focus,
@@ -9631,7 +9633,7 @@ img::-moz-selection {
 		color: hsla(0, 0%, 100%, 0.8);
 	}
 	#mainNav .navbar-nav > li.nav-item > a {
-		padding: 10px 20px;
+		padding: 10px;
 		color: #fff;
 	}
 	#mainNav .navbar-nav > li.nav-item > a:focus,
