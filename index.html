@@ -55,7 +55,9 @@ header-subtitle: Driven by a graceful, intelligent, vibrant cyber-future
             {% for item in site.data.project %}
             <tr>
               <td style="width: 25%; padding: 1rem">
-                <img src="{{ item.img }}" alt="cover" width="100%" />
+                <a href="{{ item.link }}">
+                  <img src="{{ item.img }}" alt="cover" width="100%" />
+                </a>
               </td>
               <td>
                 <p style="text-decoration: underline">
