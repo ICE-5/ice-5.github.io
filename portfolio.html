@@ -1,7 +1,38 @@
---- 
+---
 layout: default
 title: Yuning Wu
 header-bgimg: assets/img/home-bg.jpg
-header-title: Site under construction ...
-header-subtitle: Still driven by a graceful cyber-future!
+header-title: WELCOME TO THE OTHER SIDE OF ME
+header-subtitle: Architect, designer, maker
 ---
+
+<div class="container text-left">
+  <div class="row">
+    <div class="col-xl-10 offset-md-0 offset-xl-1">
+      <div style="margin-bottom: 50px">
+        <h4>/ SELECTED WORK</h4>
+        <table class="table" style="margin: 1rem 0">
+          <tbody>
+            {% for item in site.data.portfolio %}
+            <tr>
+              <td style="width: 50%; padding: 1rem 0">
+                <img src="{{ item.img }}" alt="cover" width="100%" />
+              </td>
+              <td style="padding: 1rem;">
+                <p style="text-decoration: underline">
+                  <a href="{{ item.link }}">
+                    <strong>{{ item.title }}</strong>
+                  </a>
+                </p>
+                <p style="margin: 0; color: gray">{{ item.subtitle }}</p>
+                <p><small>{{ item.studio }} / {{ item.designer }}</small></p>
+                <p></p>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,25 +1,28 @@
 ---
 layout: default
-title: Yuning Wu
-header-bgimg: assets/img/home-bg.png
-header-title: Yuning Wu
-header-subtitle: Driven by a graceful cyber-future.
+title: YUNING WU
+<!-- header-bgimg: assets/img/home-bg.png -->
+header-title: BUILD SMARTER
+header-subtitle: Driven by a graceful, intelligent, vibrant cyber-future
 ---
 
 <div class="container text-left">
   <div class="row">
     <div class="col-xl-10 offset-md-0 offset-xl-1">
-      <section>
-        <h4>About Me</h4>
+      <div style="margin-bottom: 50px">
+        <h4>/ ABOUT ME</h4>
         <p>
           I'm a Ph.D. student at&nbsp;
           <a href="https://www.cmu.edu">Carnegie Mellon University</a>
           . I've also earned my M.S. in Machine Learning here. My research
-          interest is mainly in robotics, reinforcement learning, multi-agent
-          system, and collective robotic construction. Besides that, I enjoy
-          experiencing every aspects of design, creation and hands-on making,
-          partly because of my interdisciplinary background in architecture and
-          mechanical engineering. I can be reached at
+          interest is mainly in robotics, reinforcement learning, and collective
+          robotic construction. I place my investigation at teaching robots to
+          learn smarter skills related to building elegant and artistic physical
+          creations. Besides that, I enjoy experiencing every aspect of design and making, partly because of my interdisciplinary
+          background in architecture and mechanical engineering. Prior to CMU, I obtained my M.Arch. and B.Arch. from Tsinghua University in Beijing, China. Since May 2018, I've co-founded a startup (Metascope Tech) that aims at
+          providing insightful B2B consultation to Chinese commercial
+          architecture design market by active user profiling and data analysis with large-scale machine learning. Though no longer serving as its CEO, the company is still in rapid development. In my leisure time, I enjoy photography, cooking, reading, and drum
+          playing. I can be reached at
           <strong>yuningw</strong>
           [at]
           <strong>cs</strong>
@@ -29,77 +32,57 @@ header-subtitle: Driven by a graceful cyber-future.
           <strong>edu</strong>
           .
         </p>
-      </section>
+      </div>
 
-      <section>
-        <h4>Recent News</h4>
-        <ul style="padding-inline-start: 20px; margin-top: 0.75rem">
-          {% for item in site.data.news %}
-          <li>
-            <span style="color: #a71933">{{ item.time }}</span>
-            /
-            <span>{{ item.content }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </section>
+      <div style="margin-bottom: 50px">
+        <h4>/ UPDATE</h4>
+        <!-- <ul style="padding-inline-start: 0px; margin-top: 0.75rem"> -->
+        {% for item in site.data.news %}
+        <p>
+          <!-- <span style="color: #a71933">{{ item.time }}</span> -->
+          <strong>{{ item.time }}</strong>
+          ,
+          <span>{{ item.content }}</span>
+        </p>
+        {% endfor %}
+        <!-- </ul> -->
+      </div>
 
-      <section>
-        <h4>Highlights</h4>
+      <div style="margin-bottom: 50px">
+        <h4>/ RESEARCH</h4>
         <table class="table" style="margin: 1rem 0">
           <tbody>
             {% for item in site.data.project %}
             <tr>
-              <td style="width: 25%; padding: 1rem;">
+              <td style="width: 25%; padding: 1rem">
                 <img src="{{ item.img }}" alt="cover" width="100%" />
               </td>
               <td>
-                <h5 style="text-decoration: underline;"><a href="{{ item.link }}">{{ item.title }}</a></h5>
-                <p style="margin: 0">{{ item.subtitle }}</p>
+                <p style="text-decoration: underline">
+                  <a href="{{ item.link }}">{{ item.title }}</a>
+                </p>
+                <!-- <p style="margin: 0">{{ item.conference }}</p> -->
 
                 {% if item.pub %}
-                <ul style="padding-inline-start: 20px; margin-top: 0.75rem">
-                  {% for pubitem in item.pub %}
-                  <li>
-                    <p><strong>{{ pubitem.title }}</strong></p>
-                    <p style="color: gray">{{ pubitem.author }}</p>
-                    <p>
-                      <span style="color: #a71933">
-                        {{ pubitem.conference }}
-                      </span>
-                      {% if pubitem.paper %} /
-                      <a href="{{ pubitem.paper }}">paper</a>
-                      {% endif %} {% if pubitem.video %} /
-                      <a href="{{ pubitem.video }}">video</a>
-                      {% endif %} {% if pubitem.code %} /
-                      <a href="{{ pubitem.code }}">code</a>
-                      {% endif %}
-                    </p>
-                  </li>
-                  {% endfor %}
-                </ul>
+                <p style="color: gray">{{ item.conference}} / 
+                  <a href="{{ item.paper }}" style="color: gray">paper</a>
+                  {% endif %} {% if item.video %} /
+                  <a href="{{ item.video }}" style="color: gray">video</a>
+                  {% endif %} {% if item.code %} /
+                  <a href="{{ item.code }}" style="color: gray">code</a>
+                  {% endif %}
+                </p>
+                <p>
+                  <span><small>{{ item.author }}</small></span>
+                  {% if item.paper %}
+                </p>
                 {% endif %}
               </td>
             </tr>
             {% endfor %}
           </tbody>
         </table>
-      </section>
-
-      <!-- <section>
-        <h4>Selected Publication</h4>
-        <div>
-          <p>
-            Z. Fang,
-            <strong>Y. Wu</strong>
-            , A. Hassonjee, A. Bidgoli, D.C. Llach. An Architectural Framework
-            for Distributed Semi-Autonomous Construction: Using Reinforcement
-            Learning to Support Scalable Multi-Drone Construction in Dynamic
-            Environments. Conference of the Association for Computer Aided
-            Design in Architecture (ACADIA). 2020.
-          </p>
-        </div>
-      </section> -->
+      </div>
     </div>
   </div>
 </div>

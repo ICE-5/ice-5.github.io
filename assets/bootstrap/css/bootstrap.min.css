@@ -5,6 +5,8 @@
  */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
 @import "https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic";
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -12,70 +14,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
- @font-face {
-    font-family: 'DINPro';
-    src: url('/assets/fonts/DINPro-Regular.eot');
-    src: url('/assets/fonts/DINPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/DINPro-Regular.woff2') format('woff2'),
-        url('/assets/fonts/DINPro-Regular.woff') format('woff'),
-        url('/assets/fonts/DINPro-Regular.ttf') format('truetype'),
-        url('/assets/fonts/DINPro-Regular.svg#DINPro-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
- @font-face {
-    font-family: 'DINPro';
-    src: url('/assets/fonts/DINPro-Medium.eot');
-    src: url('/assets/fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/DINPro-Medium.woff2') format('woff2'),
-        url('/assets/fonts/DINPro-Medium.woff') format('woff'),
-        url('/assets/fonts/DINPro-Medium.ttf') format('truetype'),
-        url('/assets/fonts/DINPro-Medium.svg#DINPro-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'DINPro';
-    src: url('/assets/fonts/DINPro-Light.eot');
-    src: url('/assets/fonts/DINPro-Light.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/DINPro-Light.woff2') format('woff2'),
-        url('/assets/fonts/DINPro-Light.woff') format('woff'),
-        url('/assets/fonts/DINPro-Light.ttf') format('truetype'),
-        url('/assets/fonts/DINPro-Light.svg#DINPro-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'DINPro';
-    src: url('/assets/fonts/DINPro-Bold.eot');
-    src: url('/assets/fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/DINPro-Bold.woff2') format('woff2'),
-        url('/assets/fonts/DINPro-Bold.woff') format('woff'),
-        url('/assets/fonts/DINPro-Bold.ttf') format('truetype'),
-        url('/assets/fonts/DINPro-Bold.svg#DINPro-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'DINPro';
-    src: url('/assets/fonts/DINPro-Black.eot');
-    src: url('/assets/fonts/DINPro-Black.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/DINPro-Black.woff2') format('woff2'),
-        url('/assets/fonts/DINPro-Black.woff') format('woff'),
-        url('/assets/fonts/DINPro-Black.ttf') format('truetype'),
-        url('/assets/fonts/DINPro-Black.svg#DINPro-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
 
 :root {
 	--blue: #007bff;
@@ -104,7 +43,7 @@
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 992px;
 	--breakpoint-xl: 1200px;
-	--font-family-sans-serif: "DINPro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+	--font-family-sans-serif: "Chivo", -apple-system, BlinkMacSystemFont, "Segoe UI",
 		Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
@@ -137,8 +76,8 @@ section {
 }
 body {
 	margin: 0;
-	font-size: 1rem;
-	font-weight: normal;
+	font-size: 0.9375rem;
+	font-weight: 500;
 	line-height: 1.5;
 	text-align: left;
 	background-color: #fff;
@@ -151,6 +90,7 @@ hr {
 	height: 0;
 	overflow: visible;
 }
+
 h1{
 	margin-top: 5px;
 	margin-bottom: 0;
@@ -416,8 +356,8 @@ h4,
 h5,
 h6 {
 	/* margin-bottom: 0.5rem; */
-	font-weight: 500;
-	line-height: 1.2;
+	font-weight: 300;
+	line-height: 1.25;
 }
 .h1,
 h1 {
@@ -5713,7 +5653,7 @@ a.close.disabled {
 	z-index: 1070;
 	display: block;
 	margin: 0;
-	font-family: DINPro, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Chivo, Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
@@ -5819,7 +5759,7 @@ a.close.disabled {
 	left: 0;
 	z-index: 1060;
 	max-width: 276px;
-	font-family: DINPro, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Chivo, Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
@@ -9520,8 +9460,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: bold;
-	font-family: DINPro, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: light;
+	font-family: 'Chivo', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 a {
 	color: #212529;
@@ -9600,22 +9540,22 @@ img::-moz-selection {
 	position: absolute;
 	border-bottom: 1px solid #e9ecef;
 	background-color: #fff;
-	font-family: DINPro, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Chivo, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 #mainNav .navbar-brand {
-	font-weight: 800;
+	font-weight: 300;
 	color: #343a40;
 }
 #mainNav .navbar-toggler {
 	font-size: 12px;
-	font-weight: 800;
+	font-weight: 300;
 	padding: 13px;
 	text-transform: uppercase;
 	color: #343a40;
 }
 #mainNav .navbar-nav > li.nav-item > a {
 	font-size: 12px;
-	font-weight: 800;
+	font-weight: 300;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
@@ -9678,7 +9618,7 @@ img::-moz-selection {
 }
 header.masthead {
 	margin-bottom: 50px;
-	background: no-repeat 50%;
+	background: no-repeat 70%;
 	background-color: #6c757d;
 	background-attachment: scroll;
 	position: relative;
@@ -9717,12 +9657,11 @@ header.masthead .site-heading h1 {
 }
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
-	font-size: 1rem;
-	font-weight: 300;
+	/* font-weight: 500; */
 	line-height: 1.1;
 	display: block;
 	margin: 10px 0 0;
-	font-family: DINPro, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Chivo, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 @media only screen and (min-width: 768px) {
 	header.masthead .page-heading h1,
@@ -9742,7 +9681,7 @@ header.masthead .post-heading .subheading {
 	font-size: 24px;
 	font-weight: 500;
 	margin: 10px 0 30px;
-	font-family: "DINPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Chivo", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 header.masthead .post-heading .meta {
 	font-size: 20px;
