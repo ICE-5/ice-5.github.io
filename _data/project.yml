@@ -1,5 +1,7 @@
 - title: "Towards a Distributed, Robotically-Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments"
   img: "../assets/img/drone/icon.gif"
+  img2_type: "img"
+  img2: "../assets/img/drone/icon2.gif"
   pub: True
   author: Zhihao Fang, Yuning Wu, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach
   conference: ACADIA 2020
@@ -7,9 +9,12 @@
   video: https://www.youtube.com/watch?v=oe1T1j5nVqM&feature=youtu.be
   code: https://github.com/c0deLab/RAiC
   slides: https://docs.google.com/presentation/d/1xDFruAQqMg8gfvHXw-vz88pjC3_ygpM0BJBMVWP2xBk/edit?usp=sharing
+  link:
 
 - title: "Teaching AI Spatial Sense by Playing LEGO"
   img: "../assets/img/lego/icon.gif"
+  img2_type: "img"
+  img2: "../assets/img/lego/icon2.png"
   pub: False
   author: Yuning Wu, Katerina Fragkiadaki
   conference: "[WIP]"
@@ -17,9 +22,12 @@
   video: 
   code: https://github.com/ICE-5/lego-player
   slides: https://docs.google.com/presentation/d/1wsJ7-cj-myIL8D1_o-d6TVEgZMU-LpQRw-ZKTAK2LNQ/edit?usp=sharing
+  link:
 
 - title: "Learning Dense Reward for Partially Observable Contact-Rich Manipulation"
   img: "../assets/img/dense/icon.png"
+  img2_type: "img"
+  img2: "../assets/img/dense/icon2.png"
   pub: False
   author: Yuning Wu, Rodger Luo, Hui Li
   conference: To be submitted to ICRA
@@ -27,4 +35,18 @@
   video: 
   code: https://github.com/ICE-5/dense-reward-partial-obs/tree/delta
   slides: https://docs.google.com/presentation/d/1O9myDjH9aHh3gmMSVgtsgL463LYShkZU/edit?usp=sharing&ouid=113704084293031714730&rtpof=true&sd=true
+  link:
+
+- title: "Design Architecture with Graphs: Utilize Connectivity To Inform Better Layout Design"
+  img: "../assets/img/baby/icon.png"
+  img2_type: "img"
+  img2: "../assets/img/baby/icon2.png"
+  pub: False
+  author: Yuning Wu
+  conference: Thesis Project
+  paper: 
+  video: 
+  code: 
+  slides: 
+  link: selected/baby.html
 
