@@ -1,9 +1,5 @@
 - name: Home
   link: /index.html
-# - name: Research
-#   link: /research.html
-- name: Publication
-  link: /publication.html
 - name: Portfolio
   link: /portfolio.html
 - name: CV

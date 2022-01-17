@@ -1,27 +1,38 @@
 ---
 layout: default
 title: YUNING WU
-<!-- header-bgimg: assets/img/home-bg.png -->
-header-title: BUILD SMARTER (WIP)
-header-subtitle: Driven by a graceful, intelligent, vibrant cyber-future
+header-bgimg: assets/img/home-bg.png
+header-title: 'BUILD SMARTER'
+header-subtitle: How can AI help us build a graceful cyber-future?
 ---
 
 <div class="container text-left">
   <div class="row">
     <div class="col-xl-10 offset-md-0 offset-xl-1">
       <div style="margin-bottom: 50px">
-        <h4>/ ABOUT ME</h4>
+        <h4>ABOUT ME</h4>
+        <p style="font-weight: 900">•</p>
         <p>
-          I'm a Ph.D. student at&nbsp;
+          I'm a Ph.D. student at
           <a href="https://www.cmu.edu">Carnegie Mellon University</a>
           . I've also earned my M.S. in Machine Learning here. My research
-          interest is mainly in robotics, reinforcement learning, and collective
-          robotic construction. I place my investigation at teaching robots to
-          learn smarter skills related to building elegant and artistic physical
-          creations. Besides that, I enjoy experiencing every aspect of design and making, partly because of my interdisciplinary
-          background in architecture and mechanical engineering. Prior to CMU, I obtained my M.Arch. and B.Arch. from Tsinghua University in Beijing, China. Since May 2018, I've co-founded a startup (Metascope Tech) that aims at
-          providing insightful B2B consultation to Chinese commercial
-          architecture design market by active user profiling and data analysis with large-scale machine learning. Though no longer serving as its CEO, the company is still in rapid development. In my leisure time, I enjoy photography, cooking, reading, and drum
+          interest is in
+          <strong>
+            reinforcement learning, robotics, human-robot interaction
+          </strong>
+          . With an interdisciplinary background in machine learning, robotics,
+          and computational design, I’m constantly motivated by the vision of AI
+          helping us build a better cyber-future, both virtually and concretely.
+          I enjoy prototyping and making things from 0 to 1. I enjoy exploring
+          solutions to critical problems.
+          <strong>I’m a do-er</strong>
+          . Prior to CMU, I obtained my M.Arch. and B.Arch. from Tsinghua
+          University in Beijing, China. Since May 2018, I've co-founded a
+          startup (Metascope Tech) that aims at providing B2B consultation to
+          Chinese commercial architecture design market. Applying ML and CV to
+          an aesthetics recommender, we aim to profile clients' spatial
+          preferences to facilitate architects imform better design decisions.
+          In my leisure time, I enjoy photography, cooking, reading, and drum
           playing. I can be reached at
           <strong>yuningw</strong>
           [at]
@@ -29,17 +40,16 @@ header-subtitle: Driven by a graceful, intelligent, vibrant cyber-future
           [dot]
           <strong>cmu</strong>
           [dot]
-          <strong>edu</strong>
-          .
+          <strong>edu</strong>.
         </p>
       </div>
 
       <div style="margin-bottom: 50px">
-        <h4>/ UPDATE</h4>
+        <h4>UPDATE</h4>
+        <p style="font-weight: 900">•</p>
         <!-- <ul style="padding-inline-start: 0px; margin-top: 0.75rem"> -->
         {% for item in site.data.news %}
         <p>
-          <!-- <span style="color: #a71933">{{ item.time }}</span> -->
           <strong>{{ item.time }}</strong>
           ,
           <span>{{ item.content }}</span>
@@ -49,12 +59,13 @@ header-subtitle: Driven by a graceful, intelligent, vibrant cyber-future
       </div>
 
       <div style="margin-bottom: 50px">
-        <h4>/ RESEARCH</h4>
+        <h4>SELECTED</h4>
+        <p style="font-weight: 900">•</p>
         <table class="table" style="margin: 1rem 0">
           <tbody>
             {% for item in site.data.project %}
             <tr>
-              <td style="width: 25%; padding: 1rem">
+              <td style="width: 33%; padding: 1rem">
                 <a href="{{ item.link }}">
                   <img src="{{ item.img }}" alt="cover" width="100%" />
                 </a>
@@ -65,13 +76,15 @@ header-subtitle: Driven by a graceful, intelligent, vibrant cyber-future
                 </p>
                 <!-- <p style="margin: 0">{{ item.conference }}</p> -->
 
-                {% if item.pub %}
-                <p style="color: gray">{{ item.conference}} / 
+                <p style="color: gray"> 
+                {{ item.conference}} {% if item.pub %} /
                   <a href="{{ item.paper }}" style="color: gray">paper</a>
                   {% endif %} {% if item.video %} /
                   <a href="{{ item.video }}" style="color: gray">video</a>
                   {% endif %} {% if item.code %} /
                   <a href="{{ item.code }}" style="color: gray">code</a>
+                  {% endif %} {% if item.slides %} /
+                  <a href="{{ item.slides }}" style="color: gray">slides</a>
                   {% endif %}
                 </p>
                 <p>
