@@ -1,3 +1,29 @@
+- title: "Re-Thinking Automation in Construction: Towards Robotically-Supported Cooperative Construction"
+  img: "../assets/img/reac/icon.png"
+  img2_type: "img"
+  img2: "../assets/img/reac/icon2.png"
+  pub: False
+  author: Yuning Wu, Emek Erdolu, Jean Oh, Daniel Cardoso Llach
+  conference: Submitted to conference
+  paper: 
+  video: 
+  code: 
+  slides: 
+  link: 
+
+- title: "Learning Dense Reward with Temporal Variant Self-Supervision"
+  img: "../assets/img/dense/icon.png"
+  img2_type: "img"
+  img2: "../assets/img/dense/icon2.png"
+  pub: False
+  author: Yuning Wu, Rodger Luo, Hui Li
+  conference: ICRA 2022 | RL for Contact-Rich Manipulation Workshop
+  paper: https://arxiv.org/abs/2205.10431
+  video: 
+  code: https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite
+  slides: "../assets/file/icra22_dense_reward.pdf"
+  link: 
+
 - title: "Towards a Distributed, Robotically-Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments"
   img: "../assets/img/drone/icon.gif"
   img2_type: "img"
@@ -20,22 +46,9 @@
   conference: "[WIP]"
   paper: 
   video: 
-  code: https://github.com/ICE-5/lego-player
-  slides: https://docs.google.com/presentation/d/1wsJ7-cj-myIL8D1_o-d6TVEgZMU-LpQRw-ZKTAK2LNQ/edit?usp=sharing
+  code: 
+  slides: 
   link:
-
-- title: "Learning Dense Reward with Temporal Variant Self-Supervision"
-  img: "../assets/img/dense/icon.png"
-  img2_type: "img"
-  img2: "../assets/img/dense/icon2.png"
-  pub: False
-  author: Yuning Wu, Rodger Luo, Hui Li
-  conference: ICRA 2022 | RL for Contact-Rich Manipulation Workshop
-  paper: https://arxiv.org/abs/2205.10431
-  video: 
-  code: https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite
-  slides: "../assets/file/icra22_dense_reward.pdf"
-  link: 
 
 - title: "Design Architecture with Graphs: Utilize Connectivity To Inform Better Layout Design"
   img: "../assets/img/baby/icon.png"
