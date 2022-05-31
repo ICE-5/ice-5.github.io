@@ -24,18 +24,18 @@
   slides: https://docs.google.com/presentation/d/1wsJ7-cj-myIL8D1_o-d6TVEgZMU-LpQRw-ZKTAK2LNQ/edit?usp=sharing
   link:
 
-- title: "Learning Dense Reward for Partially Observable Contact-Rich Manipulation"
+- title: "Learning Dense Reward with Temporal Variant Self-Supervision"
   img: "../assets/img/dense/icon.png"
   img2_type: "img"
   img2: "../assets/img/dense/icon2.png"
   pub: False
   author: Yuning Wu, Rodger Luo, Hui Li
-  conference: To be submitted to ICRA 2022
-  paper: 
+  conference: ICRA 2022 | RL for Contact-Rich Manipulation Workshop
+  paper: https://arxiv.org/abs/2205.10431
   video: 
-  code: https://github.com/ICE-5/dense-reward-partial-obs/tree/delta
-  slides: https://docs.google.com/presentation/d/1O9myDjH9aHh3gmMSVgtsgL463LYShkZU/edit?usp=sharing&ouid=113704084293031714730&rtpof=true&sd=true
-  link:
+  code: https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite
+  slides: "../assets/file/icra22_dense_reward.pdf"
+  link: 
 
 - title: "Design Architecture with Graphs: Utilize Connectivity To Inform Better Layout Design"
   img: "../assets/img/baby/icon.png"
