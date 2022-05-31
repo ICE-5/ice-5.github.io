@@ -15,7 +15,7 @@
   img: "../assets/img/dense/icon.png"
   img2_type: "img"
   img2: "../assets/img/dense/icon2.png"
-  pub: False
+  pub: True
   author: Yuning Wu, Rodger Luo, Hui Li
   conference: ICRA 2022 | RL for Contact-Rich Manipulation Workshop
   paper: https://arxiv.org/abs/2205.10431
