@@ -1,5 +1,5 @@
 <!-- Carousel -->
-<div id="backdrop" class="carousel slide" data-ride="carousel">
+<div id="backdrop" class="carousel slide" data-ride="carousel" height="325px">
 
     <!-- Indicators/dots -->
     <div class="carousel-indicators">
@@ -9,14 +9,17 @@
     </div>
 
     <!-- The slideshow/carousel -->
-    <div class="carousel-inner" height="385px">
+    <div class="carousel-inner w-100">
         {% for item in site.data.carousel %}
         {% if item.index == 1 %}
-        <div class="carousel-item w-100 active">
+        <div class="carousel-item active">
             {% else %}
             <div class="carousel-item">
                 {% endif %}
-                <img src="{{ item.img }}" alt="{{ item.text }}">
+                <div
+                    style="background-size: auto; background-image: url('{{page.header-bgimg}}'); background-color: white;">
+                </div>
+                <!-- <img src="{{ item.img }}" alt="{{ item.text }} "> -->
             </div>
             {% endfor %}
         </div>
