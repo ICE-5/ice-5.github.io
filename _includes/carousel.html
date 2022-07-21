@@ -1,31 +1,31 @@
 <!-- Carousel -->
-<div id="backdrop" class="carousel slide" data-bs-ride="carousel">
+<div id="backdrop" class="carousel slide" data-ride="carousel">
 
     <!-- Indicators/dots -->
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#backdrop" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#backdrop" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#backdrop" data-bs-slide-to="2"></button>
+        <button type="button" data-target="#backdrop" data-slide-to="0" class="active"></button>
+        <button type="button" data-target="#backdrop" data-slide-to="1"></button>
+        <button type="button" data-target="#backdrop" data-slide-to="2"></button>
     </div>
 
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
         {% for item in site.data.carousel %}
         {% if item.index == 1 %}
-        <div class="carousel-item active">
+        <div class="carousel-item w-100 active">
             {% else %}
             <div class="carousel-item">
                 {% endif %}
-                <img src="{{ item.img }}" alt="{{ item.text }}}" class="d-block w-100">
+                <img src="{{ item.img }}" alt="{{ item.text }}">
             </div>
             {% endfor %}
         </div>
 
         <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#backdrop" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-target="#backdrop" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#backdrop" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-target="#backdrop" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>

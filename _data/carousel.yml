@@ -1,6 +1,6 @@
-- img: "../assets/img/_carousel/1.jpg"
-  text: TBA
+- img: "../assets/img/carousel/1.jpg"
+  text: "text-1"
   index: 1
-- img: "../assets/img/_carousel/2.png"
-  text: TBA
+- img: "../assets/img/carousel/2.png"
+  text: "text-2"
   index: 2
