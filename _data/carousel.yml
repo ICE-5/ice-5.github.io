@@ -1,6 +1,15 @@
-- img: "../assets/img/carousel/1.jpg"
-  text: "text-1"
+- img: 
+  video: "../assets/video/reac1.mp4"
+  title: "BUILD SMARTER"
+  subtitle: "How can AI help us build a graceful future, both virtually and concretely?"
+  index: 0
+- img: 
+  video: "../assets/video/reac2.mp4"
+  title: "BUILD SMARTER"
+  subtitle: "How can AI help us build a graceful future, both virtually and concretely?"
   index: 1
-- img: "../assets/img/carousel/2.png"
-  text: "text-2"
+- img: 
+  video: "../assets/video/acadia20.mp4"
+  title: "BUILD SMARTER"
+  subtitle: "How can AI help us build a graceful future, both virtually and concretely?"
   index: 2

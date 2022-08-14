@@ -1,8 +1,6 @@
 - name: Home
   link: /index.html
-- name: Portfolio
+- name: side-B
   link: /portfolio.html
 - name: Github
   link: https://github.com/ICE-5
-- name: "Digital Garden"
-  link: /knowledge.html

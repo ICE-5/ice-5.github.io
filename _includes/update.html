@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xl-10">
+    <div style="margin-bottom: 35px">
+      <h4>UPDATE</h4>
+      <p style="font-weight: 900">•</p>
+      {% for item in site.data.update %}
+      <p>
+        <strong><tt>{{ item.time }} </tt></strong>
+        <span>{{ item.content }}</span>
+      </p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
