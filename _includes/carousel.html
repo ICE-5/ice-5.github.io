@@ -24,13 +24,16 @@
                 <video class="d-block" autoplay muted style="height: 475px; margin-left: auto; margin-right: auto; margin-top: 75px;">
                     <source src="{{ item.video }}" type="video/mp4" />
                 </video>
+
+                <!-- caption -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 style="font-weight: 900;">{{ item.title }}</h5>
+                    <p class="subheading">{{ item.subtitle }}</p>
+                    <p style="color: darkgray;"><small>{{ item.text }}</small></p>
+                </div>
             </div>
 
-        <!-- caption -->
-        <div class="carousel-caption d-none d-md-block">
-            <h1 style="font-weight: 900;">{{ item.title }}</h5>
-            <span class="subheading">{{ item.subtitle }}</span>
-        </div>
+        
 
         {% endfor %}
     </div>

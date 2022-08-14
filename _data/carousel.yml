@@ -2,14 +2,17 @@
   video: "../assets/video/reac1.mp4"
   title: "BUILD SMARTER"
   subtitle: "How can AI help us build a graceful future, both virtually and concretely?"
+  text: "Video from Robotically Supported Collabotative Construction (RSCC) project, lidar odometry and mapping process. &nbsp;©&nbsp;Yuning Wu 2022"
   index: 0
 - img: 
   video: "../assets/video/reac2.mp4"
   title: "BUILD SMARTER"
   subtitle: "How can AI help us build a graceful future, both virtually and concretely?"
+  text: "Video from Robotically Supported Collabotative Construction (RSCC) project, robot demo. Video recorded by Jiaying Wei."
   index: 1
 - img: 
   video: "../assets/video/acadia20.mp4"
   title: "BUILD SMARTER"
   subtitle: "How can AI help us build a graceful future, both virtually and concretely?"
+  text: "Video from our ACADIA 20 presentation, simulation of RL-driven multi-drone constrution. Video produced by Zhihao Fang."
   index: 2
