@@ -1,6 +1,6 @@
-- name: Home
+- name: SIDA-A
   link: /index.html
-- name: side-B
+- name: SIDE-B
   link: /portfolio.html
 - name: Github
   link: https://github.com/ICE-5
