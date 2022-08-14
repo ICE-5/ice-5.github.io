@@ -1,0 +1,27 @@
+<div class="row" style="margin-bottom: 35px;">
+  <div class="col-12" style="padding: 0; margin-bottom: 10px;">
+    <h4>ROBOTS (THAT I'VE BUILT WITH)</h4>
+    <p style="font-weight: 900">•</p>
+  </div>
+
+  <!-- robot -->
+  <div class="card-deck">
+    {% for item in site.data.robot %}
+    <!-- <div class="col-xl-3 col-md-6 col-sm-6" style="padding: 0;">
+      <img src="{{ item.img }}" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;"
+        alt="Avatar" />
+      
+    </div> -->
+    <div class="card text-white col-xl-2" style="padding: 0; border-width: 0; border-radius: 15px;">
+      <img class="card-img" src="{{ item.img }}" alt="Card image" style="border-radius: 10px;">
+      <div class="card-img-overlay" style="padding: 15px; border-radius: 10px; ">
+        <p class="badge badge-dark">{{ item.name }}</h5>
+        <p class="card-text">{{ item.desc }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+
+
+</div>

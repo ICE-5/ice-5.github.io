@@ -1,0 +1,15 @@
+- name: "Husky"
+  img: "../assets/img/robot/husky.jpg"
+  desc: ""
+
+- name: "Rocky"
+  img: "../assets/img/robot/rocky.png"
+  desc: ""
+
+- name: "Fetch"
+  img: "../assets/img/robot/fetch.jpg"
+  desc:
+
+- name: "Pixhawk"
+  img: "../assets/img/robot/pixhawk.png"
+  desc: ""

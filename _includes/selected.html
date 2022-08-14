@@ -1,55 +1,57 @@
-<div style="margin-bottom: 35px">
-  <h4>SELECTED</h4>
-  <p style="font-weight: 900">•</p>
-  <table class="table" style="margin: 1rem 0">
-    <tbody>
-      {% for item in site.data.project %}
-      <tr>
-        <td style="width: 20%; padding: 0.5rem">
-          <a href="{{ item.link }}">
-            <img src="{{ item.img }}" alt="cover" width="100%" />
-          </a>
-        </td>
-        <td style="width: 20%; padding: 0.5rem">
-          <img src="{{ item.img2 }}" alt="cover" width="100%" />
-        </td>
-        <td>
+<div class="row" style="margin-bottom: 35px">
+  <div >
+    <h4>SELECTED</h4>
+    <p style="font-weight: 900">•</p>
+    <table class="table" style="margin: 10px 0">
+      <tbody>
+        {% for item in site.data.project %}
+        <tr>
+          <td style="width: 20%; padding: 0.5rem">
+            <a href="{{ item.link }}">
+              <img src="{{ item.img }}" alt="cover" width="100%" />
+            </a>
+          </td>
+          <td style="width: 20%; padding: 0.5rem">
+            <img src="{{ item.img2 }}" alt="cover" width="100%" />
+          </td>
+          <td>
 
-          {% if item.link %}
-          <p style="text-decoration: underline"></p>
-          <a href="{{ item.link }}">
+            {% if item.link %}
+            <p style="text-decoration: underline"></p>
+            <a href="{{ item.link }}">
 
-            <strong>{{ item.title }}</strong>
-          </a>
-          </p>
-          {% else %}
-          <p>
-            <strong>{{ item.title }}</strong>
-          </p>
-          {% endif %}
-          <!-- <p style="margin: 0">{{ item.conference }}</p> -->
-
-          <p style="color: gray">
-            {{ item.conference}} {% if item.pub %} /
-            <a href="{{ item.paper }}" style="color: gray">paper</a>
-            {% endif %} {% if item.video %} /
-            <a href="{{ item.video }}" style="color: gray">video</a>
-            {% endif %} {% if item.code %} /
-            <a href="{{ item.code }}" style="color: gray">code</a>
-            {% endif %} {% if item.slides %} /
-            <a href="{{ item.slides }}" style="color: gray">slides</a>
-            {% endif %} {% if item.link %} /
-            <a href="{{ item.link }}" style="color: gray">project page</a>
+              <strong>{{ item.title }}</strong>
+            </a>
+            </p>
+            {% else %}
+            <p>
+              <strong>{{ item.title }}</strong>
+            </p>
             {% endif %}
-          </p>
-          <p>
-            <span><small>{{ item.author }}</small></span>
-            {% if item.paper %}
-          </p>
-          {% endif %}
-        </td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+            <!-- <p style="margin: 0">{{ item.conference }}</p> -->
+
+            <p style="color: gray">
+              {{ item.conference}} {% if item.pub %} /
+              <a href="{{ item.paper }}" style="color: gray">paper</a>
+              {% endif %} {% if item.video %} /
+              <a href="{{ item.video }}" style="color: gray">video</a>
+              {% endif %} {% if item.code %} /
+              <a href="{{ item.code }}" style="color: gray">code</a>
+              {% endif %} {% if item.slides %} /
+              <a href="{{ item.slides }}" style="color: gray">slides</a>
+              {% endif %} {% if item.link %} /
+              <a href="{{ item.link }}" style="color: gray">project page</a>
+              {% endif %}
+            </p>
+            <p>
+              <span><small>{{ item.author }}</small></span>
+              {% if item.paper %}
+            </p>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 </div>
