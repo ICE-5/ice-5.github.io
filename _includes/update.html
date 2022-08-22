@@ -5,7 +5,10 @@
     {% for item in site.data.update %}
     <p>
       <strong><tt>{{ item.time }} </tt></strong>
-      <span>{{ item.content }}</span>
+      <span>{{ item.content }}</span> 
+      {% if item.link %}
+      See <a href="{{ item.link }}">{{ item.link-text }}</a> <i class="fa fa-external-link" aria-hidden="true"></i>.
+      {% endif %}
     </p>
     {% endfor %}
   </div>

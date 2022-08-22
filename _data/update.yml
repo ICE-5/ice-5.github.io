@@ -1,11 +1,15 @@
 - time: 2022-05
   content: I received Manufacturing Futures Institute (MFI) Fellowship.
+  link-text: Manufacturing Futures Institute
+  link: https://engineering.cmu.edu/mfi/index.html
 
 - time: 2021-12
   content: I received Autodesk Research Merit Scholarship.
 
 - time: 2021-08
   content: I helped founded our new lab space at Mill-19.
+  link-text: Mill-19 Advanced Research Center
+  link: https://engineering.cmu.edu/mfi/mill19/index.html
 
 - time: 2021-08
   content: I received Manufacturing PA Fellowship from State of Pennsylvania and Carnegie Mellon University.
