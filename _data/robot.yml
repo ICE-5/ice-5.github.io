@@ -4,7 +4,7 @@
 
 - name: "Blacky Proton"
   img: "../assets/img/robot/blacky.png"
-  desc: "A mini UGV hacked from a Tamiya RC car. Equipped with a Jetson Nano, a Realsense D435i, and a 2D LiDAR."
+  desc: ""
 
 
 - name: "Rocky"
