@@ -11,13 +11,13 @@
   slides: 
   link: 
 
-- title: "Am I in the Way? Reasoning-Based Human-Aware Robot Navigation in Labor-Intensive Work Environments"
+- title: '"Am I in the Way?": Reasoning-Based Human-Aware Robot Navigation in Labor-Intensive Work Environments'
   img: "../assets/img/reason/icon.jpeg"
   img2_type: "img"
   img2: "../assets/img/reason/icon2.png"
   pub: False
-  author: Yuning Wu
-  conference: Submitted to conference
+  author: Yuning Wu, Rodger Luo, Jean Oh 
+  conference: WIP, in submission
   paper: 
   video: 
   code: 
@@ -69,7 +69,7 @@
   img2: "../assets/img/lego/icon2.png"
   pub: False
   author: Yuning Wu, Katerina Fragkiadaki
-  conference: "[WIP]"
+  conference: "WIP, I will resume this project after my PhD thesis defense."
   paper: 
   video: 
   code: 
