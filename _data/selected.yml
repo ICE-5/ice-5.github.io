@@ -12,11 +12,11 @@
   link: 
 
 - title: "Am I in the Way? Reasoning-based Human-aware Robot Navigation in Labor-Intensive Work Environments"
-  img: "../assets/img/reac/icon.png"
+  img: "../assets/img/reason/icon.jpeg"
   img2_type: "img"
-  img2: "../assets/img/reac/icon2.png"
+  img2: "../assets/img/reason/icon2.png"
   pub: False
-  author: Yuning Wu, 
+  author: Yuning Wu
   conference: Submitted to conference
   paper: 
   video: 
@@ -27,7 +27,7 @@
 - title: "Robot in the Loop: From Construction Automation to RL-Driven Robotically-Supported Cooperative Construction"
   img: "../assets/img/reac/icon.png"
   img2_type: "img"
-  img2: "../assets/img/reac/icon2.png"
+  img2: "../assets/img/reac/icon2.jpeg"
   pub: True
   author: Yuning Wu, Emek Erdolu, Jiaying Wei, Jean Oh, Daniel Cardoso Llach
   conference: CSCW 2023
