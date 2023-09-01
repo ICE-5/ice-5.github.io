@@ -1,7 +1,7 @@
-- title: "Towards Humane Automation: An RL-Based Framework for Robotically Supported Collaborative Construction"
-  img: "../assets/img/reac/icon.gif"
+- title: "Towards Humane Automation: An RL-Based Framework for Robotically Supported Collaborative Automation"
+  img: "../assets/img/thesis/icon.png"
   img2_type: "img"
-  img2: "../assets/img/reac/icon2.gif"
+  img2: "../assets/img/thesis/icon2.jpg"
   pub: False
   author: Yuning Wu
   conference: Doctoral Thesis [WIP]
@@ -11,11 +11,24 @@
   slides: 
   link: 
 
-- title: "Robot in the Loop: From Construction Automation to RL-Driven Robotically-Supported Cooperative Construction"
-  img: "../assets/img/reac/icon.gif"
+- title: "Am I in the Way? Reasoning-based Human-aware Robot Navigation in Labor-Intensive Work Environments"
+  img: "../assets/img/reac/icon.png"
   img2_type: "img"
-  img2: "../assets/img/reac/icon2.gif"
+  img2: "../assets/img/reac/icon2.png"
   pub: False
+  author: Yuning Wu, 
+  conference: Submitted to conference
+  paper: 
+  video: 
+  code: 
+  slides: 
+  link: 
+
+- title: "Robot in the Loop: From Construction Automation to RL-Driven Robotically-Supported Cooperative Construction"
+  img: "../assets/img/reac/icon.png"
+  img2_type: "img"
+  img2: "../assets/img/reac/icon2.png"
+  pub: True
   author: Yuning Wu, Emek Erdolu, Jiaying Wei, Jean Oh, Daniel Cardoso Llach
   conference: CSCW 2023
   paper: 
