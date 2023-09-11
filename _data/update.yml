@@ -1,14 +1,18 @@
 - time: 2023-07
-  content: I received another year's Presidential Fellowship from CMU.
+  content: My CMU Presidential Scholarship is extended for the second year. Thank you for supporting my research, TCS!
 
-- time: 2023-05
-  content: I demonstrated and presented our research (and robot) to Bosch AI and Leadership from Germany.
-
-- time: 2023-05
+- time: 2023-06
   content: I am happy to present my PhD research at TCS Innovation Forum 2023, hosted at Cornell Tech, NYC. 
 
+- time: 2023-05
+  content: I demonstrated and presented our research (and robot) to Bosch Leadership and AI team from Germany.
+
+- time: 2022-11
+  content: I presented our ReAC project at CMU MFI Research Seminar, along with my colleague Emek Erdolu.
+
 - time: 2022-09
-  content: I am humbled to receive the CMU Presidential Fellowship, generously donated by TCS.
+  content: I am humbled to be named a Presidential Fellow at Carnegie Mellon University. The scholarship is generously funded by TCS.
+  priority: high
 
 - time: 2022-05
   content: I received Manufacturing Futures Initiative (MFI) Fellowship.

@@ -1,20 +1,19 @@
 - name: "Husky"
   img: "../assets/img/robot/husky.jpg"
-  desc: ""
+  desc: "This robot is my dearest baby. I designed and built it almost from scratch based on a Clearpath Husky A200 base, kindly made available by Jean and the National Robotics and Engineering Center (NREC). It is equipped with 2D & 3D LiDARs, RGB-D cameras, IMU unit, and a (strong) on-board computer. It is the cornerstone robot used for my PhD research on robot learning and human-robot interaction."
 
 - name: "Black Proton"
   img: "../assets/img/robot/blacky.png"
-  desc: ""
-
+  desc: "This cute little one is hacked entirely by me at home. It's adapted from a Tamiya 4WD remote control car (yes, a toy car), and is intended to be a mini version of Husky. Black Proton is a prototyping robot that I try all my Reinforcement Learning algorithms on. It is equipped with a Jetson Nano, a 2D LiDAR, and an RGB-D camera. After the heavy algo testing duty, Black Proton now serves as the Cat Detection, Tracking & Chasing (CDTC) robot at home. I'm sure my cats love it."
 
 - name: "Rocky"
   img: "../assets/img/robot/rocky.png"
-  desc: ""
+  desc: "Rocky is a home-made robot built by students from the Robotics Institute. It came to us after Fetch decided to sleep forever, and has been nicely rennovated by Sam Shun from NREC. However it is not so safe to work with. Our lab still has some drifting tire mark left by it on the floor. Once Rocky decides to go crazy, we have exactly 30s to catch it and press stop. Otherwise it's gone for good. Its heart is definitely in racing, not in HRI. Play safe next time, Rocky!"
 
 - name: "Fetch"
   img: "../assets/img/robot/fetch.jpg"
-  desc:
+  desc: 'The Fetch robot is the first member of the robotically supported collaborative work research. It came to us with a broken arm (gripper/end-effector), a malfunctioning 2D LiDAR, and eventually a "sleeping beauty" mainboard that is no longer awake. We tried very hard to fix it, but luck is not on our side. I love you still, Fetch.'
 
 - name: "Pixhawk"
   img: "../assets/img/robot/pixhawk.png"
-  desc: ""
+  desc: "This drone was the star in the RL-driven multi-drone project. My teammate finished its initial building for carrying blocks using magnets. I've adapted things here and there after the debut. It's a very stable drone, but has only flied indoor for experimentation purposes. It is now retired, and is always waiting for a chance to get a spin outdoor."

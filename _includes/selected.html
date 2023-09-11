@@ -2,7 +2,7 @@
   <div>
     <h4>SELECTED</h4>
     <p style="font-weight: 900">•</p>
-    <table class="table" style="margin: 10px 0">
+    <table class="table" style="margin: 10px 0; border-color: black;">
       <tbody>
         {% for item in site.data.selected %}
         <tr>
@@ -21,7 +21,6 @@
             {% if item.link %}
             <p style="text-decoration: underline"></p>
             <a href="{{ item.link }}">
-
               <strong>{{ item.title }}</strong>
             </a>
             </p>
@@ -32,17 +31,17 @@
             {% endif %}
             <!-- <p style="margin: 0">{{ item.conference }}</p> -->
 
-            <p style="color: gray">
+            <p>
               {{ item.conference}} {% if item.pub %} /
-              <a href="{{ item.paper }}" style="color: gray">paper</a>
+              <a href="{{ item.paper }}">paper</a>
               {% endif %} {% if item.video %} /
-              <a href="{{ item.video }}" style="color: gray">video</a>
+              <a href="{{ item.video }}">video</a>
               {% endif %} {% if item.code %} /
-              <a href="{{ item.code }}" style="color: gray">code</a>
+              <a href="{{ item.code }}">code</a>
               {% endif %} {% if item.slides %} /
-              <a href="{{ item.slides }}" style="color: gray">slides</a>
+              <a href="{{ item.slides }}">slides</a>
               {% endif %} {% if item.link %} /
-              <a href="{{ item.link }}" style="color: gray">project page</a>
+              <a href="{{ item.link }}">project page</a>
               {% endif %}
             </p>
             <p>

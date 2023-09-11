@@ -9,7 +9,9 @@ title: YUNING WU
       <div style="margin-bottom: 50px">
         <h4>ARCHITECTURE OF THINGS</h4>
         <p style="font-weight: 900">•</p>
-        <p>Welcome to <strong>SIDE-B</strong>. As a curious person who has always appreciated (all kinds of) elegant
+        <p style="margin-top: 10px">Welcome to <strong>SIDE-B</strong>.</p>
+        <p style="margin-top: 10px">
+          As a curious person who has always appreciated (all kinds of) elegant
           systems emerged in the flow of human civilization and beyond, my journey starts in architecture. Although people might
           find it confusing how someone trained to design buildings ended up working with robots and AI, to me they
           share the same philosophical traits of <strong>architecting amazing, beautiful, and eventually intelligent things</strong>.
@@ -32,10 +34,8 @@ title: YUNING WU
                     <strong>{{ item.title }}</strong>
                   </a>
                 </p>
-                <p style="margin: 0; color: gray">{{ item.subtitle }}</p>
-                <p><small>{{ item.studio }}</small></p>
-                <p>{{ item.designer }}</p>
-                <p></p>
+                <p style="margin: 0">{{ item.subtitle }} / {{ item.studio }}</p>
+                <p><small>{{ item.designer }}</small></p>
               </td>
             </tr>
             {% endfor %}

@@ -4,7 +4,7 @@
   img2: "../assets/img/thesis/icon2.jpg"
   pub: False
   author: Yuning Wu
-  conference: Doctoral Thesis [WIP]
+  conference: "[WIP] Doctoral Dissertation"
   paper: 
   video: 
   code: 
@@ -16,8 +16,8 @@
   img2_type: "img"
   img2: "../assets/img/reason/icon2.png"
   pub: False
-  author: Yuning Wu, Rodger Luo, Jean Oh 
-  conference: WIP
+  author: Yuning Wu, Jieliang Luo, Jean Oh 
+  conference: "[WIP]"
   paper: 
   video: 
   code: 
@@ -29,8 +29,8 @@
   img2_type: "img"
   img2: "../assets/img/reac/icon2.jpeg"
   pub: True
-  author: Yuning Wu, Emek Erdolu, Jiaying Wei, Jean Oh, Daniel Cardoso Llach
-  conference: CSCW 2023
+  author: Yuning Wu, Emek Erdolu, Jiaying Wei, Daniel Cardoso Llach
+  conference: ACM CSCW 2024
   paper: 
   video: 
   code: 
@@ -42,8 +42,8 @@
   img2_type: "img"
   img2: "../assets/img/dense/icon2.png"
   pub: True
-  author: Yuning Wu, Rodger Luo, Hui Li
-  conference: ICRA 2022 | RL for Contact-Rich Manipulation Workshop
+  author: Yuning Wu, Jieliang Luo, Hui Li
+  conference: IEEE ICRA 2022 | RL for Contact-Rich Manipulation Workshop
   paper: https://arxiv.org/abs/2205.10431
   video: 
   code: https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite
@@ -69,7 +69,7 @@
   img2: "../assets/img/lego/icon2.png"
   pub: False
   author: Yuning Wu, Katerina Fragkiadaki
-  conference: "WIP, I will resume this project after my PhD thesis defense."
+  conference: "[WIP] I will resume this project after my PhD thesis defense."
   paper: 
   video: 
   code: 

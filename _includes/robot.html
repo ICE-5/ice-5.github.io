@@ -4,24 +4,20 @@
     <p style="font-weight: 900">•</p>
   </div>
 
-  <!-- robot -->
-  <div class="card-deck">
+  <div class="card-deck" style="padding: 0 10px;">
     {% for item in site.data.robot %}
-    <!-- <div class="col-xl-3 col-md-6 col-sm-6" style="padding: 0;">
-      <img src="{{ item.img }}" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;"
-        alt="Avatar" />
-      
-    </div> -->
-    <div class="card text-white col-xl-2" style="padding: 0; border-width: 0; border-radius: 15px;">
-      <img class="card-img" src="{{ item.img }}" alt="Card image" style="border-radius: 10px;">
-      <div class="card-img-overlay" style="padding: 15px; border-radius: 10px; ">
-        <p class="badge badge-dark">{{ item.name }}</h5>
-        <p class="card-text">{{ item.desc }}</p>
+    <div class="card" style="padding: 0; border-radius: 0; margin: 5px;">
+      <img class="card-img-top" style="border-radius: 0;" src="{{ item.img }}" alt="Card image cap">
+      <div class="card-body" style="padding: 10px;" >
+        <p class="card-title"><strong>{{ item.name }}</strong></p>
+        <p class="card-text"><small>{{ item.desc }}</small></p>
       </div>
+      <!-- <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div> -->
     </div>
     {% endfor %}
   </div>
 
-
-
 </div>
+
