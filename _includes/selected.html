@@ -18,18 +18,9 @@
           </td>
           <td>
 
-            {% if item.link %}
-            <p style="text-decoration: underline"></p>
-            <a href="{{ item.link }}">
-              <strong>{{ item.title }}</strong>
-            </a>
-            </p>
-            {% else %}
             <p>
-              <strong>{{ item.title }}</strong>
+            <strong>{{ item.title }}</strong>
             </p>
-            {% endif %}
-            <!-- <p style="margin: 0">{{ item.conference }}</p> -->
 
             <p>
               {{ item.conference}} {% if item.pub %} /

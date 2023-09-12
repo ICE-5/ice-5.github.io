@@ -159,7 +159,7 @@ strong {
   font-weight: 700;
 }
 small {
-  font-size: 90%;
+  font-size: 85%;
 }
 sub,
 sup {
@@ -413,7 +413,7 @@ hr {
 }
 .small,
 small {
-  font-size: 80%;
+  font-size: 85%;
   font-weight: 400;
 }
 .mark,
@@ -9443,7 +9443,7 @@ body {
   color: #212529;
 }
 p {
-  line-height: 1.15;
+  line-height: 1.25;
   margin: 0;
 }
 p a {
