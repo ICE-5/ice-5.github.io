@@ -1,19 +1,19 @@
 - img: 
   video: "../assets/video/demo2.mp4"
   title: "HUMANE AUTOMATION & AI"
-  subtitle: "How can AI and robotics be leveraged to support human labor?"
+  subtitle: "How can AI and robotics be leveraged to support existing human labor?"
   text: "Our RL-driven robot navigate and provide support on a real-world construction site. Video from Robotically Supported Collabotative Construction (RSCC) project. &nbsp;©&nbsp;Yuning Wu 2023"
   index: 0
 - img: 
   video: "../assets/video/demo1.mp4"
   title: "HUMANE AUTOMATION & AI"
-  subtitle: "How can AI and robotics be leveraged to support human labor?"
+  subtitle: "How can AI and robotics be leveraged to support existing human labor?"
   text: "Autonomous, human-aware social navigation in complex, dynamic work environments. Video from Robotically Supported Collabotative Construction (RSCC) project. &nbsp;©&nbsp;Yuning Wu 2023"
   index: 1
 - img: 
   video: "../assets/video/loam.mp4"
   title: "HUMANE AUTOMATION & AI"
-  subtitle: "How can AI and robotics be leveraged to support human labor?"
+  subtitle: "How can AI and robotics be leveraged to support existing human labor?"
   text: "LiDAR Odometry and Mapping (LOAM) and robotic perception in real-time. Video from Robotically Supported Collabotative Construction (RSCC) project. &nbsp;©&nbsp;Yuning Wu 2023"
   index: 2
 - img: 
