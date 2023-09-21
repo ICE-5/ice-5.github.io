@@ -7,7 +7,11 @@ tinify.key = "4NN774xxvLwFCcxXK9vMYFk78RZ0wcDZ"
 
 def tiny_png(src):
     source = tinify.from_file(src)
-    source.to_file(src)
+    resized = source.resize(
+        method="scale",
+        width=1500
+    )
+    resized.to_file(src)
 
 directory = argv[1]
 for root, subdirectories, files in os.walk(directory):

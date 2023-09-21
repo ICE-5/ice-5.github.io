@@ -1,7 +1,7 @@
 - title: "Towards Humane Automation: An RL-Driven Framework for Robotically Supported Collaborative Automation"
-  img: "../assets/img/thesis/icon.png"
+  img: "../assets/img/selected/thesis/icon.png"
   img2_type: "img"
-  img2: "../assets/img/thesis/icon2.jpg"
+  img2: "../assets/img/selected/thesis/icon2.jpg"
   pub: False
   author: Yuning Wu
   conference: "[WIP] Doctoral Dissertation"
@@ -12,9 +12,9 @@
   link: 
 
 - title: '"Am I in the Way?": Reasoning-Based Human-Aware Robot Navigation in Labor-Intensive Work Environments'
-  img: "../assets/img/reason/icon.jpeg"
+  img: "../assets/img/selected/reason/icon.jpeg"
   img2_type: "img"
-  img2: "../assets/img/reason/icon2.png"
+  img2: "../assets/img/selected/reason/icon2.png"
   pub: False
   author: Yuning Wu, Jieliang Luo, Jean Oh 
   conference: "[WIP]"
@@ -25,9 +25,9 @@
   link: 
 
 - title: "Robot in the Loop: From Construction Automation to RL-Driven Robotically-Supported Cooperative Construction"
-  img: "../assets/img/reac/icon.png"
+  img: "../assets/img/selected/reac/icon.png"
   img2_type: "img"
-  img2: "../assets/img/reac/icon2.jpeg"
+  img2: "../assets/img/selected/reac/icon2.jpeg"
   pub: True
   author: Yuning Wu, Emek Erdolu, Jiaying Wei, Daniel Cardoso Llach
   conference: In revision, pending publication
@@ -38,9 +38,9 @@
   link: 
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
-  img: "../assets/img/dense/icon.png"
+  img: "../assets/img/selected/dense/icon.png"
   img2_type: "img"
-  img2: "../assets/img/dense/icon2.png"
+  img2: "../assets/img/selected/dense/icon2.png"
   pub: True
   author: Yuning Wu, Jieliang Luo, Hui Li
   conference: IEEE ICRA 2022 | RL for Contact-Rich Manipulation Workshop
@@ -51,9 +51,9 @@
   link: 
 
 - title: "Towards a Distributed, Robotically-Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments"
-  img: "../assets/img/drone/icon.gif"
+  img: "../assets/img/selected/drone/icon.gif"
   img2_type: "img"
-  img2: "../assets/img/drone/icon2.gif"
+  img2: "../assets/img/selected/drone/icon2.gif"
   pub: True
   author: Zhihao Fang, Yuning Wu, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach
   conference: ACADIA 2020
@@ -64,9 +64,9 @@
   link:
 
 - title: "Teaching AI Spatial Sense by Playing LEGO"
-  img: "../assets/img/lego/icon.gif"
+  img: "../assets/img/selected/lego/icon.gif"
   img2_type: "img"
-  img2: "../assets/img/lego/icon2.png"
+  img2: "../assets/img/selected/lego/icon2.png"
   pub: False
   author: Yuning Wu, Katerina Fragkiadaki
   conference: "[WIP] I will resume this project after my PhD thesis defense."
@@ -77,9 +77,9 @@
   link:
 
 - title: "Design ARCHITECT OF THINGSure with Graphs: Utilize Connectivity To Inform Better Layout Design"
-  img: "../assets/img/baby/icon.png"
+  img: "../assets/img/selected/baby/icon.png"
   img2_type: "img"
-  img2: "../assets/img/baby/icon2.png"
+  img2: "../assets/img/selected/baby/icon2.png"
   pub: False
   author: Yuning Wu
   conference: Thesis Project
