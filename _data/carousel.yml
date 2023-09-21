@@ -1,24 +1,30 @@
 - img: 
-  video: "../assets/video/demo2.mp4"
+  video: "../assets/video/demo_1_caption.mp4"
   title: "HUMANE AUTOMATION & AI"
   subtitle: "How can AI and robotics be leveraged to support existing human labor?"
   text: "Our RL-driven robot navigate and provide support on a real-world construction site. Video from Robotically Supported Collabotative Construction (RSCC) project. &nbsp;©&nbsp;Yuning Wu 2023"
   index: 0
 - img: 
-  video: "../assets/video/demo1.mp4"
+  video: "../assets/video/demo_2_caption.mp4"
   title: "HUMANE AUTOMATION & AI"
   subtitle: "How can AI and robotics be leveraged to support existing human labor?"
   text: "Autonomous, human-aware social navigation in complex, dynamic work environments. Video from Robotically Supported Collabotative Construction (RSCC) project. &nbsp;©&nbsp;Yuning Wu 2023"
   index: 1
 - img: 
-  video: "../assets/video/loam.mp4"
+  video: "../assets/video/loam_caption.mp4"
   title: "HUMANE AUTOMATION & AI"
   subtitle: "How can AI and robotics be leveraged to support existing human labor?"
   text: "LiDAR Odometry and Mapping (LOAM) and robotic perception in real-time. Video from Robotically Supported Collabotative Construction (RSCC) project. &nbsp;©&nbsp;Yuning Wu 2023"
   index: 2
 - img: 
-  video: "../assets/video/acadia20.mp4"
+  video: "../assets/video/pdt_caption.mp4"
   title: "BUILD SMARTER"
   subtitle: "How can AI help us build a graceful future, both virtually and concretely?"
   text: "Video from our ACADIA 2020 presentation, simulation of RL-driven multi-drone constrution. Video produced by Zhihao Fang."
   index: 3
+- img: 
+  video: "../assets/video/drone_caption.mp4"
+  title: "BUILD SMARTER"
+  subtitle: "How can AI help us build a graceful future, both virtually and concretely?"
+  text: "Video from our ACADIA 2020 presentation, simulation of RL-driven multi-drone constrution. Video produced by Zhihao Fang."
+  index: 4
