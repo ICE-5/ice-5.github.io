@@ -1,5 +1,5 @@
 <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="10000"
-    style="height: 550px; background-color: black;">
+    style="height: 550px;">
     <ol class="carousel-indicators" style="top: 100%;">
         {% for item in site.data.carousel %}
         {% if item.index == 0 %}
@@ -21,28 +21,12 @@
             {% else %}
             <div class="carousel-item" style="top: 0;">
                 {% endif %}
-                <!-- <video class="d-block" autoplay loop muted
-                    style="height: 475px; margin-left: auto; margin-right: auto; margin-top: 75px;">
-                    <source src="{{ item.video }}" type="video/mp4" />
-                </video> -->
 
                 <video class="d-block" autoplay loop muted
+                    poster="{{ item.poster }}"
                     style="height: 600px; width: 100%; position: relative; object-fit: cover; margin-top: 0px; margin-bottom: 0px;">
                     <source src="{{ item.video }}" type="video/mp4" />
                 </video>
-
-                <!-- <iframe class="d-block" style="height: 475px; width: 800px; margin-left: auto; margin-right: auto; margin-top: 75px;"
-                    src="{{ item.link }}"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe> -->
-
-                <!-- caption -->
-                <!-- <div class="carousel-caption d-none d-md-block">
-                    <h1 style="font-weight: 900;">{{ item.title }}</h5>
-                        <p style="font-weight: 700;">{{ item.subtitle }}</p>
-                        <p><small>{{ item.text }}</small></p>
-                </div> -->
 
 
             </div>
