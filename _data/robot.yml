@@ -16,4 +16,4 @@
 
 - name: "Pixhawk"
   img: "../assets/img/robot/pixhawk.png"
-  desc: "This drone was <strong>the star in the RL-driven multi-drone project</strong>. My teammate finished its initial building for carrying blocks using magnets. I've adapted things here and there after the debut. It's a very stable drone, but has only flied indoor for experimentation purposes. It is now retired, and is always waiting for a chance to get a spin outdoor."
+  desc: "This drone was <strong>the star in the RL-driven multi-drone project</strong>. My teammate finished its initial building for carrying blocks using magnets. I must say I am not good at flying real drones. But I am really good at training drones with RL in simulation environments, e.g. Unity+MLAgents, NVIDIA Omniverse Isaac Gym. Pixhawk is now retired, and is always waiting for a chance to get a spin outdoor."
