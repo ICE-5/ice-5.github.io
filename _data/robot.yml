@@ -4,7 +4,7 @@
 
 - name: "Black Proton"
   img: "../assets/img/robot/blacky.png"
-  desc: "This cute little one is hacked entirely by me at home. It's adapted from a Tamiya 4WD remote control car (yes, a toy car), and is intended to be a mini version of Husky. Black Proton is a prototyping robot that I try all my Reinforcement Learning algorithms on. It is equipped with a Jetson Nano, a 2D LiDAR, and an RGB-D camera. After the heavy algo testing duty, Black Proton now serves as the <strong>Cat Detection, Tracking & Chasing (CDTC) robot</strong> in the family. I'm sure my cats love it."
+  desc: "This cute little one is hacked entirely by me at home. It's adapted from a <strong>Tamiya 4WD remote control car (yes, a toy car)</strong>, and is intended to be a mini version of Husky. Black Proton is a prototyping robot that I try all my reinforcement learning algorithms on. It is equipped with a Jetson Nano, a 2D LiDAR, and an RGB-D camera. After the heavy algo testing duty, Black Proton now serves as the <strong>Cat Detection, Tracking & Chasing (CDTC) robot</strong> in the family. I'm sure my cats love it."
 
 - name: "Rocky"
   img: "../assets/img/robot/rocky.png"
