@@ -1,16 +1,3 @@
-- title: "Towards Humane Automation and AI: An RL-Driven Robotic Framework for Collaborative Supporting On-Site Construction Workers"
-  img: "../assets/img/selected/thesis/icon.png"
-  img2_type: "img"
-  img2: "../assets/img/selected/thesis/icon2.jpg"
-  pub: False
-  author: Yuning Wu
-  conference: "[WIP] Doctoral Dissertation"
-  paper: 
-  video: 
-  code: 
-  slides: 
-  link: 
-
 - title: '"Am I in the Way?": Reasoning-Based Human-Aware Robot Navigation in Labor-Intensive Work Environments'
   img: "../assets/img/selected/reason/icon.jpeg"
   img2_type: "img"
@@ -75,17 +62,4 @@
   code: 
   slides: 
   link:
-
-- title: "Design Architecture with Graphs: Utilize Connectivity To Inform Better Layout Design"
-  img: "../assets/img/selected/baby/icon.png"
-  img2_type: "img"
-  img2: "../assets/img/selected/baby/icon2.png"
-  pub: False
-  author: Yuning Wu
-  conference: Thesis Project
-  paper: 
-  video: 
-  code: 
-  slides: 
-  link: selected/baby.html
 
