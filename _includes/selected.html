@@ -7,19 +7,23 @@
         {% for item in site.data.selected %}
         <tr>
           <td style="width: 20%; padding: 10px; padding-left: 0;">
+            {% if item.img %}
             <a href="{{ item.link }}">
               <img src="{{ item.img }}" alt="cover" width="100%" />
             </a>
+            {% endif %}
           </td>
           <td style="width: 20%; padding: 10px; padding-left: 0;">
+            {% if item.img2 %}
             <a href="{{ item.link }}">
               <img src="{{ item.img2 }}" alt="cover" width="100%" />
             </a>
+            {% endif %}
           </td>
           <td>
 
             <p>
-            <strong>{{ item.title }}</strong>
+              <strong>{{ item.title }}</strong>
             </p>
 
             <p>

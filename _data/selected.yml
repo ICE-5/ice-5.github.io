@@ -65,12 +65,12 @@
 
 - title: "State Space Paradox of Computational Research in Creativity"
   img: 
-  img2_type: "img"
+  img2_type: 
   img2: 
   pub: False
   author: Omer Akin, Yuning Wu
   conference: "In memory of Professor Ömer Akin (1942-2020)" 
-  paper: 
+  paper: "../assets/file/ssp.pdf"
   video: 
   code: 
   slides: 
