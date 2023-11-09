@@ -27,23 +27,28 @@
             </p>
 
             <p>
-              {{ item.conference}} {% if item.pub %} /
+              {{ item.conference}}
+            </p>
+            <p> 
+              {% if item.pub %}
               <a href="{{ item.paper }}">paper</a>
-              {% endif %} {% if item.video %} /
-              <a href="{{ item.video }}">video</a>
-              {% endif %} {% if item.code %} /
-              <a href="{{ item.code }}">code</a>
-              {% endif %} {% if item.slides %} /
-              <a href="{{ item.slides }}">slides</a>
-              {% endif %} {% if item.link %} /
-              <a href="{{ item.link }}">project page</a>
+              {% if item.video %} / <a href="{{ item.video }}">video</a>{% endif %} 
+              {% if item.code %} / <a href="{{ item.code }}">code</a>{% endif %} 
+              {% if item.slides %} / <a href="{{ item.slides }}">slides</a>{% endif %} 
+              {% if item.link %} / <a href="{{ item.link }}">project page</a>{% endif %}
               {% endif %}
             </p>
+
             <p>
-              <span><small>{{ item.author }}</small></span>
-              {% if item.paper %}
+              <span><small></strong>{{ item.author }}</small></span>
             </p>
-            {% endif %}
+
+            <p>
+              {% if item.additional %}
+              <span><small><i>{{ item.additional }}</i></small></span>
+              {% endif %}
+            </p>
+
           </td>
         </tr>
         {% endfor %}

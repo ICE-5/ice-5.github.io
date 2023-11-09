@@ -3,7 +3,7 @@
   img2_type: "img"
   img2: "../assets/img/selected/reason/icon2.png"
   pub: False
-  author: Yuning Wu, Jieliang Luo, Jean Oh
+  author: "<strong>Yuning Wu</strong>, Jieliang Luo, Jean Oh"
   conference: "[WIP]"
   paper: 
   video: 
@@ -11,13 +11,13 @@
   slides: 
   link: 
 
-- title: "Robot-in-the-loop? Mobilizing Ethnography, Robotics, and Reinforcement Learning to Support Carpentry Workers"
+- title: "Robot-in-the-loop? Mobilizing Ethnography, Robotics, and Reinforcement Learning to Support Workers"
   img: "../assets/img/selected/reac/icon.png"
   img2_type: "img"
   img2: "../assets/img/selected/reac/icon2.jpeg"
   pub: True
-  author: Yuning Wu, Emek Erdolu, Jiaying Wei, Daniel Cardoso Llach
-  conference: In revision, pending publication
+  author: "<strong>Yuning Wu</strong>, Emek Erdolu, Jiaying Wei, Daniel Cardoso Llach"
+  conference: In revision, pending final publication
   paper: 
   video: 
   code: 
@@ -29,7 +29,7 @@
   img2_type: "img"
   img2: "../assets/img/selected/dense/icon2.png"
   pub: True
-  author: Yuning Wu, Jieliang Luo, Hui Li
+  author: "<strong>Yuning Wu</strong>, Jieliang Luo, Hui Li"
   conference: "IEEE International Conference on Robotics and Automation (ICRA) 2022 Workshop: Reinforcement Learning for Contact-Rich Manipulation"
   paper: https://arxiv.org/abs/2205.10431
   video: 
@@ -42,8 +42,8 @@
   img2_type: "img"
   img2: "../assets/img/selected/drone/icon2.gif"
   pub: True
-  author: Zhihao Fang, Yuning Wu, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach
-  conference: Proceedings of the 40th Annual Conference of the Association of Computer Aided Design in Architecture (ACADIA)
+  author: "Zhihao Fang, <strong>Yuning Wu</strong>, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach"
+  conference: Annual Conference of the Association of Computer Aided Design in Architecture (ACADIA) 2020
   paper: http://papers.cumincad.org/cgi-bin/works/paper/acadia20_320
   video: https://www.youtube.com/watch?v=oe1T1j5nVqM&feature=youtu.be
   code: https://github.com/c0deLab/RAiC
@@ -55,24 +55,26 @@
   img2_type: "img"
   img2: "../assets/img/selected/lego/icon2.png"
   pub: False
-  author: Yuning Wu, Katerina Fragkiadaki
-  conference: "Independent research. I will resume this research and consolidate the findings into publications after my PhD thesis defense. Feel free to contact me if you are interested and wish to collaborate."
+  author: "<strong>Yuning Wu</strong>, Katerina Fragkiadaki"
+  conference: "Independent research for M.S. in Machine Learning"
   paper: 
   video: 
   code: 
   slides: 
   link:
+  additional:  "I will resume this research and consolidate the findings into publications after my PhD thesis defense. Feel free to contact me if you are interested."
 
 - title: "State Space Paradox of Computational Research in Creativity"
   img: 
   img2_type: 
   img2: 
-  pub: False
-  author: Omer Akin, Yuning Wu
-  conference: "In memory of Professor Ömer Akin (1942-2020)" 
+  pub: True
+  author: "Omer Akin, <strong>Yuning Wu</strong>"
+  conference: 
   paper: "../assets/file/ssp.pdf"
   video: 
   code: 
   slides: 
   link:
+  additional: "In memory of Professor Ömer Akin (1942-2020). This is the last paper he wrote. I am honored and grateful to be a co-author." 
 
