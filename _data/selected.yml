@@ -30,7 +30,7 @@
   img2: "../assets/img/selected/dense/icon2.png"
   pub: True
   author: "<strong>Yuning Wu</strong>, Jieliang Luo, Hui Li"
-  conference: "IEEE International Conference on Robotics and Automation (ICRA) 2022 Workshop: Reinforcement Learning for Contact-Rich Manipulation"
+  conference: "IEEE International Conference on Robotics and Automation (ICRA) 2022 | Reinforcement Learning for Contact-Rich Manipulation Workshop"
   paper: https://arxiv.org/abs/2205.10431
   video: 
   code: https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite
