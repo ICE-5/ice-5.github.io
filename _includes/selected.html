@@ -8,16 +8,12 @@
         <tr>
           <td style="width: 20%; padding: 10px; padding-left: 0;">
             {% if item.img %}
-            <a href="{{ item.link }}">
-              <img src="{{ item.img }}" alt="cover" width="100%" />
-            </a>
+            <img src="{{ item.img }}" alt="cover" width="100%" />
             {% endif %}
           </td>
           <td style="width: 20%; padding: 10px; padding-left: 0;">
             {% if item.img2 %}
-            <a href="{{ item.link }}">
-              <img src="{{ item.img2 }}" alt="cover" width="100%" />
-            </a>
+            <img src="{{ item.img2 }}" alt="cover" width="100%" />
             {% endif %}
           </td>
           <td>
@@ -27,16 +23,13 @@
             </p>
 
             <p>
-              {{ item.conference}}
+              {{ item.occasion }}
             </p>
-            <p> 
-              {% if item.pub %}
-              <a href="{{ item.paper }}">paper</a>
-              {% if item.video %} / <a href="{{ item.video }}">video</a>{% endif %} 
-              {% if item.code %} / <a href="{{ item.code }}">code</a>{% endif %} 
-              {% if item.slides %} / <a href="{{ item.slides }}">slides</a>{% endif %} 
-              {% if item.link %} / <a href="{{ item.link }}">project page</a>{% endif %}
-              {% endif %}
+            
+            <p>
+              {% for subitem in item.item %}
+              <a href="{{ subitem.link }}">{{ subitem.name }}</a>
+              {% endfor %}
             </p>
 
             <p>

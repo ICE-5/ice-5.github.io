@@ -1,80 +1,76 @@
-- title: '"Am I in the Way?": Reasoning-Based Human-Aware Robot Navigation in Labor-Intensive Work Environments'
+- title: "Towards Humane Automation: An RL-Driven Robotic Framework for Supporting On-Site Construction Workers"
+  img: "../assets/img/selected/thesis/icon.png"
+  img2_type: "img"
+  img2: "../assets/img/selected/thesis/icon2.jpg"
+  author: Yuning Wu
+  occasion: "Doctoral Dissertation [WIP]"
+  item: 
+  - name: "Thesis Proposal"
+    link: "../assets/file/thesis_proposal_yuningw.pdf"
+
+
+- title: "SA-RLHF: Contextualizing Socially-Aware Robot Navigation with Human Preferences"
   img: "../assets/img/selected/reason/icon.jpeg"
   img2_type: "img"
   img2: "../assets/img/selected/reason/icon2.png"
-  pub: False
   author: "<strong>Yuning Wu</strong>, Jieliang Luo, Jean Oh"
-  conference: "[WIP]"
-  paper: 
-  video: 
-  code: 
-  slides: 
-  link: 
+  occasion: "In submission"
+
 
 - title: "Robot-in-the-loop? Mobilizing Ethnography, Robotics, and Reinforcement Learning to Support Workers"
   img: "../assets/img/selected/reac/icon.png"
   img2_type: "img"
   img2: "../assets/img/selected/reac/icon2.jpeg"
-  pub: True
   author: "<strong>Yuning Wu</strong>, Emek Erdolu, Jiaying Wei, Daniel Cardoso Llach"
-  conference: In revision, pending final publication
-  paper: 
-  video: 
-  code: 
-  slides: 
-  link: 
+  occasion: In revision, pending final publication
+
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
   img: "../assets/img/selected/dense/icon.png"
   img2_type: "img"
   img2: "../assets/img/selected/dense/icon2.png"
-  pub: True
   author: "<strong>Yuning Wu</strong>, Jieliang Luo, Hui Li"
-  conference: "IEEE International Conference on Robotics and Automation (ICRA) 2022 | Reinforcement Learning for Contact-Rich Manipulation Workshop"
-  paper: https://arxiv.org/abs/2205.10431
-  video: 
-  code: https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite
-  slides: "../assets/file/icra22_dense_reward.pdf"
-  link: 
+  occasion: "IEEE International Conference on Robotics and Automation (ICRA) 2022 | Reinforcement Learning for Contact-Rich Manipulation Workshop"
+  item:
+  - name: "paper"
+    link: "https://arxiv.org/abs/2205.10431"
+  - name: "code"
+    link: "https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite"
+  - name: "slides"
+    link: "../assets/file/icra22_dense_reward.pdf"
 
 - title: "Towards a Distributed, Robotically-Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments"
   img: "../assets/img/selected/drone/icon.gif"
   img2_type: "img"
   img2: "../assets/img/selected/drone/icon2.gif"
-  pub: True
   author: "Zhihao Fang, <strong>Yuning Wu</strong>, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach"
-  conference: Annual Conference of the Association of Computer Aided Design in Architecture (ACADIA) 2020
-  paper: http://papers.cumincad.org/cgi-bin/works/paper/acadia20_320
-  video: https://www.youtube.com/watch?v=oe1T1j5nVqM&feature=youtu.be
-  code: https://github.com/c0deLab/RAiC
-  slides: https://docs.google.com/presentation/d/1xDFruAQqMg8gfvHXw-vz88pjC3_ygpM0BJBMVWP2xBk/edit?usp=sharing
-  link:
+  occasion: Annual Conference of the Association of Computer Aided Design in Architecture (ACADIA) 2020
+  item:
+  - name: "paper"
+    link: "http://papers.cumincad.org/cgi-bin/works/paper/acadia20_320"
+  - name: "video"
+    link: "https://www.youtube.com/watch?v=oe1T1j5nVqM&feature=youtu.be"
+  - name: "slides"
+    link: "https://docs.google.com/presentation/d/1xDFruAQqMg8gfvHXw-vz88pjC3_ygpM0BJBMVWP2xBk/edit?usp=sharing"
+  - name: "code"
+    link: "https://github.com/c0deLab/RAiC"
 
 - title: "Teaching AI Spatial Sense by Playing LEGO"
   img: "../assets/img/selected/lego/icon.gif"
   img2_type: "img"
   img2: "../assets/img/selected/lego/icon2.png"
-  pub: False
   author: "<strong>Yuning Wu</strong>, Katerina Fragkiadaki"
-  conference: "Independent research for M.S. in Machine Learning"
-  paper: 
-  video: 
-  code: 
-  slides: 
-  link:
+  occasion: "Independent research for M.S. in Machine Learning"
   additional:  "I will resume this research and consolidate the findings into publications after my PhD thesis defense. Feel free to contact me if you are interested."
 
 - title: "State Space Paradox of Computational Research in Creativity"
   img: 
   img2_type: 
   img2: 
-  pub: True
   author: "Ömer Akin, <strong>Yuning Wu</strong>"
-  conference: 
-  paper: "../assets/file/ssp.pdf"
-  video: 
-  code: 
-  slides: 
-  link:
+  occasion: "Thirtieth Anniversary "Heron Island" Conference on Computational and Cognitive Models of Creative Design (Hi'19)"
+  item:
+  - name: "paper"
+    link: "../assets/file/ssp.pdf"
   additional: "In memory of Professor Ömer Akin (1942-2020). This is one of his last papers. I am honored and grateful to be organizing and presenting it." 
 
