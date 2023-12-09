@@ -2,11 +2,12 @@
   img: "../assets/img/selected/thesis/icon.png"
   img2_type: "img"
   img2: "../assets/img/selected/thesis/icon2.jpg"
-  author: Yuning Wu
+  author: "<strong>Yuning Wu</strong>"
   occasion: "Doctoral Dissertation [WIP]"
   item: 
-  - name: "Thesis Proposal"
+  - name: "proposal defense"
     link: "../assets/file/thesis_proposal_yuningw.pdf"
+  additional: "Dissertation Committee: Daniel Cardoso Llach (Advisor), Jean Oh (Co-Advisor), Jieliang Luo"
 
 
 - title: "SA-RLHF: Contextualizing Socially-Aware Robot Navigation with Human Preferences"
@@ -17,12 +18,12 @@
   occasion: "In submission"
 
 
-- title: "Robot-in-the-loop? Mobilizing Ethnography, Robotics, and Reinforcement Learning to Support Workers"
+- title: "Robot-in-the-loop? Mobilizing Ethnography, Robotics, and Reinforcement Learning to Support Carpentry Workers"
   img: "../assets/img/selected/reac/icon.png"
   img2_type: "img"
   img2: "../assets/img/selected/reac/icon2.jpeg"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Daniel Cardoso Llach"
-  occasion: In revision, pending final publication
+  occasion: Accepted to ACM Conference on Computer Supported Cooperative Work (CSCW)
 
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
@@ -30,7 +31,7 @@
   img2_type: "img"
   img2: "../assets/img/selected/dense/icon2.png"
   author: "<strong>Yuning Wu</strong>, Jieliang Luo, Hui Li"
-  occasion: "IEEE International Conference on Robotics and Automation (ICRA) 2022 | Reinforcement Learning for Contact-Rich Manipulation Workshop"
+  occasion: "IEEE International Conference on Robotics and Automation (ICRA) 2022 | RL for Contact-Rich Manipulation Workshop"
   item:
   - name: "paper"
     link: "https://arxiv.org/abs/2205.10431"
@@ -60,7 +61,7 @@
   img2_type: "img"
   img2: "../assets/img/selected/lego/icon2.png"
   author: "<strong>Yuning Wu</strong>, Katerina Fragkiadaki"
-  occasion: "Independent research for M.S. in Machine Learning"
+  occasion: "Graduation research for M.S. in Machine Learning"
   additional:  "I will resume this research and consolidate the findings into publications after my PhD thesis defense. Feel free to contact me if you are interested."
 
 - title: "State Space Paradox of Computational Research in Creativity"
@@ -68,7 +69,7 @@
   img2_type: 
   img2: 
   author: "Ömer Akin, <strong>Yuning Wu</strong>"
-  occasion: "Thirtieth Anniversary "Heron Island" Conference on Computational and Cognitive Models of Creative Design (Hi'19)"
+  occasion: "Thirtieth Anniversary 'Heron Island' Conference on Computational and Cognitive Models of Creative Design (Hi'19)"
   item:
   - name: "paper"
     link: "../assets/file/ssp.pdf"

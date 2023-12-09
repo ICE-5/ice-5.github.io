@@ -23,13 +23,7 @@
             </p>
 
             <p>
-              {{ item.occasion }}
-            </p>
-            
-            <p>
-              {% for subitem in item.item %}
-              <a href="{{ subitem.link }}">{{ subitem.name }}</a>
-              {% endfor %}
+              <small style="font-weight: 500;">{{ item.occasion }}</small>
             </p>
 
             <p>
@@ -37,8 +31,18 @@
             </p>
 
             <p>
+              <small>
+                {% if item.item %}
+                {% for subitem in item.item %}
+                / <a href="{{ subitem.link }}">{{ subitem.name }}</a>
+                {% endfor %}
+                {% endif %}
+              </small>
+            </p>
+
+            <p>
               {% if item.additional %}
-              <span><small><i>{{ item.additional }}</i></small></span>
+              <span><small style="color: gray;"><i>{{ item.additional }}</i></small></span>
               {% endif %}
             </p>
 
