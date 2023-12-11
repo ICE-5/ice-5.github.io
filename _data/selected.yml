@@ -3,11 +3,11 @@
   img2_type: "img"
   img2: "../assets/img/selected/thesis/icon2.jpg"
   author: "<strong>Yuning Wu</strong>"
-  occasion: "Doctoral Dissertation [WIP]"
+  occasion: "Doctoral Dissertation (WIP)"
   item: 
-  - name: "proposal defense"
-    link: "../assets/file/thesis_proposal_yuningw.pdf"
-  additional: "Dissertation Committee: Dr. Daniel Cardoso Llach (Advisor), Dr. Jean Oh (Co-Advisor), Dr. Jieliang Luo <br>I am currently in Ph.D. ABD (All But Dissertation) and in focused thesis writing mode."
+  # - name: "proposal defense"
+    # link: "../assets/file/thesis_proposal_yuningw.pdf"
+  additional: "Dissertation Committee: Dr. Daniel Cardoso Llach (Advisor), Dr. Jean Oh (Co-Advisor), Dr. Jieliang Luo <br>I am currently in Ph.D. ABD (All But Dissertation) stage, during which I am mostly focusing on final dissertation writing."
 
 
 - title: "SA-RLHF: Contextualizing Socially-Aware Robot Navigation with Human Preferences"
@@ -23,7 +23,7 @@
   img2_type: "img"
   img2: "../assets/img/selected/reac/icon2.jpeg"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Daniel Cardoso Llach"
-  occasion: Accepted to ACM Conference on Computer Supported Cooperative Work (CSCW)
+  occasion: "[CSCW 2023 & 2024] Accepted to ACM Conference on Computer Supported Cooperative Work"
 
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
@@ -31,7 +31,7 @@
   img2_type: "img"
   img2: "../assets/img/selected/dense/icon2.png"
   author: "<strong>Yuning Wu</strong>, Jieliang Luo, Hui Li"
-  occasion: "IEEE International Conference on Robotics and Automation (ICRA) 2022 | RL for Contact-Rich Manipulation Workshop"
+  occasion: "[ICRA 2022] IEEE International Conference on Robotics and Automation 2022 | RL for Contact-Rich Manipulation Workshop"
   item:
   - name: "paper"
     link: "https://arxiv.org/abs/2205.10431"
@@ -45,7 +45,7 @@
   img2_type: "img"
   img2: "../assets/img/selected/drone/icon2.gif"
   author: "Zhihao Fang, <strong>Yuning Wu</strong>, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach"
-  occasion: Annual Conference of the Association of Computer Aided Design in Architecture (ACADIA) 2020
+  occasion: "[ACADIA 2020] Annual Conference of the Association of Computer Aided Design in Architecture 2020"
   item:
   - name: "paper"
     link: "http://papers.cumincad.org/cgi-bin/works/paper/acadia20_320"
@@ -69,7 +69,7 @@
   img2_type: 
   img2: 
   author: "Ömer Akin, <strong>Yuning Wu</strong>"
-  occasion: "Thirtieth Anniversary 'Heron Island' Conference on Computational and Cognitive Models of Creative Design (Hi'19)"
+  occasion: "[HI'19] Thirtieth Anniversary 'Heron Island' Conference on Computational and Cognitive Models of Creative Design"
   item:
   - name: "paper"
     link: "../assets/file/ssp.pdf"

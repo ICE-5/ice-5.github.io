@@ -1,0 +1,23 @@
+<div class="row" style="margin-bottom: 25px">
+  <div>
+    <h4>SERVICE</h4>
+    <p style="font-weight: 900">•</p>
+    <div style="margin-top: 5px;">
+    {% for item in site.data.service %}
+    <p>
+      <strong><tt>{{ item.time }} </tt></strong>
+
+      {% if item.priority %}
+        <span style="font-weight: 500;">{{ item.content }}</span>
+      {% else %}
+        <span>{{ item.content }}</span>
+      {% endif %}
+
+      {% if item.link %}
+      See <a href="{{ item.link }}">{{ item.link-text }}</a> <i class="fa fa-external-link" aria-hidden="true"></i>.
+      {% endif %}
+    </p>
+    {% endfor %}
+  </div>
+  </div>
+</div>
