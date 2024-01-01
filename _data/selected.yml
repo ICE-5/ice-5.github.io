@@ -5,8 +5,8 @@
   author: "<strong>Yuning Wu</strong>"
   occasion: "Doctoral Dissertation (WIP)"
   item: 
-  # - name: "proposal defense"
-    # link: "../assets/file/thesis_proposal_yuningw.pdf"
+  - name: "proposal"
+    link: "../assets/file/thesis_proposal_yuningw.pdf"
   additional: "Dissertation Committee: Dr. Daniel Cardoso Llach (Advisor), Dr. Jean Oh (Co-Advisor), Dr. Jieliang Luo <br>I am currently in Ph.D. ABD (All But Dissertation) stage, during which I am mostly focusing on final dissertation writing."
 
 
@@ -18,12 +18,12 @@
   occasion: "In submission"
 
 
-- title: "Robot-in-the-loop? Mobilizing Ethnography, Robotics, and Reinforcement Learning to Support Carpentry Workers"
+- title: "Robot-in-the-loop? Mobilizing Ethnography, Robotics, and Reinforcement Learning to Support Construction Workers"
   img: "../assets/img/selected/reac/icon.png"
   img2_type: "img"
   img2: "../assets/img/selected/reac/icon2.jpeg"
-  author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Daniel Cardoso Llach"
-  occasion: "[CSCW 2023 & 2024] Accepted to ACM Conference on Computer Supported Cooperative Work"
+  author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
+  occasion: "[CSCW] In Revision. Submitted to ACM Conference on Computer Supported Cooperative Work"
 
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
