@@ -7,7 +7,7 @@
   item: 
   - name: "proposal"
     link: "../assets/file/thesis_proposal_yuningw.pdf"
-  additional: "Dissertation Committee: Dr. Daniel Cardoso Llach (Advisor), Dr. Jean Oh (Co-Advisor), Dr. Jieliang Luo <br>I am currently in Ph.D. ABD (All But Dissertation) stage, during which I am mostly focusing on final dissertation writing."
+  additional: "Dissertation Committee: Daniel Cardoso Llach (Advisor), Jean Oh (Co-Advisor), Jieliang Luo <br>I am currently in Ph.D. ABD (All But Dissertation) stage, during which I am mostly focusing on final dissertation writing."
 
 
 - title: "SA-RLHF: Contextualizing Socially-Aware Robot Navigation with Human Preferences"
@@ -22,7 +22,7 @@
   img: "../assets/img/selected/reac/icon.png"
   img2_type: "img"
   img2: "../assets/img/selected/reac/icon2.jpeg"
-  author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
+  author: "<strong>Yuning Wu</strong>, Emek Erdolu, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
   occasion: "[CSCW] In Revision. Submitted to ACM Conference on Computer Supported Cooperative Work"
 
 
