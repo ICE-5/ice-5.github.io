@@ -9,15 +9,43 @@ title: YUNING WU
       <div style="margin-bottom: 50px">
         <h4>IMMATURE ARCHITECT OF THINGS</h4>
         <p style="font-weight: 900">•</p>
-        <p style="margin-top: 10px">Welcome to <strong>SIDE-B</strong>.</p>
+        <p style="margin-top: 5px">Welcome to <strong>SIDE-B</strong>.</p>
+
         <p style="margin-top: 10px">
+          As someone innately curious and deeply appreciative of the design of elegant systems that have emerged
+          throughout human
+          civilization and beyond, my journey began in the realm of architecture. While some might find it perplexing
+          that a background in architectural design led me to the world of robots and AI, I see a profound philosophical
+          connection. To me, <strong>all these disciplines embody the art of crafting amazing, beautiful, and ultimately
+          intelligent
+          entities</strong>.
+
+          This page showcases some of the initial works that hint at this interconnected vision. Although these early
+          projects primarily focus on the innovation and storytelling of spaces, they transcend traditional boundaries.
+          They are explorations
+          - unbounded, divergent, and expressive of various thoughts and ideas. These "immature" works represent the
+          seeds of a journey that bridges creation of physical space with the dynamic world of AI and robotics.
+
+          If you wish to revisit my more recent endeavors in AI and robotics research, please feel free to return to
+          <a href="index.html" class="badge badge-dark"><strong>SIDE-A: AI+ROBOTICS
+              RESEARCHER</strong></a>.
+        </p>
+
+
+
+        <!-- <p style="margin-top: 10px">
           As a curious person who has always appreciated (all kinds of) elegant
-          systems emerged in the flow of human civilization and beyond, my journey starts in architecture. Although people might
+          systems emerged in the flow of human civilization and beyond, my journey starts in architecture. Although
+          people might
           find it confusing how someone trained to design buildings ended up working with robots and AI, to me they
-          share the same philosophical traits of <strong>architecting amazing, beautiful, and eventually intelligent things</strong>.
-          This page contains some of the initial seeds hinting at this intention. These immature works, though all taking buildings and
+          share the same philosophical traits of <strong>architecting amazing, beautiful, and eventually intelligent
+            things</strong>.
+          This page contains some of the initial seeds hinting at this intention. These immature works, though all
+          taking buildings and
           spaces as agencies, are largely unbounded, divergent, and expressive of different thoughts. Of course,
-          please feel free to go back to <a href="index.html" class="badge badge-dark"><strong>SIDE-A: AI+ROBOTICS RESEARCHER</strong></a>.</p>
+          please feel free to go back to <a href="index.html" class="badge badge-dark"><strong>SIDE-A: AI+ROBOTICS
+              RESEARCHER</strong></a>.</p> -->
+
         <table class="table" style="margin: 1rem 0">
           <tbody>
             {% for item in site.data.portfolio %}
@@ -33,7 +61,8 @@ title: YUNING WU
                     <strong>{{ item.title }}</strong>
                   </a>
                 </p>
-                <p style="margin: 0">{{ item.subtitle }} / {{ item.studio }}</p>
+                <p style="margin: 0">{{ item.subtitle }}</p>
+                <p><br><small style="font-weight: 500;">{{ item.studio }}</small></p>
                 <p><small>{{ item.designer }}</small></p>
               </td>
             </tr>

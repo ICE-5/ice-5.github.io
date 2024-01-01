@@ -1,26 +1,33 @@
-- title: Erosion
-  subtitle: Yokohama 2015 • 2065
+- title: "Erosion: Yokohama 2015 • 2065"
+  subtitle: "Generative Form Design of a Port Harbor Based on Erosion Simulation of Sea Wind and Water"
   img: "../assets/img/page/p_yokohama/1.jpeg"
   studio: Princeton-Tsinghua Joint Design Studio, "Yokohama Redux"
   designer: Yuning Wu, Ananda de Vos, Liang Xu
   link: /portfolio/yokohama.html
 
+- title: "Design Architecture with Graphs: Utilize Space Connectivity and Graph Neural Networks To Inform Layout Design"
+  subtitle: AI x Space Design
+  img: "../assets/img/page/baby/5.png"
+  studio: Independent Research
+  designer: Yuning Wu
+  link: /selected/baby.html
+
 - title: Playground = Heritage x Drama
-  subtitle: The Rivival of a Shipyard 
+  subtitle: The Creative Rivival of a Abandoned Shipyard Through the Lens of Theatrical Arts and Performances
   img: "../assets/img/page/p_tianjin/1.jpeg"
   studio: Yale-Tsinghua Joint Design Studio, "Tianjin Binhai Industrial Heritage Rivival"
   designer: Yuning Wu (To be noted, the photorealistic rendering "Rhinoceros in Love" in this work is credited to Xiyao Wang)
   link: /portfolio/tianjin.html
 
 - title: Urban Interface
-  subtitle: Restoration Design & Research of Torino Porta Nuova
+  subtitle: Urban Restoration Design & Research of Torino Porta Nuova
   img: "../assets/img/page/p_torino/1.png"
-  studio: Partial Selection of PoliTo-Tsinghua Master Graduation Project
+  studio: Partial Selection of Tsinghua-PoliTo Joint Master Graduation Project
   designer: Yuning Wu
   link: /portfolio/torino.html
 
 - title: Wall, Silk, Light
-  subtitle: A Subtle Urban Experiment @ Yonghegong Lama Temple
+  subtitle: An Experimental Urban Reform of the Traditional Yonghegong Lama Temple & Hutong Area in Beijing Through Sunlight Installations 
   img: "../assets/img/page/p_beijing/1.png"
   studio: Tsinghua Urban Design Studio
   designer: Yuning Wu
