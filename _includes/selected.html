@@ -7,8 +7,8 @@
         {% for item in site.data.selected %}
         <tr>
           <td style="width: 20%; padding: 10px; padding-left: 0;">
-            {% if item.img %}
-            <img src="{{ item.img }}" alt="cover" width="100%" />
+            {% if item.img1 %}
+            <img src="{{ item.img1 }}" alt="cover" width="100%" />
             {% endif %}
           </td>
           <td style="width: 20%; padding: 10px; padding-left: 0;">
@@ -16,8 +16,8 @@
             <img src="{{ item.img2 }}" alt="cover" width="100%" />
             {% endif %}
           </td>
-          <td>
 
+          <td>
             <p>
               <strong>{{ item.title }}</strong>
             </p>
@@ -42,7 +42,7 @@
 
             <p>
               {% if item.additional %}
-              <span><small style="color: #505050;"><i><br>{{ item.additional }}</i></small></span>
+              <span><small style="color: #505050;"><br>{{ item.additional }}</small></span>
               {% endif %}
             </p>
 
