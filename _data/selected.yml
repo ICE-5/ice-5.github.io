@@ -1,29 +1,37 @@
-- title: "Towards Humane Automation: An RL-Driven Robotic Framework for Supporting On-Site Construction Workers"
+- title: "Towards Human-Centered Automation: An RL-Driven Robotic Framework for Humanely Supporting Labor-Intensive Construction Workers"
   img1: "../assets/img/selected/thesis/img1.png"
   img2: "../assets/img/selected/thesis/img2.jpg"
   author: "<strong>Yuning Wu</strong>"
-  occasion: "Doctoral Dissertation (WIP)"
+  occasion: "In preparation, doctoral dissertation."
   additional: "Committee: Daniel Cardoso Llach (Advisor), Jean Oh (Co-Advisor), Jieliang Luo <br>I am currently in Ph.D. ABD (All But Dissertation) stage, during which I am mostly focusing on final dissertation writing."
 
 - title: "Towards Human-Centered Construction Robotics: An RL-Driven Companion Robot For Contextually Assisting Carpentry Workers"
   img1: "../assets/img/selected/companion/img1.png"
   img2: "../assets/img/selected/companion/img2.png"
   author: "<strong>Yuning Wu</strong>, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "Under Review. Submitted to IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+  occasion: "Under review, submitted to IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)."
   additional: "TL;DR: This paper documents the development of a socially-aware work companion robot for assisting labor-intensive carpentry workers. Besides robot system design, we also propose a novel pipeline for incrementally finetuning a pretrained RL model to align with context-specific human preferences and worker behaviour."
 
 - title: "Construction as Computer-Supported Cooperative Work: Designing a Robot for Assisting Carpentry Workers"
   img1: "../assets/img/selected/reac/img1.jpeg"
   img2: "../assets/img/selected/reac/img2.png"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "Under Review. Submitted to ACM Conference on Computer Supported Cooperative Work (CSCW)"
-  additional: "TL;DR: This paper reimagines the integration of robotics into highly manual construction work from a socio-technical perspective. It emphasizes the application of Computer-Supported Cooperative Work (CSCW) principles, presenting a case study on the design, development, and evaluation of a prototype robot intended to assist in carpentry formwork. This paper discusses the use of ethnographic and practice-based research methods to understand the cooperative work of construction teams and inform the design of supportive robot technologies. It proposes specific human-centered benchmarking metrics for evaluating the envisioned robot support and advocates for an approach that supports rather than completely reconfigures or replaces the human elements of construction work."
+  occasion: "Under review, submitted to ACM Conference on Computer Supported Cooperative Work (CSCW)."
+  additional: "TL;DR: This paper reimagines the integration of robotics into highly manual construction work from a socio-technical perspective. It emphasizes the application of Computer-Supported Cooperative Work (CSCW) principles, presenting a case study on the design, development, and evaluation of a prototype robot intended to assist in carpentry formwork. This paper discusses the use of ethnographic and practice-based research methods to understand the cooperative work of construction teams and inform the design of supportive robot technologies. It proposes specific human-centered benchmarking metrics for evaluating the envisioned robot support and advocates for an approach that supports rather than completely reconfigures or replaces the human elements in existing labor-intensive work."
+
+- title: "Correcting Sparse Erroneous Navigation Behaviors through Few-Shot Learning from Two Teachers"
+  img1: 
+  img2: "../assets/img/selected/vlm/img2.png"
+  author: "<strong>Yuning Wu</strong>, Jean Oh"
+  occasion: "In preparation."
+  additional: "TL;DR: This research introduces a novel approach to address long-tailed errors in robot navigation, utilizing a Vision Language Model (VLM) and human expert preferences for corrections. By leveraging CLIP as few-shot learners, the method effectively compensates for the sparse data issue inherent in long-tailed distributions. The paper proposes a new architecture aimed at efficiently rectifying erroneous navigation behaviors and better aligning them with human preferences, offering a significant advancement in social navigation systems. This paper is currently in preparation. It will be submitted to a top-tier conference in robotics and AI. "
+
 
 - title: "SA-RLHF: Contextualizing Socially-Aware Robot Navigation with Human Preferences"
   img1: "../assets/img/selected/reason/img1.jpeg"
   img2: "../assets/img/selected/reason/img2.png"
   author: "<strong>Yuning Wu</strong>, Jieliang Luo, Jean Oh"
-  occasion: "In submission"
+  occasion: "In submission."
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
   img1: "../assets/img/selected/dense/img1.png"
@@ -53,7 +61,7 @@
     link: "https://docs.google.com/presentation/d/1xDFruAQqMg8gfvHXw-vz88pjC3_ygpM0BJBMVWP2xBk/edit?usp=sharing"
   - name: "code"
     link: "https://github.com/c0deLab/RAiC"
-  additional: "TL;DR: The paper explores an innovative framework that utilizes reinforcement learning to enable drones to perform collaborative tasks such as bricklaying and spray-coating. This scalable, adaptive approach allows multiple drones to work in dynamic environments, promising to enhance efficiency and flexibility in construction processes. By demonstrating the framework's potential through simulations and advancing towards a hardware prototype, the study contributes to the evolving field of construction robotics by offering insights into the future of human-machine collaborative construction ecosystems."
+  additional: "TL;DR: The paper explores an innovative framework that utilizes reinforcement learning to enable drones to perform collaborative tasks such as bricklaying and spray-coating. This scalable, adaptive approach allows multiple drones to work in dynamic environments, promising to enhance efficiency and flexibility in construction processes. By demonstrating the framework's potential through simulations and advancing towards a hardware prototype, the study contributes to the evolving field of construction robotics by offering insights into the future of human-machine collaborative ecosystems."
 
 - title: "Teaching AI Spatial Sense by Playing LEGO"
   img1: "../assets/img/selected/lego/img1.gif"
