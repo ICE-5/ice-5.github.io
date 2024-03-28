@@ -87,6 +87,8 @@
   occasion: "[HI'19] Thirtieth Anniversary 'Heron Island' Conference on Computational and Cognitive Models of Creative Design"
   item:
   - name: "PDF"
-    link: "../assets/file/ssp.pdf"
+    link: "../assets/file/arxiv_state_space_paradox.pdf"
+  - name: "arXiv"
+    link: "https://arxiv.org/abs/TBA"
   additional: "In memory of Professor Ömer Akin (1942-2020). This is one of his last papers. I am honored and grateful to be organizing and presenting it." 
 
