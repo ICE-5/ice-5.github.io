@@ -13,9 +13,9 @@
   additional: "TL;DR: This paper documents the development of a socially-aware work companion robot for assisting labor-intensive carpentry workers. Besides robot system design, we also propose a novel pipeline for incrementally finetuning a pretrained RL model to align with context-specific human preferences and worker behaviour."
   item:
   - name: "PDF"
-    link: "../assets/file/submission_companion.pdf"
+    link: "../assets/file/sub_companion_paper.pdf"
   - name: "arXiv"
-    link: "https://arxiv.org/abs/TBA"
+    link: "https://arxiv.org/abs/2403.19060"
   - name: "video"
     link: "https://youtu.be/wwta5bsOK0k"
 - title: "Construction as Computer-Supported Cooperative Work: Designing a Robot for Assisting Carpentry Workers"
