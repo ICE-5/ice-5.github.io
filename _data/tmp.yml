@@ -24,6 +24,12 @@
   slides: 
   link: selected/baby.html
 
+- title: "SA-RLHF: Contextualizing Socially-Aware Robot Navigation with Human Preferences"
+  img1: "../assets/img/selected/reason/img1.jpeg"
+  img2: "../assets/img/selected/reason/img2.png"
+  author: "<strong>Yuning Wu</strong>, Jieliang Luo, Jean Oh"
+  occasion: "In preparation."
+
 -  As a big fan of sci-fi films, I think the prospective form of this kind of intelligent, humanistic robots might be TARS in Interstellar,
       Benben in the Wandering Earth II, and Baymax in Big Hero 6.
 

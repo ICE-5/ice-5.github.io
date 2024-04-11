@@ -10,7 +10,7 @@
   img2: "../assets/img/selected/companion/img2.png"
   author: "<strong>Yuning Wu</strong>, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
   occasion: "Under review, submitted to IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)."
-  additional: "TL;DR: This paper documents the development of a socially-aware work companion robot for assisting labor-intensive carpentry workers. Besides robot system design, we also propose a novel pipeline for incrementally finetuning a pretrained RL model to align with context-specific human preferences and worker behaviour."
+  additional: "TL;DR: This paper documents the technical development of a socially-aware 'work companion robot' centered on assisting, rather than brutally replacing, human workers. By taking on the more physically burdensome tasks within an existing prototypical construction scenario, carpentry formwork, the robot aims to allow workers to focus on the more high-skilled and sophisticated facets of their daily practice. The paper offers a systematic overview of how the robot prototype is architected, driven by state-of-the-art (SoTA) reinforcement learning algorithms. It also proposes a novel pipeline for incrementally fine-tuning a pretrained RL model to align with context-specific worker behaviors and prevent drastic policy shifts during Sim2Real."
   item:
   - name: "PDF"
     link: "../assets/file/sub_companion_paper.pdf"
@@ -30,14 +30,7 @@
   img2: "../assets/img/selected/vlm/img2.png"
   author: "<strong>Yuning Wu</strong>, Jean Oh"
   occasion: "In preparation."
-  additional: "TL;DR: This research introduces a novel approach to address long-tailed errors in robot navigation, utilizing a Vision Language Model (VLM) and human expert preferences for corrections. By leveraging CLIP as few-shot learners, the method effectively compensates for the sparse data issue inherent in long-tailed distributions. The paper proposes a new architecture aimed at efficiently rectifying erroneous navigation behaviors and better aligning them with human preferences, offering a significant advancement in social navigation systems. This paper is currently in preparation. It will be submitted to a top-tier conference in robotics and AI. "
-
-
-- title: "SA-RLHF: Contextualizing Socially-Aware Robot Navigation with Human Preferences"
-  img1: "../assets/img/selected/reason/img1.jpeg"
-  img2: "../assets/img/selected/reason/img2.png"
-  author: "<strong>Yuning Wu</strong>, Jieliang Luo, Jean Oh"
-  occasion: "In preparation."
+  additional: "TL;DR: This research introduces a novel approach to address long-tailed errors in robot navigation, utilizing a Vision Language Model (VLM) and human expert preferences for corrections. By leveraging CLIP as few-shot learners, the method effectively compensates for the sparse data issue inherent in long-tailed distributions. The paper proposes a new architecture aimed at efficiently rectifying erroneous navigation behaviors and better aligning them with human preferences, offering a significant advancement in social navigation systems. This paper is currently in preparation. It will be submitted to a top-tier conference in robotics and AI."
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
   img1: "../assets/img/selected/dense/img1.png"
@@ -53,7 +46,7 @@
     link: "../assets/file/icra22_dense_reward_slides.pdf"
   - name: "code"
     link: "https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite"
-  additional: "TL;DR: This paper introduces an efficient framework for deriving dense rewards in reinforcement learning, focusing on enhancing the efficiency and robustness of training for robots performing contact-rich manipulation tasks. Developed through collaboration between Carnegie Mellon University and Autodesk Research, the framework leverages Temporal Variant Forward Sampling (TVFS) and a self-supervised learning architecture. By utilizing temporal variance and multimodal observation pairs, the generated dense reward can facilitating faster and more stable policy training in a plug-and-play manner, examplified in tasks such as joint assembly and door opening. This work aims to share new thinkings in reward learning and its applications in robotics."
+  additional: "TL;DR: This paper introduces an efficient framework for deriving dense rewards in reinforcement learning, focusing on enhancing the efficiency and robustness of training for robots performing contact-rich manipulation tasks. Developed through collaboration between Carnegie Mellon University and Autodesk Research, the framework leverages Temporal Variant Forward Sampling (TVFS) and a self-supervised learning architecture. By utilizing temporal variance and multimodal observation pairs, the generated dense reward can facilitate faster and more stable policy training in a plug-and-play manner, examplified in tasks such as joint assembly and door opening. This work aims to share new thinkings in reward learning and its applications in robotics."
 
 - title: "Towards a Distributed, Robotically-Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments"
   img1: "../assets/img/selected/drone/img1.png"
@@ -71,14 +64,14 @@
     link: "https://www.youtube.com/watch?v=oe1T1j5nVqM&feature=youtu.be"
   - name: "code"
     link: "https://github.com/c0deLab/RAiC"
-  additional: "TL;DR: The paper explores an innovative framework that utilizes reinforcement learning to enable drones to perform collaborative tasks such as bricklaying and spray-coating. This scalable, adaptive approach allows multiple drones to work in dynamic environments, promising to enhance efficiency and flexibility in construction processes. By demonstrating the framework's potential through simulations and advancing towards a hardware prototype, the study contributes to the evolving field of construction robotics by offering insights into the future of human-machine collaborative ecosystems."
+  additional: "TL;DR: The paper explores an innovative framework that utilizes multi-agent reinforcement learning method (MADDPG) to enable drones to perform collaborative tasks such as bricklaying and spray-coating. This scalable, adaptive approach allows multiple drones to work in dynamic environments, promising to enhance efficiency and flexibility in construction processes. By demonstrating the framework's potential through simulations and advancing towards a hardware prototype, the study contributes to the evolving field of construction robotics by offering insights into the future of human-machine collaborative ecosystems."
 
-- title: "Teaching AI Spatial Sense by Playing LEGO"
+- title: "Teaching an AI Agent Spatial Sense by Playing LEGO"
   img1: "../assets/img/selected/lego/img1.gif"
   img2: "../assets/img/selected/lego/img2.png"
   author: "<strong>Yuning Wu</strong>, Katerina Fragkiadaki"
-  occasion: "Graduation research for M.S. in Machine Learning"
-  additional:  "I will resume this research by consolidating the findings into publications after my PhD thesis defense. Feel free to contact me if you are interested."
+  occasion: "In submission"
+  additional:  "TL;DR: Whether an architect or not, how we build reflects our spatial sense of the physical world. As a child, this exploration usually starts with playing toys like building blocks. This research traces this initial, baby-step learning process through training an AI agent by playing LEGOs in a physical simulator (NVIDIA Omniverse Isaac Gym / PyBullet). A key facet is to let the AI agent gain a spatial sense by roughly understand whether a composite structure is stable or not, through the understanding of the relationships between blocks. This paper is currently in submission to a top-tier conference in AI."
 
 - title: "State Space Paradox of Computational Research in Creativity"
   img1:
@@ -92,5 +85,5 @@
     link: "https://arxiv.org/abs/TBA"
   - name: "slides"
     link: "../assets/file/sub_ssp_slides.pdf"
-  additional: "In memory of Professor Ömer Akin (1942-2020). This is one of his last papers. I am honored and grateful to be organizing and presenting it." 
+  additional: "In memory of Professor Ömer Akin (1942-2020). This is one of his last papers. I am priviledged to be organizing and presenting it. This paper explores the State Space Paradox (SSP) in computational creativity research, discussing how current digital systems, designed as closed systems with predefined parameters, are inherently limited in their creative capacity compared to the open systems of human creativity. It examines various procedural and representational approaches to artificial creativity, such as genetic algorithms and shape grammars, and critiques their ability to truly emulate human creativity. The paradox lies in the fact that while these systems can produce outputs that may initially seem creative, they are unable to exceed their predefined state spaces and thus fail to achieve genuine novelty or adapt beyond their initial programming." 
 
