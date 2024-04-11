@@ -36,7 +36,7 @@
   img1: "../assets/img/selected/dense/img1.png"
   img2: "../assets/img/selected/dense/img2.png"
   author: "<strong>Yuning Wu</strong>, Jieliang Luo, Hui Li"
-  occasion: "[ICRA 2022] IEEE International Conference on Robotics and Automation 2022 | RL for Contact-Rich Manipulation Workshop"
+  occasion: "[ICRA'22] IEEE International Conference on Robotics and Automation 2022 | RL for Contact-Rich Manipulation Workshop."
   item:
   - name: "PDF"
     link: "../assets/file/icra22_dense_reward_paper.pdf"
@@ -52,7 +52,7 @@
   img1: "../assets/img/selected/drone/img1.png"
   img2: "../assets/img/selected/drone/img2.gif"
   author: "Zhihao Fang, <strong>Yuning Wu</strong>, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach"
-  occasion: "[ACADIA 2020] Annual Conference of the Association of Computer Aided Design in Architecture 2020"
+  occasion: "[ACADIA'20] Annual Conference of the Association of Computer Aided Design in Architecture 2020."
   item:
   - name: "PDF"
     link: "../assets/file/acadia20_drone_paper.pdf"
@@ -70,14 +70,14 @@
   img1: "../assets/img/selected/lego/img1.gif"
   img2: "../assets/img/selected/lego/img2.png"
   author: "<strong>Yuning Wu</strong>, Katerina Fragkiadaki"
-  occasion: "In submission"
-  additional:  "TL;DR: Whether an architect or not, how we build reflects our spatial sense of the physical world. As a child, this exploration usually starts with playing toys like building blocks. This research traces this initial, baby-step learning process through training an AI agent by playing LEGOs in a physical simulator (NVIDIA Omniverse Isaac Gym / PyBullet). A key facet is to let the AI agent gain a spatial sense by roughly understand whether a composite structure is stable or not, through the understanding of the relationships between blocks. This paper is currently in submission to a top-tier conference in AI."
+  occasion: "Under submission."
+  additional:  "TL;DR: Whether an architect or not, how we build reflects our spatial sense of the physical world. As children, this exploration typically begins with playing with toys like building blocks. This research traces this initial baby-step learning process by training an AI agent to play with LEGOs in a physical simulator (NVIDIA Omniverse Isaac Gym / PyBullet). A key aspect is enabling the AI agent to gain a spatial sense by roughly understanding whether a composite structure is stable, through grasping the relationships between blocks. This paper is currently under submission to a top-tier conference in AI."
 
 - title: "State Space Paradox of Computational Research in Creativity"
   img1:
   img2:
   author: "Ömer Akin, <strong>Yuning Wu</strong>"
-  occasion: "[HI'19] Thirtieth Anniversary 'Heron Island' Conference on Computational and Cognitive Models of Creative Design"
+  occasion: "[HI'19] Thirtieth Anniversary 'Heron Island' Conference on Computational and Cognitive Models of Creative Design."
   item:
   - name: "PDF"
     link: "../assets/file/sub_ssp_paper.pdf"

@@ -34,7 +34,7 @@
               <small>
                 {% if item.item %}
                 {% for subitem in item.item %}
-                / <a href="{{ subitem.link }}" target="_blank">{{ subitem.name }}</a>
+                / <a href="{{ subitem.link }}" target="_blank" class="badge badge-dark">{{ subitem.name }}</a>
                 {% endfor %}
                 {% endif %}
               </small>
