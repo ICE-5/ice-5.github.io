@@ -22,7 +22,7 @@
   img1: "../assets/img/selected/reac/img1.jpeg"
   img2: "../assets/img/selected/reac/img2.png"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "Under review, submitted to ACM Conference on Computer Supported Cooperative Work (CSCW)."
+  occasion: "In revision, submitted to ACM Conference on Computer Supported Cooperative Work (CSCW)."
   additional: "TL;DR: This paper reimagines the integration of robotics into highly manual construction work from a socio-technical perspective. It emphasizes the application of Computer-Supported Cooperative Work (CSCW) principles, presenting a case study on the design, development, and evaluation of a prototype robot intended to assist in carpentry formwork. This paper discusses the use of ethnographic and practice-based research methods to understand the cooperative work of construction teams and inform the design of supportive robot technologies. It proposes specific human-centered benchmarking metrics for evaluating the envisioned robot support and advocates for an approach that supports rather than completely reconfigures or replaces the human elements in existing labor-intensive work."
 
 - title: "Correcting Sparse Erroneous Navigation Behaviors through Few-Shot Learning from Two Teachers"
