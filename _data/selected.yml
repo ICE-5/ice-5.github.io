@@ -82,7 +82,7 @@
   - name: "PDF"
     link: "../assets/file/sub_ssp_paper.pdf"
   - name: "arXiv"
-    link: "https://arxiv.org/abs/TBA"
+    link: "https://arxiv.org/abs/2404.15303"
   - name: "slides"
     link: "../assets/file/sub_ssp_slides.pdf"
   additional: "In memory of Professor Ömer Akin (1942-2020). This is one of his last papers. I am priviledged to be organizing and presenting it. This paper explores the State Space Paradox (SSP) in computational creativity research, discussing how current digital systems, designed as closed systems with predefined parameters, are inherently limited in their creative capacity compared to the open systems of human creativity. It examines various procedural and representational approaches to artificial creativity, such as genetic algorithms and shape grammars, and critiques their ability to truly emulate human creativity. The paradox lies in the fact that while these systems can produce outputs that may initially seem creative, they are unable to exceed their predefined state spaces and thus fail to achieve genuine novelty or adapt beyond their initial programming." 
