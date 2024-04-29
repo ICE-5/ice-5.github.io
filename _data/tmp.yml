@@ -33,3 +33,9 @@
 -  As a big fan of sci-fi films, I think the prospective form of this kind of intelligent, humanistic robots might be TARS in Interstellar,
       Benben in the Wandering Earth II, and Baymax in Big Hero 6.
 
+- title: "Correcting Sparse Erroneous Navigation Behaviors through Few-Shot Learning from Two Teachers"
+  img1: 
+  img2: "../assets/img/selected/vlm/img2.png"
+  author: "<strong>Yuning Wu</strong>, Jean Oh"
+  occasion: "In preparation."
+  additional: "TL;DR: This research introduces a novel approach to address long-tailed errors in robot navigation, utilizing a Vision Language Model (VLM) and human expert preferences for corrections. By leveraging CLIP as few-shot learners, the method effectively compensates for the sparse data issue inherent in long-tailed distributions. The paper proposes a new architecture aimed at efficiently rectifying erroneous navigation behaviors and better aligning them with human preferences, offering a significant advancement in social navigation systems. This paper is currently in preparation. It will be submitted to a top-tier conference in robotics and AI."
