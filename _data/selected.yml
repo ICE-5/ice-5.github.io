@@ -67,6 +67,17 @@
   occasion: "In preparation."
   additional:  "TL;DR: Whether one is an architect or not, the way we design and build reflects our spatial understanding of the physical world. As children, this exploration typically begins by playing with building blocks. This research retraces these initial steps by training an AI agent to play with LEGOs in a physical simulator (NVIDIA Omniverse Isaac Gym / PyBullet). A crucial aspect of this study is enabling the AI agent to design valid, and eventually elegant, stacked structures within a specified arena by interpreting spatial relationships among the blocks. Various components of this research are pending completion and will be submitted to both top-tier AI and robotics conferences as well as an art venue."
 
+- title: "Design Architecture with Graphs: Utilize Space Connectivity and Graph Neural Networks To Inform Layout Design"
+  img1: "../assets/img/selected/baby/img1.png"
+  img2: "../assets/img/selected/baby/img2.png"
+  author: "<strong>Yuning Wu</strong>"
+  occasion: Master Thesis Project
+  paper: 
+  item:
+  - name: "link"
+    link: selected/baby.html
+  additional: "TL;DR: This thesis project explores the potential of utilizing space connectivity and graph neural networks (GNNs) to inform layout design. It proposes a novel computational framework that leverages the spatial relationships between architectural elements to generate more informed and contextually relevant design solutions, contrasting from solutions that are purely data-driven or rule-based. "
+
 - title: "State Space Paradox of Computational Research in Creativity"
   img1:
   img2:
