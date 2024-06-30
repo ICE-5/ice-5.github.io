@@ -9,7 +9,7 @@
   img1: "../assets/img/selected/companion/img1.png"
   img2: "../assets/img/selected/companion/img2.png"
   author: "<strong>Yuning Wu</strong>, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "Under review, submitted to IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)."
+  occasion: "[IROS'24] IEEE/RSJ International Conference on Intelligent Robots and Systems 2024."
   additional: 'TL;DR: This paper documents the technical development of a socially-aware "work companion robot" focused on assisting, rather than brutally replacing, skilled human workers. By taking on the more physically burdensome tasks within an existing prototypical construction workflow, specifically carpentry formwork, the robot enables workers to concentrate on the more high-skilled and sophisticated facets of their daily practice. The paper provides a systematic overview of how the robot prototype is architected, driven by recent RL-based social navigation methods. It also proposes a novel pipeline for incrementally fine-tuning a pretrained RL model to align with context-specific worker behaviors while preventing drastic policy shifts in Sim2Real. The robot is evaluated on an actual construction site by a group of workers through direct operation.'
   item:
   - name: "PDF"
@@ -19,12 +19,12 @@
   - name: "video"
     link: "https://youtu.be/wwta5bsOK0k"
 
-- title: "Construction as Computer-Supported Cooperative Work: Designing a Robot for Assisting Carpentry Workers"
+- title: "Robot in the Loop: An Ethnography-Based Approach to Robotics and Reinforcement Learning to Support On-Site Construction Work"
   img1: "../assets/img/selected/reac/img1.jpeg"
   img2: "../assets/img/selected/reac/img2.png"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "In revision, submitted to ACM Conference on Computer Supported Cooperative Work (CSCW)."
-  additional: "TL;DR: This paper reimagines the integration of robotics into highly manual construction work from a socio-technical perspective. It emphasizes the application of Computer-Supported Cooperative Work (CSCW) principles, presenting a case study on the design, development, and evaluation of a prototype robot designed to assist in an existing indoor construction workflow, carpentry formwork. The paper discusses the use of ethnographic and practice-based research methods to understand the cooperative work of construction teams and to inform the design of supportive robot technologies. It proposes specific human-centered benchmarking metrics for evaluating the envisioned robot support and advocates for an approach that supports, rather than completely reconfigures or replaces, the human elements in existing labor-intensive work."
+  occasion: "In revision. Submitted to Journal of Construction Robotics, special issue on Robotics and AI."
+  additional: "TL;DR: This paper reimagines the integration of robotics into highly manual construction work from a socio-technical perspective. It emphasizes the application of ethnography-based approach to inspire the development of reinforcement learning driven robots, presenting a "robot in the loop" case study of a prototype robot designed to assist workers in an existing indoor construction workflow. The paper discusses the use of ethnographic and practice-based research methods to understand the cooperative human work of construction teams and to inform the design of supportive robot technologies. It proposes specific human-centered benchmarking metrics for evaluating the envisioned robot support and advocates for a route of automation that supports, rather than completely reconfigures or replaces, the skilled human elements in existing labor-intensive work."
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
   img1: "../assets/img/selected/dense/img1.png"
