@@ -10,7 +10,7 @@
   img2: "../assets/img/selected/companion/img2.png"
   author: "<strong>Yuning Wu</strong>, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
   occasion: "[IROS'24] IEEE/RSJ International Conference on Intelligent Robots and Systems 2024."
-  additional: 'TL;DR: This paper documents the technical development of a socially-aware "work companion robot" focused on assisting, rather than brutally replacing, skilled human workers. By taking on the more physically burdensome tasks within an existing prototypical construction workflow, specifically carpentry formwork, the robot enables workers to concentrate on the more high-skilled and sophisticated facets of their daily practice. The paper provides a systematic overview of how the robot prototype is architected, driven by recent RL-based social navigation methods. It also proposes a novel pipeline for incrementally fine-tuning a pretrained RL model to align with context-specific worker behaviors while preventing drastic policy shifts in Sim2Real. The robot is evaluated on an actual construction site by a group of workers through direct operation.'
+  additional: "TL;DR: This paper outlines the development of a socially-aware ''work companion robot'' designed to support, rather than replace, skilled human workers by handling frequent and physically demanding tasks like on-site tool/material delivery. It details the robot's architecture, driven by recent reinforcement learning (RL) methods for social navigation, and introduces a novel pipeline for fine-tuning a pretrained RL model to adapt to specific worker behaviors, ensuring smooth Sim2Real transitions. The robot's effectiveness is validated in a real construction environment through direct worker interaction."
   item:
   - name: "PDF"
     link: "../assets/file/sub_companion_paper.pdf"
@@ -24,7 +24,7 @@
   img2: "../assets/img/selected/reac/img2.png"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
   occasion: "In revision. Submitted to Journal of Construction Robotics, special issue on Robotics and AI."
-  additional: "TL;DR: This paper reimagines the integration of robotics into highly manual construction work from a socio-technical perspective. It emphasizes the application of ethnography-based approach to inspire the development of reinforcement learning driven robots, presenting a ''robot in the loop''' case study of a prototype robot designed to assist workers in an existing indoor construction workflow. The paper discusses the use of ethnographic and practice-based research methods to understand the cooperative human work of construction teams and to inform the design of supportive robot technologies. It proposes specific human-centered benchmarking metrics for evaluating the envisioned robot support and advocates for a route of automation that supports, rather than completely reconfigures or replaces, the skilled human elements in existing labor-intensive work."
+  additional: "TL;DR: This paper explores how robotics can be integrated into manual construction work, using an ethnography-based approach to develop reinforcement learning-driven robots. It features a case study of a prototype designed to assist construction workers, employing ethnographic methods to inform design and proposing human-centered metrics for evaluating robot support. The study advocates for automation that enhances, rather than replaces, skilled human labor."
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
   img1: "../assets/img/selected/dense/img1.png"
@@ -40,7 +40,7 @@
     link: "../assets/file/icra22_dense_reward_slides.pdf"
   - name: "code"
     link: "https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite"
-  additional: "TL;DR: This paper introduces an efficient framework for deriving dense rewards in reinforcement learning, aimed at enhancing the efficiency and robustness of training robots for contact-rich manipulation tasks. Developed through a collaboration between Carnegie Mellon University and Autodesk Research, this framework utilizes Temporal Variant Forward Sampling (TVFS) and a self-supervised learning architecture. By leveraging temporal variance and multimodal observation pairs, the generated dense reward facilitates faster and more stable policy training in a plug-and-play manner, exemplified in tasks such as joint assembly and door opening."
+  additional: "TL;DR: This paper introduces an efficient framework for deriving dense rewards in reinforcement learning, designed to improve the training of robots for contact-rich manipulation tasks like joint assembly and door opening. Developed in collaboration between Carnegie Mellon University and Autodesk Research, this framework employs Temporal Variant Forward Sampling (TVFS) and a self-supervised learning architecture. It leverages temporal variance and multimodal observation pairs, enabling faster and more stable policy training in a plug-and-play manner."
 
 - title: "Towards a Distributed, Robotically-Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments"
   img1: "../assets/img/selected/drone/img1.png"
