@@ -23,8 +23,11 @@
   img1: "../assets/img/selected/reac/img1.jpeg"
   img2: "../assets/img/selected/reac/img2.png"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "In revision. Submitted to Journal of Construction Robotics, special issue on Robotics and AI."
+  occasion: "Under review. Submitted to Construction Robotics, special issue on Robotics and AI."
   additional: "TL;DR: This paper explores how robotics can be integrated into manual construction work, using an ethnography-based approach to develop reinforcement learning-driven robots. It features a case study of a prototype designed to assist construction workers, employing ethnographic methods to inform design and proposing human-centered metrics for evaluating robot support. The study advocates for automation that enhances, rather than replaces, skilled human labor."
+  item:
+  - name: "Preprint"
+    link: "https://www.researchsquare.com/article/rs-4509610/v1"
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
   img1: "../assets/img/selected/dense/img1.png"
