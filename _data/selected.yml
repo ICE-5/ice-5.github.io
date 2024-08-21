@@ -1,9 +1,9 @@
-- title: "A Human-Centered, Reinforcement Learning-Driven Robotic Framework for Collaboratively Supporting On-Site Construction Workers"
+- title: "A Human-Centered, Reinforcement Learning-Driven Robotic Framework for Assisting Construction Workers"
   img1: "../assets/img/selected/thesis/img1.png"
   img2: "../assets/img/selected/thesis/img2.jpg"
   author: "<strong>Yuning Wu</strong>"
-  occasion: "In preparation, doctoral dissertation."
-  additional: "Committee: Daniel Cardoso Llach, Jean Oh, Jieliang Luo <br>I am currently in Ph.D. ABD (All But Dissertation) stage."
+  occasion: "Doctoral dissertation, Carnegie Mellon University, 2024."
+  additional: "Committee: Daniel Cardoso Llach, Jean Oh, Jieliang Luo"
 
 - title: "Towards Human-Centered Construction Robotics: An RL-Driven Companion Robot For Contextually Assisting Construction Workers"
   img1: "../assets/img/selected/companion/img1.png"
@@ -23,7 +23,7 @@
   img1: "../assets/img/selected/reac/img1.jpeg"
   img2: "../assets/img/selected/reac/img2.png"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "Under review. Submitted to Construction Robotics, special issue on Robotics and AI."
+  occasion: "Under review. Submitted to Springer Nature Construction Robotics, special issue on Robotics and AI."
   additional: "TL;DR: This paper explores how robotics can be integrated into manual construction work, using an ethnography-based approach to develop reinforcement learning-driven robots. It features a case study of a prototype designed to assist construction workers, employing ethnographic methods to inform design and proposing human-centered metrics for evaluating robot support. The study advocates for automation that enhances, rather than replaces, skilled human labor."
   item:
   - name: "Preprint"
