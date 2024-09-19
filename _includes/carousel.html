@@ -15,23 +15,27 @@
         <div class="carousel-item {% if item.index == 0 %}active{% endif %}" style="height: 100%;">
 
             <!-- Video Element -->
-            <video class="d-block w-100" autoplay loop muted poster="{{ item.poster }}"
+            <video oncontextmenu="return false;" class="d-block w-100" autoplay loop muted poster="{{ item.poster }}"
                 style="height: 100%; object-fit: cover; z-index: 1;">
                 <source src="{{ item.video }}" type="video/mp4" />
             </video>
+
 
             <!-- Semi-transparent Black Overlay -->
             <div class="overlay"
                 style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0); z-index: 2;">
             </div>
 
+            <!-- Diagonal Lines Masking Effect -->
+            <div class="masking-layer"></div>
+
             <!-- Responsive Overlay Text Container -->
             <div class="container" style="position: absolute; bottom: 20%; left: 0; right: 0; z-index: 3;">
                 <div class="row">
                     <div class="col-md-10 col-lg-12 mx-auto text-left">
-                        <h3 style="color: white; font-weight: bold; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);">
+                        <h1 style="color: white; font-weight: bold; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);">
                             {{ item.title }}
-                        </h3>
+                        </h1>
                         <p style="color: white; font-weight: bold; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);">
                             {{ item.subtitle }}
                         </p>
@@ -74,3 +78,32 @@
         onmouseover="this.src='assets/img/avatar/avatar_hover_1.jpg'"
         onmouseout="this.src='assets/img/avatar/avatar.png'" alt="Avatar" />
 </div>
+
+<style>
+    /* Diagonal Lines Masking Effect */
+    .masking-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        pointer-events: none;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><line x1="0" y1="10" x2="10" y2="0" stroke="rgba(0,0,0,0.3)" stroke-width="0.25" /></svg>');
+        background-repeat: repeat;
+        background-size: 10px 10px;
+    }
+
+    /* .masking-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        pointer-events: none;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><line x1="0" y1="10" x2="10" y2="0" stroke="rgba(0,0,0,0.3)" stroke-width="0.5" /></svg>');
+        background-repeat: repeat;
+        background-size: 10px 10px;
+    } */
+</style>

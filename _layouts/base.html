@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.0/tocbot.css">
 </head>
 
 <body>
@@ -29,10 +30,60 @@
     {% include footer.html %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.0/tocbot.min.js"></script>
     <script src="/assets/js/script.min.js?h=974aa5763b800e4bac542e36f19c5ffa"></script>
     <script type="text/javascript" async
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
         </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            tocbot.init({
+                tocSelector: '#toc',
+                contentSelector: 'body',
+                headingSelector: 'h2, h3',
+                scrollSmooth: true,
+                scrollSmoothOffset: 200,  // Adjust for a smoother experience
+                collapseDepth: 6,
+            });
+        });
+    </script>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            tocbot.init({
+                tocSelector: '#toc',        // The container for the ToC
+                contentSelector: 'body',    // The container with the content
+                headingSelector: 'h2, h3',  // Headings to parse
+                scrollSmooth: true,         // Enable smooth scrolling
+                scrollSmoothOffset: 200,    // Offset for fixed navbar
+                collapseDepth: 0,           // Always keep the ToC expanded
+    
+                // Custom callback to use data-toc-title if available
+                headingLabelCallback: function (heading, anchorName) {
+                    // Check if the heading has a data-toc-title attribute
+                    return heading.getAttribute('data-toc-title') || heading.textContent;
+                }
+            });
+        });
+    </script> -->
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var tocContainer = document.getElementById('toc-container');
+            var scrollPosition = window.scrollY || window.pageYOffset;
+            var carouselHeight = 650; // Set the height of your carousel or the offset point
+            var stickyPosition = 150; // The position you want ToC to stick to
+
+            if (scrollPosition > carouselHeight) {
+                tocContainer.style.position = 'fixed';
+                tocContainer.style.top = stickyPosition + 'px';
+            } else {
+                tocContainer.style.position = 'absolute';
+                tocContainer.style.top = carouselHeight + stickyPosition + 'px'; // Original position below the carousel
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -2,10 +2,84 @@
 layout: base
 ---
 {% include header.html %}
-<div class="container">
+
+<div class="container" style="position: relative; top: 0px;">
     <div class="row">
         <div class="col-md-10 col-lg-12 mx-auto text-center">
             {{ content }}
         </div>
     </div>
 </div>
+
+<!-- ToC positioned initially at 700px, but will become sticky at 100px after scroll -->
+<div id="toc-container" class="d-none d-md-block" style="position: absolute; top: 750px; left: 25px; width: 300px;">
+    <div id="toc" style="position: relative;"></div>
+</div>
+
+<style>
+    /* Hide ToC on small screens */
+    @media (max-width: 1800px) {
+        #toc {
+            display: none;
+        }
+    }
+
+    /* Vertical line for the ToC */
+    #toc {
+        position: relative;
+        padding-left: 0px;
+        font-size: 0.9em;
+        border-left: none;
+    }
+
+    #toc::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        background-color: #ddd;
+    }
+
+    .toc-list {
+        padding-left: 0px;
+    }
+
+    .toc-list-item {
+        font-weight: 800;
+        margin-bottom: 5px;
+        list-style-type: none;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    .toc-list-item .toc-list-item {
+        font-size: smaller;
+        font-weight: 500;
+        line-height: 1.15;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .toc-link {
+        color: #212529;
+        background-color: white;
+        text-decoration: none;
+        transition: color 0.2s;
+        width: 0;
+    }
+
+    .toc-link.is-active-link {
+        font-weight: inherit;
+    }
+
+    .toc-link:hover {
+        color: white;
+    }
+
+    .toc-link::before {
+        width: 0;
+    }
+</style>

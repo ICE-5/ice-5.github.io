@@ -1,7 +1,7 @@
 <div class="row" style="margin-bottom: 25px">
   <div>
-    <h4>SELECTED</h4>
-    <p style="font-weight: 900">•</p>
+    <h2 id="selected">SELECTED</h2>
+    <!-- <p style="font-weight: 900">•</p> -->
     <table class="table" style="margin: 10px 0; border-color: black;">
       <tbody>
         {% for item in site.data.selected %}
@@ -17,10 +17,10 @@
             {% endif %}
           </td>
 
-          <td>
-            <p>
+          <td style="padding: 10px 0;">
+            <h3 id="selected-{{ item.title | slugify }}" style="margin: 0;">
               <strong>{{ item.title }}</strong>
-            </p>
+            </h3>
 
             <p>
               <small style="font-weight: 500;">{{ item.occasion }}</small>

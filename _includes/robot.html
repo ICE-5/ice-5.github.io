@@ -1,7 +1,7 @@
 <div class="row" style="margin-bottom: 25px;">
   <div class="col-12" style="padding: 0; margin-bottom: 10px;">
-    <h4>LOVE, DEATH & ROBOTS (THAT I'VE HACKED WITH)</h4>
-    <p style="font-weight: 900">•</p>
+    <h2 id="robot" data-toc-title="ROBOTS">LOVE, DEATH & ROBOTS (THAT I'VE HACKED WITH)</h2>
+    <!-- <p style="font-weight: 900">•</p> -->
   </div>
 
   <div class="card-deck" style="padding: 0 10px;">
@@ -9,7 +9,7 @@
     <div class="card" style="padding: 0; border-radius: 0; margin: 5px;">
       <img class="card-img-top" style="border-radius: 0;" src="{{ item.img }}" alt="Card image cap">
       <div class="card-body" style="padding: 10px;" >
-        <p class="card-title"><strong>{{ item.name }}</strong></p>
+        <h3 id="robot-{{ item.name | slugify }}" class="card-title"><strong>{{ item.name }}</strong></h3>
         <p class="card-text" style="line-height: 1.1;"><small>{{ item.desc }}</small></p>
       </div>
       <!-- <div class="card-footer">
