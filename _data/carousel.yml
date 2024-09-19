@@ -1,29 +1,29 @@
 - index: 0
-  video: "../assets/video/demo_1.mp4"
+  video: "../assets/video/demo_1_clean.mp4"
   poster: "../assets/img/carousel/demo_1_poster.png"
   title: "Human-Centered Robotics and AI"
   subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
   text: 'The "work companion robot" prototype developed in ReAC project, evaluated on an actual construction work site. &copy; 2023 Yuning Wu.'
 - index: 1
-  video: "../assets/video/demo_2.mp4"
+  video: "../assets/video/demo_2_clean.mp4"
   poster: "../assets/img/carousel/demo_2_poster.png"
   title: "Human-Centered Robotics and AI"
   subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
   text: 'The "work companion robot" prototype developed in ReAC project, evaluated on an actual construction work site. &copy; Yuning Wu.'
 - index: 2
-  video: "../assets/video/loam.mp4"
+  video: "../assets/video/loam_clean.mp4"
   poster: "../assets/img/carousel/loam_poster.png"
   title: "Human-Centered Robotics and AI"
   subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
   text: 'LiDAR-based robot mapping and localization on unstructured and dynamic work site in the ReAC project. &copy; Yuning Wu.'
 - index: 3
-  video: "../assets/video/pdt.mp4"
+  video: "../assets/video/pdt_clean.mp4"
   poster: "../assets/img/carousel/pdt_poster.png"
   title: "Human-Centered Robotics and AI"
   subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
   text: 'Real-time people detection and tracking in the ReAC project. &copy; Yuning Wu.'
 - index: 4
-  video: "../assets/video/drone.mp4"
+  video: "../assets/video/drone_clean.mp4"
   poster: "../assets/img/carousel/drone_poster.png"
   title: "Distributed AI/ML for Robotics"
   subtitle: "Towards scalable, efficient, and robust AI/ML-driven robots in constrained and dynamic environments"
