@@ -3,7 +3,7 @@
   poster: "../assets/img/carousel/demo_1_poster.png"
   title: "Human-Centered Robotics and AI"
   subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
-  text: 'The "work companion robot" prototype developed in ReAC project, evaluated on an actual construction work site. &copy; 2023 Yuning Wu.'
+  text: 'The "work companion robot" prototype developed in ReAC project, evaluated on an actual construction work site. &copy; Yuning Wu.'
 - index: 1
   video: "../assets/video/demo_2_clean.mp4"
   poster: "../assets/img/carousel/demo_2_poster.png"
