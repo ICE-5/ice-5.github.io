@@ -1,30 +1,30 @@
 - index: 0
   video: "../assets/video/demo_1_clean.mp4"
   poster: "../assets/img/carousel/demo_1_poster.png"
-  title: "Human-Centered Robotics and AI"
+  title: "Design Intelligent Robots that Support and Understand Humans"
   subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
   text: 'The "work companion robot" prototype developed in ReAC project, evaluated on an actual construction work site. &copy; Yuning Wu.'
 - index: 1
   video: "../assets/video/demo_2_clean.mp4"
   poster: "../assets/img/carousel/demo_2_poster.png"
-  title: "Human-Centered Robotics and AI"
+  title: "Design Intelligent Robots that Support and Understand Humans"
   subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
   text: 'The "work companion robot" prototype developed in ReAC project, evaluated on an actual construction work site. &copy; Yuning Wu.'
 - index: 2
   video: "../assets/video/loam_clean.mp4"
   poster: "../assets/img/carousel/loam_poster.png"
-  title: "Human-Centered Robotics and AI"
+  title: "Design Intelligent Robots that Support and Understand Humans"
   subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
   text: 'LiDAR-based robot mapping and localization on unstructured and dynamic work site in the ReAC project. &copy; Yuning Wu.'
 - index: 3
   video: "../assets/video/pdt_clean.mp4"
   poster: "../assets/img/carousel/pdt_poster.png"
-  title: "Human-Centered Robotics and AI"
+  title: "Design Intelligent Robots that Support and Understand Humans"
   subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
   text: 'Real-time people detection and tracking in the ReAC project. &copy; Yuning Wu.'
 - index: 4
   video: "../assets/video/drone_clean.mp4"
   poster: "../assets/img/carousel/drone_poster.png"
-  title: "Distributed AI/ML for Robotics"
+  title: "Design Intelligent Robots that Support and Understand Humans"
   subtitle: "Towards scalable, efficient, and robust AI/ML-driven robots in constrained and dynamic environments"
   text: 'Reinforcement learning-based multi-drone navigation for collectively building complex-shaped geometry. Video by Zhihao Fang.'

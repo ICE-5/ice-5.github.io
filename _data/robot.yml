@@ -1,9 +1,12 @@
 - name: "Husky"
   img: "../assets/img/robot/husky.jpg"
+  img2: "../assets/img/robot/husky2.png"
   desc: "<strong>This robot is my dearest baby.</strong> I designed and built it almost from scratch based on a Clearpath Husky A200 base, kindly made available by Jean and the National Robotics and Engineering Center (NREC). It is equipped with 2D & 3D LiDARs, RGB-D cameras, IMU unit, and a (strong) on-board computer. It is the <strong>cornerstone robot</strong> used for my PhD research on robot learning and human-robot interaction. To be noted, Jiaying Wei and Sam Shun played a critical role in the building process."
 
 - name: "Black Proton"
-  img: "../assets/img/robot/blacky.png"
+  img: "../assets/img/robot/proto.png"
+  img2: "../assets/img/robot/proto2.png"
+  img3: "../assets/img/robot/proto3.png"
   desc: "This cute little one is hacked entirely by me at home. It's adapted from a <strong>Tamiya 4WD remote control car (yes, a toy car)</strong>, and is intended to be a mini version of Husky. Black Proton is a prototyping robot that I try all my reinforcement learning algorithms on. It is equipped with a Jetson Nano, a 2D LiDAR, and an RGB-D camera. After the heavy algorithm testing duty, Black Proton now serves as the <strong>Cat Detection, Tracking & Chasing (CDTC) robot</strong> in the family. I'm sure my cats love it."
 
 - name: "Rocky"
