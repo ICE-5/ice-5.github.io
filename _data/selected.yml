@@ -76,7 +76,7 @@
   additional:  "TL;DR: Whether one is an architect or not, the way we design and build reflects our spatial understanding of the physical world. As children, this exploration typically begins by playing with building blocks. This research retraces these initial steps by training an AI agent to play with LEGOs in a physical simulator (NVIDIA Omniverse Isaac Gym / PyBullet). A crucial aspect of this study is enabling the AI agent to design valid, and eventually elegant, stacked structures within a specified arena by interpreting spatial relationships among the blocks. Various components of this research are pending completion and will be submitted to both top-tier AI and robotics conferences as well as an art venue."
   theme: "Design AI Agents and Algorithms with Spatial Sense, Intelligence and Creativity"
 
-- title: "Design Architecture with Graphs: Utilize Space Connectivity and Graph Neural Networks To Inform Layout Design"
+- title: "Design Architecture with Graphs: Utilize Space Connectivity and Graph Neural Networks To Inform Coherent Spatial Generation"
   img1: "../assets/img/selected/baby/img1.png"
   img2: "../assets/img/selected/baby/img2.png"
   author: "<strong>Yuning Wu</strong>"
