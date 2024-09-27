@@ -1,98 +1,111 @@
-<div class="row" style="margin-bottom: 25px"></div>
-<div>
-  <h2 id="selected">SELECTED</h2>
+<div class="row" style="margin-bottom: 25px">
+  <div>
+    <h2 id="selected">SELECTED</h2>
 
-  <!-- Group by theme -->
-  {% assign grouped_items = site.data.selected | group_by: "theme" %}
+    <!-- Group by theme -->
+    {% assign grouped_items = site.data.selected | group_by: "theme" %}
 
-  {% for group in grouped_items %}
-  <h3 class="theme-title">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span> {{ group.name }}
-  </h3>
+    {% for group in grouped_items %}
+    <h3 class="theme-title">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span> {{ group.name }}
+    </h3>
 
-  <table class="table" style="margin: 10px 0; border-color: black;">
-    <tbody>
-      {% for item in group.items %}
-      <tr>
-        <td style="width: 20%; padding: 10px; padding-left: 0;">
-          {% if item.img1 %}
-          <img src="{{ item.img1 }}" alt="cover" width="100%" />
-          {% endif %}
-        </td>
-        <td style="width: 20%; padding: 10px; padding-left: 0;">
-          {% if item.img2 %}
-          <img src="{{ item.img2 }}" alt="cover" width="100%" />
-          {% endif %}
-        </td>
-
-        <td style="padding: 10px 0;">
-          <h4 id="selected-{{ item.title | slugify }}" style="margin: 0;">
-            <strong>{{ item.title }}</strong>
-          </h4>
-
-          <p><small style="font-weight: 500;">{{ item.occasion }}</small></p>
-
-          <p><span><small>{{ item.author }}</small></span></p>
-
-          <p>
-            <small>
-              {% if item.item %}
-              {% for subitem in item.item %}
-              / <a href="{{ subitem.link }}" target="_blank" class="badge badge-dark">{{ subitem.name }}</a>
-              {% endfor %}
-              {% endif %}
-            </small>
-          </p>
-
-          <p>
-            {% if item.additional %}
-            <span style="color: #505050; font-size: 11px;"><br>{{ item.additional }}</span>
+    <table class="table" style="margin: 0; border-color: black;">
+      <tbody>
+        {% for item in group.items %}
+        <tr>
+          <td style="width: 20%; padding: 10px; padding-left: 0;">
+            {% if item.img1 %}
+            <img src="{{ item.img1 }}" alt="cover" width="100%" />
             {% endif %}
-          </p>
-        </td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+          </td>
+          <td style="width: 20%; padding: 10px; padding-left: 0;">
+            {% if item.img2 %}
+            <img src="{{ item.img2 }}" alt="cover" width="100%" />
+            {% endif %}
+          </td>
 
-  {% endfor %}
-</div>
+          <td style="padding: 10px 0;">
+            <h4 id="selected-{{ item.title | slugify }}" style="margin: 0;">
+              <strong>{{ item.title }}</strong>
+            </h4>
+
+            <p><small style="font-weight: 500;">{{ item.occasion }}</small></p>
+
+            <p><span><small>{{ item.author }}</small></span></p>
+
+            <p>
+              <small>
+                {% if item.item %}
+                {% for subitem in item.item %}
+                / <a href="{{ subitem.link }}" target="_blank" class="badge badge-dark">{{ subitem.name }}</a>
+                {% endfor %}
+                {% endif %}
+              </small>
+            </p>
+
+            <p>
+              {% if item.additional %}
+              <span style="color: #505050; font-size: 11px;"><br>{{ item.additional }}</span>
+              {% endif %}
+            </p>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% endfor %}
+  </div>
 </div>
 
 <style>
   .theme-title {
-    background-color: #333; /* Black background */
-    color: #fff; /* White font */
-    padding: 5px 5px; /* Padding for readability */
-    font-weight: 700;  /* Bold to stand out */
+    background-color: #333;
+    /* Black background */
+    color: #fff;
+    /* White font */
+    padding: 5px 5px;
+    /* Padding for readability */
+    font-weight: 700;
+    /* Bold to stand out */
     display: flex;
-    align-items: center; /* Aligns arrow and text */
-    letter-spacing: 0.5px; /* Slight letter spacing for elegance */
+    align-items: center;
+    /* Aligns arrow and text */
+    letter-spacing: 0.5px;
+    /* Slight letter spacing for elegance */
     margin-top: 10px;
     margin-bottom: 10px;
-    position: relative; /* For layering the grey slanted lines */
+    position: relative;
+    /* For layering the grey slanted lines */
     z-index: 1;
-    overflow: hidden; /* Ensures the masking effect stays within bounds */
-}
+    overflow: hidden;
+    /* Ensures the masking effect stays within bounds */
+  }
 
-/* Diagonal Lines Masking Effect */
-.theme-title::before {
+  /* Diagonal Lines Masking Effect */
+  .theme-title::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 0; /* Ensure it stays behind the text */
-    pointer-events: none; /* Prevent interaction with the layer */
+    z-index: 0;
+    /* Ensure it stays behind the text */
+    pointer-events: none;
+    /* Prevent interaction with the layer */
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><line x1="0" y1="10" x2="10" y2="0" stroke="rgba(255,255,255,0.9)" stroke-width="0.25" /></svg>');
     background-repeat: repeat;
     background-size: 7px 7px;
-    opacity: 0.8; /* Control the visibility of the lines */
-}
+    opacity: 0.8;
+    /* Control the visibility of the lines */
+  }
 
-.theme-title .carousel-control-next-icon {
-    margin-right: 5px; /* Space between arrow and text */
-    scale: 0.6; /* Slightly larger arrow */
-}
+  .theme-title .carousel-control-next-icon {
+    margin-right: 5px;
+    /* Space between arrow and text */
+    scale: 0.6;
+    /* Slightly larger arrow */
+  }
 </style>
