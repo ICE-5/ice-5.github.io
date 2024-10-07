@@ -19,6 +19,8 @@
     link: "https://arxiv.org/abs/2403.19060"
   - name: "video"
     link: "https://youtu.be/wwta5bsOK0k"
+  - name: "slides"
+    link: "../assets/file/iros24_companion_slides.pdf"
   theme: "Design Intelligent Robots that Support and Understand Humans"
 
 - title: "Robot in the Loop: A Human-Centered Approach to the Design of Construction Robotics Technologies"
