@@ -27,7 +27,7 @@
   img1: "../assets/img/selected/reac/img1.jpeg"
   img2: "../assets/img/selected/reac/img2.png"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "Acceptedd for  publication. Construction Robotics, Springer Nature."
+  occasion: "Accepte for  publication. Construction Robotics, Springer Nature."
   additional: "TL;DR: This paper explores how robotics can be integrated into manual construction work, leveraging ethnography insights to inform the technology design of a robot prototype designed to assist construction workers driven by deep reinforcement learning approaches for adaptive social compliance and comfort. The study advocates for AI and robotic technology that supports, rather than replaces, skilled human labor."
   item:
   - name: "Preprint"
