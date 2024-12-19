@@ -27,11 +27,11 @@
   img1: "../assets/img/selected/reac/img1.jpeg"
   img2: "../assets/img/selected/reac/img2.png"
   author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "Accepted for  publication. Construction Robotics, Springer Nature."
+  occasion: "Construction Robotics, Springer Nature, 2025."
   additional: "TL;DR: This paper explores how robotics can be integrated into manual construction work, leveraging ethnography insights to inform the technology design of a robot prototype designed to assist construction workers driven by deep reinforcement learning approaches for adaptive social compliance and comfort. The study advocates for AI and robotic technology that supports, rather than replaces, skilled human labor."
   item:
-  - name: "Preprint"
-    link: "https://www.researchsquare.com/article/rs-4509610/v1"
+  - name: Springer Nature
+    link: https://link.springer.com/article/10.1007/s41693-024-00144-8
   theme: "Design Intelligent Robots that Support and Understand Humans"
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
