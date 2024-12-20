@@ -14,7 +14,7 @@
   additional: "TL;DR: This paper outlines the development of a socially-aware ''work companion robot'' designed to support, rather than replace, skilled human workers by handling frequent and physically demanding tasks like on-site tool/material delivery. It details the robot's architecture, driven by recent reinforcement learning (RL) methods for social navigation, and introduces a novel pipeline for fine-tuning a pretrained RL model to adapt to specific worker behaviors, ensuring smooth Sim2Real transitions. The robot's effectiveness is validated in a real construction environment through direct worker interaction."
   item:
   - name: "PDF"
-    link: "../assets/file/sub_companion_paper.pdf"
+    link: "../assets/file/iros24_companion_paper.pdf"
   - name: "arXiv"
     link: "https://arxiv.org/abs/2403.19060"
   - name: "video"
