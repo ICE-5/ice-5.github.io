@@ -1,34 +1,40 @@
-- title: "Erosion: Yokohama 2015 • 2065"
-  subtitle: "Generative Form Design of a Port Harbor Based on Erosion Simulation of Sea Wind and Water"
-  img: "../assets/img/page/p_yokohama/1.jpeg"
-  studio: Princeton-Tsinghua Joint Design Studio, "Yokohama Redux"
-  designer: Yuning Wu, Ananda de Vos, Liang Xu
-  link: /portfolio/yokohama.html
+projects:
+  - title: "Erosion: Yokohama 2015 • 2065"
+    description: "Generative Form Design of a Port Harbor Based on Erosion Simulation of Sea Wind and Water"
+    image_folder: "assets/img/project/yokohama/"
+    cover: "../assets/img/project/yokohama/1.jpeg"
+    permalink: "portfolio/yokohama/"
+    studio: "Princeton-Tsinghua Joint Design Studio, 'Yokohama Redux'"
+    designer: "Yuning Wu, Ananda de Vos, Liang Xu"
 
-- title: "Design Architecture with Graphs: Utilize Space Connectivity and Graph Neural Networks To Inform Coherent Spatial Generation"
-  subtitle: AI x Space Design
-  img: "../assets/img/page/baby/5.png"
-  studio: Independent Research
-  designer: Yuning Wu
-  link: /selected/baby.html
+  - title: "Design Architecture with Graphs"
+    description: "Utilize Space Connectivity and Graph Neural Networks To Inform Coherent Spatial Generation."
+    image_folder: "assets/img/project/design-architecture-with-graphs/"
+    cover: "../assets/img/project/design-architecture-with-graphs/5.png"
+    permalink: "portfolio/design-architecture-with-graphs/"
+    studio: "Independent Research"
+    designer: "Yuning Wu"
 
-- title: Playground = Heritage x Drama
-  subtitle: The Creative Rivival of an Abandoned Shipyard Through the Lens of Theatrical Arts and Performances
-  img: "../assets/img/page/p_tianjin/1.jpeg"
-  studio: Yale-Tsinghua Joint Design Studio, "Tianjin Binhai Industrial Heritage Rivival"
-  designer: Yuning Wu (To be noted, the photorealistic rendering "Rhinoceros in Love" in this work is credited to Xiyao Wang)
-  link: /portfolio/tianjin.html
+  - title: "Playground = Heritage x Drama"
+    description: "The Creative Revival of an Abandoned Shipyard Through the Lens of Theatrical Arts and Performances"
+    image_folder: "assets/img/project/playground-heritage-drama/"
+    cover: "../assets/img/project/playground-heritage-drama/1.jpeg"
+    permalink: "portfolio/playground-heritage-drama/"
+    studio: "Yale-Tsinghua Joint Design Studio, 'Tianjin Binhai Industrial Heritage Revival'"
+    designer: "Yuning Wu (To be noted, the photorealistic rendering 'Rhinoceros in Love' in this work is credited to Xiyao Wang)"
 
-- title: Urban Interface
-  subtitle: Urban Restoration Design & Research of Torino Porta Nuova
-  img: "../assets/img/page/p_torino/1.png"
-  studio: Partial Selection of Tsinghua-PoliTo Joint Master Graduation Project
-  designer: Yuning Wu
-  link: /portfolio/torino.html
+  - title: "Urban Interface"
+    description: "Urban Restoration Design & Research of Torino Porta Nuova"
+    image_folder: "assets/img/project/urban-interface/"
+    cover: "../assets/img/project/urban-interface/1.png"
+    permalink: "portfolio/urban-interface/"
+    studio: "Partial Selection of Tsinghua-PoliTo Joint Master Graduation Project"
+    designer: "Yuning Wu"
 
-- title: Wall, Silk, Light
-  subtitle: An Experimental Urban Reform of the Traditional Yonghegong Lama Temple & Hutong Area in Beijing Through Sunlight Installations 
-  img: "../assets/img/page/p_beijing/1.png"
-  studio: Tsinghua Urban Design Studio
-  designer: Yuning Wu
-  link: /portfolio/beijing.html
+  - title: "Wall, Silk, Light"
+    description: "An Experimental Urban Reform of the Traditional Yonghegong Lama Temple & Hutong Area in Beijing Through Sunlight Installations"
+    image_folder: "assets/img/project/wall-silk-light/"
+    cover: "../assets/img/project/wall-silk-light/1.png"
+    permalink: "portfolio/wall-silk-light/"
+    studio: "Tsinghua Urban Design Studio"
+    designer: "Yuning Wu"

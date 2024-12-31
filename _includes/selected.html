@@ -6,49 +6,78 @@
     {% assign grouped_items = site.data.selected | group_by: "theme" %}
 
     {% for group in grouped_items %}
-    <h3 class="theme-title">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span> {{ group.name }}
+
+    <!-- Theme -->
+
+    <h3 style="margin: 15px 0;">
+      <i class="fas fa-quote-left" style="font-size: 24px; border-radius: 2px;"></i>
+      <span class="text-thin" style="font-size: 25px;">{{ group.name }}</span>
+      <i class="fas fa-quote-right" style="font-size: 24px;"></i>
     </h3>
 
-    <table class="table" style="margin: 0; border-color: black;">
+
+    <table class="table" style="margin: 0; border: none;">
       <tbody>
         {% for item in group.items %}
         <tr>
-          <td style="width: 20%; padding: 10px; padding-left: 0;">
-            {% if item.img1 %}
-            <img src="{{ item.img1 }}" alt="cover" width="100%" />
-            {% endif %}
-          </td>
-          <td style="width: 20%; padding: 10px; padding-left: 0;">
-            {% if item.img2 %}
-            <img src="{{ item.img2 }}" alt="cover" width="100%" />
-            {% endif %}
-          </td>
 
+
+          <!-- Text -->
           <td style="padding: 10px 0;">
-            <h4 id="selected-{{ item.title | slugify }}" style="margin: 0;">
-              <strong>{{ item.title }}</strong>
+            <p>
+              <!-- Title -->
+            <h4 id="selected-{{ item.title | slugify }}" style="margin: 0">
+              {{ item.title }}
             </h4>
 
-            <p><small style="font-weight: 500;">{{ item.occasion }}</small></p>
+            <!-- Authors -->
+            {% if item.authors %}
+            {% for person in item.authors %}
+            {% if person == "Yuning Wu" or person == "Yuning Wu*" %}
+            <b class="text-medium">{{ person }}</b>
+            {% else %}
+            {{ person }}
+            {% endif %}
+            {% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+            {% endif %}
+            </br>
 
-            <p><span><small>{{ item.author }}</small></span></p>
+            <!-- Occasion -->
+            {% if item.occasion %}
+            <span class="badge badge-dark">{{ item.occasion.badge }}</span> {{ item.occasion.name }}
+            {% endif %}
+            </br>
 
-            <p>
-              <small>
-                {% if item.item %}
-                {% for subitem in item.item %}
-                / <a href="{{ subitem.link }}" target="_blank" class="badge badge-dark">{{ subitem.name }}</a>
-                {% endfor %}
-                {% endif %}
-              </small>
+            <!-- Links -->
+            <small>
+              {% if item.resources %}
+              {% for resource in item.resources %}
+              <a href="{{ resource.link }}" target="_blank" style="text-decoration: underline;">{{ resource.type }}</a>
+              {% unless forloop.last %} | {% endunless %}
+              {% endfor %}
+              {% endif %}
+            </small>
             </p>
 
+            <!-- Summary -->
             <p>
-              {% if item.additional %}
-              <span style="color: #505050; font-size: 11px;"><br>{{ item.additional }}</span>
+              {% if item.summary %}
+              <span class="small"><br>{{ item.summary }}</span>
               {% endif %}
             </p>
+          </td>
+
+          <!-- Images -->
+          <td style="width: 20%; padding: 10px; padding-right: 0;">
+            {% if item.images[0] %}
+            <img src="{{ item.images[0] }}" alt="cover" width="100%" />
+            {% endif %}
+          </td>
+          <td style="width: 20%; padding: 10px; padding-right: 0;">
+            {% if item.images[1] %}
+            <img src="{{ item.images[1] }}" alt="cover" width="100%" />
+            {% endif %}
           </td>
         </tr>
         {% endfor %}
@@ -60,52 +89,8 @@
 </div>
 
 <style>
-  .theme-title {
-    background-color: #333;
-    /* Black background */
-    color: #fff;
-    /* White font */
-    padding: 5px 5px;
-    /* Padding for readability */
-    font-weight: 700;
-    /* Bold to stand out */
-    display: flex;
-    align-items: center;
-    /* Aligns arrow and text */
-    letter-spacing: 0.5px;
-    /* Slight letter spacing for elegance */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-    /* For layering the grey slanted lines */
-    z-index: 1;
-    overflow: hidden;
-    /* Ensures the masking effect stays within bounds */
-  }
-
-  /* Diagonal Lines Masking Effect */
-  .theme-title::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    /* Ensure it stays behind the text */
-    pointer-events: none;
-    /* Prevent interaction with the layer */
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><line x1="0" y1="10" x2="10" y2="0" stroke="rgba(255,255,255,0.9)" stroke-width="0.25" /></svg>');
-    background-repeat: repeat;
-    background-size: 7px 7px;
-    opacity: 0.8;
-    /* Control the visibility of the lines */
-  }
-
-  .theme-title .carousel-control-next-icon {
-    margin-right: 5px;
-    /* Space between arrow and text */
-    scale: 0.6;
-    /* Slightly larger arrow */
+  .fancy-quote {
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
   }
 </style>

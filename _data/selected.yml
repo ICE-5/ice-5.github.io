@@ -1,109 +1,126 @@
 - title: "A Human-Centered, Reinforcement Learning-Driven Robotic Framework for Assisting Construction Workers"
-  img1: "../assets/img/selected/thesis/img1.png"
-  img2: "../assets/img/selected/thesis/img2.jpg"
-  author: "<strong>Yuning Wu</strong>"
-  occasion: "Doctoral dissertation, Carnegie Mellon University, 2024."
-  additional: "Committee: Daniel Cardoso Llach, Jean Oh, Jieliang Luo"
-  theme: "Design Intelligent Robots that Support and Understand Humans"
+  images:
+    - "../assets/img/selected/thesis/img1.png"
+    - "../assets/img/selected/thesis/img2.jpg"
+  authors:
+    - "Yuning Wu"
+  occasion:
+    name: "Doctoral dissertation, Carnegie Mellon University, 2024."
+  summary: "Committee: Daniel Cardoso Llach, Jean Oh, Jieliang Luo"
+  theme: "How to design intelligent robots that support and understand humans?"
 
 - title: "Towards Human-Centered Construction Robotics: A Reinforcement Learning-Driven Companion Robot For Contextually Assisting Carpentry Workers"
-  img1: "../assets/img/selected/companion/img1.png"
-  img2: "../assets/img/selected/companion/img2.png"
-  author: "<strong>Yuning Wu</strong>, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "[IROS'24] IEEE/RSJ International Conference on Intelligent Robots and Systems 2024."
-  additional: "TL;DR: This paper outlines the development of a socially-aware ''work companion robot'' designed to support, rather than replace, skilled human workers by handling frequent and physically demanding tasks like on-site tool/material delivery. It details the robot's architecture, driven by recent reinforcement learning (RL) methods for social navigation, and introduces a novel pipeline for fine-tuning a pretrained RL model to adapt to specific worker behaviors, ensuring smooth Sim2Real transitions. The robot's effectiveness is validated in a real construction environment through direct worker interaction."
-  item:
-  - name: "PDF"
-    link: "../assets/file/iros24_companion_paper.pdf"
-  - name: "arXiv"
-    link: "https://arxiv.org/abs/2403.19060"
-  - name: "video"
-    link: "https://youtu.be/wwta5bsOK0k"
-  - name: "slides"
-    link: "../assets/file/iros24_companion_slides.pdf"
-  theme: "Design Intelligent Robots that Support and Understand Humans"
+  images:
+    - "../assets/img/selected/companion/img1.png"
+    - "../assets/img/selected/companion/img2.png"
+  authors:
+    - "Yuning Wu"
+    - "Jiaying Wei"
+    - "Jean Oh"
+    - "Daniel Cardoso Llach"
+  occasion:
+    name: "IEEE/RSJ International Conference on Intelligent Robots and Systems 2024"
+    badge: "IROS 2024"
+  summary: >
+    TL;DR: This paper outlines the development of a socially-aware "work companion robot" designed to support, rather than replace, skilled human workers by handling frequent and physically demanding tasks like on-site tool/material delivery. It details the robot's architecture, driven by recent reinforcement learning (RL) methods for social navigation, and introduces a novel pipeline for fine-tuning a pretrained RL model to adapt to specific worker behaviors, ensuring smooth Sim2Real transitions. The robot's effectiveness is validated in a real construction environment through direct worker interaction.
+  resources:
+    - type: "PDF"
+      link: "../assets/file/iros24_companion_paper.pdf"
+    - type: "arXiv"
+      link: "https://arxiv.org/abs/2403.19060"
+    - type: "Video"
+      link: "https://youtu.be/wwta5bsOK0k"
+    - type: "Slides"
+      link: "../assets/file/iros24_companion_slides.pdf"
+  theme: "How to design intelligent robots that support and understand humans?"
 
 - title: "Robot in the Loop: A Human-Centered Approach to Contextualizing AI and Robotics in Construction"
-  img1: "../assets/img/selected/reac/img1.jpeg"
-  img2: "../assets/img/selected/reac/img2.png"
-  author: "<strong>Yuning Wu</strong>*, Emek Erdolu*, Jiaying Wei, Jean Oh, Daniel Cardoso Llach"
-  occasion: "Construction Robotics, Springer Nature, 2025."
-  additional: "TL;DR: This paper explores how robotics can be integrated into manual construction work, leveraging ethnography insights to inform the technology design of a robot prototype designed to assist construction workers driven by deep reinforcement learning approaches for adaptive social compliance and comfort. The study advocates for AI and robotic technology that supports, rather than replaces, skilled human labor."
-  item:
-  - name: "PDF"
-    link: "https://rdcu.be/d3Xws"
-  - name: Springer Nature
-    link: https://link.springer.com/article/10.1007/s41693-024-00144-8
-  theme: "Design Intelligent Robots that Support and Understand Humans"
+  images:
+    - "../assets/img/selected/reac/img1.jpeg"
+    - "../assets/img/selected/reac/img2.png"
+  authors:
+    - "Yuning Wu*"
+    - "Emek Erdolu*"
+    - "Jiaying Wei"
+    - "Jean Oh"
+    - "Daniel Cardoso Llach"
+  occasion:
+    name: "Construction Robotics, Springer Nature, 2025."
+  summary: >
+    TL;DR: This paper explores how robotics can be integrated into manual construction work, leveraging ethnography insights to inform the technology design of a robot prototype designed to assist construction workers driven by deep reinforcement learning approaches for adaptive social compliance and comfort. The study advocates for AI and robotic technology that supports, rather than replaces, skilled human labor.
+  resources:
+    - type: "PDF"
+      link: "https://rdcu.be/d3Xws"
+    - type: "Springer Nature"
+      link: "https://link.springer.com/article/10.1007/s41693-024-00144-8"
+  theme: "How to design intelligent robots that support and understand humans?"
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
-  img1: "../assets/img/selected/dense/img1.png"
-  img2: "../assets/img/selected/dense/img2.png"
-  author: "<strong>Yuning Wu</strong>, Jieliang Luo, Hui Li"
-  occasion: "[ICRA'22] IEEE International Conference on Robotics and Automation 2022 | RL for Contact-Rich Manipulation Workshop."
-  item:
-  - name: "PDF"
-    link: "../assets/file/icra22_dense_reward_paper.pdf"
-  - name: "arXiv"
-    link: "https://arxiv.org/abs/2205.10431"
-  - name: "slides"
-    link: "../assets/file/icra22_dense_reward_slides.pdf"
-  - name: "code"
-    link: "https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite"
-  additional: "TL;DR: This paper introduces an efficient framework for deriving dense rewards in reinforcement learning, designed to improve the training of robots for contact-rich manipulation tasks like joint assembly and door opening. Developed in collaboration between Carnegie Mellon University and Autodesk Research, this framework employs Temporal Variant Forward Sampling (TVFS) and a self-supervised learning architecture. It leverages temporal variance and multimodal observation pairs, enabling faster and more stable policy training in a plug-and-play manner."
-  theme: "Design Intelligent Robots that Support and Understand Humans"
-
-- title: "Towards a Distributed, Robotically-Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone Construction in Dynamic Environments"
-  img1: "../assets/img/selected/drone/img1.png"
-  img2: "../assets/img/selected/drone/img2.gif"
-  author: "Zhihao Fang, <strong>Yuning Wu</strong>, Ammar Hassonjee, Ardavan Bidgoli, Daniel Cardoso Llach"
-  occasion: "[ACADIA'20] Annual Conference of the Association of Computer Aided Design in Architecture 2020."
-  item:
-  - name: "PDF"
-    link: "../assets/file/acadia20_drone_paper.pdf"
-  - name: "CumInCAD"
-    link: "http://papers.cumincad.org/cgi-bin/works/paper/acadia20_320"
-  - name: "slides"
-    link: "../assets/file/acadia20_drone_slides.pdf"
-  - name: "video"
-    link: "https://www.youtube.com/watch?v=oe1T1j5nVqM&feature=youtu.be"
-  - name: "code"
-    link: "https://github.com/c0deLab/RAiC"
-  additional: "TL;DR: This paper explores a robotic framework that utilizes the multi-agent reinforcement learning method (MADDPG) to enable drones to execute collaborative tasks such as bricklaying and spray-coating, specifically designed for complex-shaped geometric structures. It showcases a robotic framework adept at managing intricate real-world designs in dynamic environments, leveraging recent advances in machine learning."
-  theme: "Design Intelligent Robots that Support and Understand Humans"
+  images:
+    - "../assets/img/selected/dense/img1.png"
+    - "../assets/img/selected/dense/img2.png"
+  authors:
+    - "Yuning Wu"
+    - "Jieliang Luo"
+    - "Hui Li"
+  occasion:
+    name: "IEEE International Conference on Robotics and Automation 2022 | RL for Contact-Rich Manipulation Workshop."
+    badge: "ICRA 2022"
+  summary: >
+    TL;DR: This paper introduces an efficient framework for deriving dense rewards in reinforcement learning, designed to improve the training of robots for contact-rich manipulation tasks like joint assembly and door opening. Developed in collaboration between Carnegie Mellon University and Autodesk Research, this framework employs Temporal Variant Forward Sampling (TVFS) and a self-supervised learning architecture. It leverages temporal variance and multimodal observation pairs, enabling faster and more stable policy training in a plug-and-play manner.
+  resources:
+    - type: "PDF"
+      link: "../assets/file/icra22_dense_reward_paper.pdf"
+    - type: "arXiv"
+      link: "https://arxiv.org/abs/2205.10431"
+    - type: "Slides"
+      link: "../assets/file/icra22_dense_reward_slides.pdf"
+    - type: "Code"
+      link: "https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite"
+  theme: "How to design intelligent robots that support and understand humans?"
 
 - title: "Teaching an AI Agent Spatial Sense by Playing LEGO"
-  img1: "../assets/img/selected/lego/img1.gif"
-  img2: "../assets/img/selected/lego/img2.png"
-  author: "<strong>Yuning Wu</strong>, Katerina Fragkiadaki"
-  occasion: "In preparation."
-  additional:  "TL;DR: Whether one is an architect or not, the way we design and build reflects our spatial understanding of the physical world. As children, this exploration typically begins by playing with building blocks. This research retraces these initial steps by training an AI agent to play with LEGOs in a physical simulator (NVIDIA Omniverse Isaac Gym / PyBullet). A crucial aspect of this study is enabling the AI agent to design valid, and eventually elegant, stacked structures within a specified arena by interpreting spatial relationships among the blocks. Various components of this research are pending completion and will be submitted to both top-tier AI and robotics conferences as well as an art venue."
-  theme: "Design AI Agents and Algorithms with Spatial Sense, Intelligence and Creativity"
+  images:
+    - "../assets/img/selected/lego/img1.gif"
+    - "../assets/img/selected/lego/img2.png"
+  authors:
+    - "Yuning Wu"
+    - "Katerina Fragkiadaki"
+  occasion:
+    name: "In preparation."
+  summary: >
+    TL;DR: Whether one is an architect or not, the way we design and build reflects our spatial understanding of the physical world. As children, this exploration typically begins by playing with building blocks. This research retraces these initial steps by training an AI agent to play with LEGOs in a physical simulator (NVIDIA Omniverse Isaac Gym / PyBullet). A crucial aspect of this study is enabling the AI agent to design valid, and eventually elegant, stacked structures within a specified arena by interpreting spatial relationships among the blocks.
+  theme: "How to design AI agents and algorithms with spatial sense and creativity?"
 
 - title: "Design Architecture with Graphs: Utilize Space Connectivity and Graph Neural Networks To Inform Coherent Spatial Generation"
-  img1: "../assets/img/selected/baby/img1.png"
-  img2: "../assets/img/selected/baby/img2.png"
-  author: "<strong>Yuning Wu</strong>"
-  occasion: Independent research project
-  paper: 
-  item:
-  - name: "link"
-    link: selected/baby.html
-  additional: "TL;DR: This thesis project explores the potential of utilizing space connectivity and graph neural networks (GNNs) to inform layout design. It proposes a novel computational framework that leverages the spatial relationships between architectural elements to generate more informed and contextually relevant design solutions, contrasting from solutions that are purely data-driven or rule-based."
-  theme: "Design AI Agents and Algorithms with Spatial Sense, Intelligence and Creativity"
+  images:
+    - "../assets/img/selected/baby/img1.png"
+    - "../assets/img/selected/baby/img2.png"
+  authors:
+    - "Yuning Wu"
+  occasion:
+    name: "Independent research project"
+  resources:
+    - type: "Link"
+      link: "project/baby.html"
+  summary: >
+    TL;DR: This thesis project explores the potential of utilizing space connectivity and graph neural networks (GNNs) to inform layout design. It proposes a novel computational framework that leverages the spatial relationships between architectural elements to generate more informed and contextually relevant design solutions, contrasting from solutions that are purely data-driven or rule-based.
+  theme: "How to design AI agents and algorithms with spatial sense and creativity?"
 
 - title: "State Space Paradox of Computational Research in Creativity"
-  img1:
-  img2:
-  author: "Ömer Akin, <strong>Yuning Wu</strong>"
-  occasion: "[HI'19] Thirtieth Anniversary 'Heron Island' Conference on Computational and Cognitive Models of Creative Design."
-  item:
-  - name: "PDF"
-    link: "../assets/file/sub_ssp_paper.pdf"
-  - name: "arXiv"
-    link: "https://arxiv.org/abs/2404.15303"
-  - name: "slides"
-    link: "../assets/file/sub_ssp_slides.pdf"
-  additional: "In memory of Professor Ömer Akin (1942-2020). This is one of his last papers, and I am privileged to be organizing and presenting it. This paper explores the State Space Paradox (SSP) in computational creativity research, discussing how current digital systems, designed as closed systems with predefined parameters, are inherently limited in their creative capacity compared to the open systems of human creativity. It examines various procedural and representational approaches to artificial creativity, such as genetic algorithms and shape grammars, and critiques their ability to truly emulate human creativity. The paradox lies in the fact that while these systems can produce outputs that may initially seem creative, they are ultimately unable to exceed their predefined state spaces and thus fail to achieve genuine novelty or adapt beyond their initial programming."
-  theme: "Design AI Agents and Algorithms with Spatial Sense, Intelligence and Creativity"
-
+  authors:
+    - "Ömer Akin"
+    - "Yuning Wu"
+  occasion:
+    name: "Thirtieth Anniversary 'Heron Island' Conference on Computational and Cognitive Models of Creative Design."
+    badge: "HI 2019"
+  resources:
+    - type: "PDF"
+      link: "../assets/file/sub_ssp_paper.pdf"
+    - type: "arXiv"
+      link: "https://arxiv.org/abs/2404.15303"
+    - type: "Slides"
+      link: "../assets/file/sub_ssp_slides.pdf"
+  summary: >
+    In memory of Professor Ömer Akin (1942-2020). This is one of his last papers, and I am privileged to be organizing and presenting it. This paper explores the State Space Paradox (SSP) in computational creativity research, discussing how current digital systems, designed as closed systems with predefined parameters, are inherently limited in their creative capacity compared to the open systems of human creativity.
+  theme: "How to design AI agents and algorithms with spatial sense and creativity?"

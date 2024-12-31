@@ -1,50 +1,56 @@
-- time: 2024-06
+- time: "2024.12"
+  content: Our journal article on "Robot in the Loop" and human-centered robotics is accepted for publication.
+
+- time: "2024.10"
+  content: We presented our research on "work companion robot" at IROS 2024 in Abu Dhabi. The paper is accepted for publication.
+
+- time: "2024.06"
   content: Our paper on the "work companion robot" for labor intensive human work is accepted to IROS 2024! Looking forward to presenting it in Abu Dhabi.
 
-- time: 2023-07
+- time: "2023.07"
   content: I am honored to receive another year of CMU Presidential Fellowship.
 
-- time: 2023-06
+- time: "2023.06"
   content: I am happy to present my PhD research at TCS Innovation Forum 2023, hosted at Cornell Tech, NYC. Thank you for the invite!
 
-- time: 2023-05
+- time: "2023.05"
   content: I demonstrated and presented our research (and robot) at Mill-19 to Bosch Leadership and AI team visiting from Germany.
 
-- time: 2022-11
+- time: "2022.11"
   content: I presented our ReAC project at CMU MFI Research Seminar, along with my colleague Emek Erdolu.
 
-- time: 2022-10
+- time: "2022.10"
   content: Our team presented and demonstrated the ReAC research to CMU Board of Trustees at Mill-19.
 
-- time: 2022-09
+- time: "2022.09"
   content: I am humbled to be named a Presidential Fellow at Carnegie Mellon University. The scholarship is generously donated by TCS.
   priority: high
 
-- time: 2022-05
+- time: "2022.05"
   content: I received Manufacturing Futures Initiatives (MFI) Fellowship.
   link-text: Manufacturing Futures Institute
   link: https://engineering.cmu.edu/mfi/index.html
 
-- time: 2021-12
+- time: "2021.12"
   content: I received Autodesk Research Merit Scholarship.
 
-- time: 2021-08
+- time: "2021.08"
   content: I helped founded our new lab space at Mill-19.
   link-text: Mill-19 Advanced Research Center
   link: https://engineering.cmu.edu/mfi/mill19/conference-event-space.html
 
-- time: 2021-08
+- time: "2021.08"
   content: I received Manufacturing PA Fellowship from State of Pennsylvania. The research later received recognition from the State Governor Tom Wolf.
 
-- time: 2021-05
+- time: "2021.05"
   content: I joined Autodesk AI Lab as research intern, working in affiliation with Autodesk Robotics Lab.
 
-- time: 2020-10
+- time: "2020.10"
   content: I was awarded GSA/Provost GuSH Grant by Carnegie Mellon University.
 
-- time: 2019-11
+- time: "2019.11"
   content: I was awarded LEGO Scholarship for attending HI'19. Thank you, LEGO Foundation!
 
-- time: 2018-05
+- time: "2018.05"
   content: I co-founded Metascope Tech in Beijing, China.
 

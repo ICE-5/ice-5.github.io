@@ -7,7 +7,7 @@ title: YUNING WU
   <div class="row">
     <div class="col-xl-10 offset-md-0 offset-xl-1">
       <div style="margin-bottom: 50px">
-        <h4>IMMATURE ARCHITECT OF THINGS</h4>
+        <h1>ARCHITECT OF THINGS</h1>
         <p style="font-weight: 900">•</p>
         <p style="margin-top: 5px">Welcome to <strong>SIDE-B</strong>.</p>
 
@@ -26,29 +26,34 @@ title: YUNING WU
           <a href="index.html" class="badge badge-dark"><strong>SIDE-A: AI+ROBOTICS RESEARCHER</strong></a>.
         </p>
 
+
+
         <table class="table" style="margin: 1rem 0">
           <tbody>
-            {% for item in site.data.portfolio %}
+            {% for project in site.data.portfolio.projects %}
             <tr>
               <td style="width: 50%; padding: 1rem 0">
-                <a href="{{ item.link }}">
-                  <img src="{{ item.img }}" alt="cover" width="100%" />
+                <a href="{{ project.permalink }}">
+                  <img src="{{ project.cover }}" alt="cover" width="100%" />
                 </a>
               </td>
               <td style="padding: 1rem;">
                 <p style="text-decoration: underline">
-                  <a href="{{ item.link }}">
-                    <strong>{{ item.title }}</strong>
+                  <a href="{{ project.permalink }}">
+                    <h2>{{ project.title }}</h2>
                   </a>
                 </p>
-                <p style="margin: 0">{{ item.subtitle }}</p>
-                <p><br><small style="font-weight: 500;">{{ item.studio }}</small></p>
-                <p><small>{{ item.designer }}</small></p>
+                <p style="margin: 0">{{ project.description }}</p>
+                <p><br><small style="font-weight: 500;">{{ project.studio }}</small></p>
+                <p><small>{{ project.designer }}</small></p>
               </td>
             </tr>
             {% endfor %}
           </tbody>
         </table>
+
+
+
       </div>
     </div>
   </div>

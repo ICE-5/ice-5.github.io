@@ -1,0 +1,24 @@
+---
+layout: blank
+---
+
+<div class="container">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.description }}</h2>
+    <p>
+        <a href="/portfolio.html">Back to portfolio</a>
+    </p>
+    <p>
+        <small>
+            Please contact me in advanced if you'd like to cite, refer, mention, or adapt
+            this work. All rights reserved &nbsp;©&nbsp;Yuning Wu.
+        </small>
+    </p>
+
+    <div>
+        {% for image in page.images %}
+        <img src="{{ image }}" alt="{{ page.title }}" style="width: 100%; margin-bottom: 20px;">
+        {% endfor %}
+    </div>
+
+</div>
