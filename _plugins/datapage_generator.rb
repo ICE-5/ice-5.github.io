@@ -19,8 +19,8 @@ module Jekyll
           end
 
           # Log generated images for debugging
-          puts "Project: #{project['title']}"
-          puts "Images: #{project['images'].join(', ')}"
+          # puts "Project: #{project['title']}"
+          # puts "Images: #{project['images'].join(', ')}"
 
           # Generate the page
           site.pages << DataPage.new(site, site.source, project)
@@ -47,7 +47,7 @@ module Jekyll
       self.data['images'] = project['images']
 
       # Log the data for debugging
-      puts "Generated DataPage for: #{project['title']}"
+      # puts "Generated DataPage for: #{project['title']}"
     end
   end
 end
