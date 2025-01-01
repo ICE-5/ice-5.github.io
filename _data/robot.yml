@@ -1,22 +1,27 @@
 - name: "Husky"
-  img: "../assets/img/robot/husky.jpg"
-  img2: "../assets/img/robot/husky2.png"
+  images:
+    - "../assets/img/robot/husky/1.jpg"
+    - "../assets/img/robot/husky/2.png"
   desc: "<strong>This robot is my dearest baby.</strong> I designed and built it almost from scratch based on a Clearpath Husky A200 base, kindly made available by Jean and the National Robotics and Engineering Center (NREC). It is equipped with 2D & 3D LiDARs, RGB-D cameras, IMU unit, and a (strong) on-board computer. It is the <strong>cornerstone robot</strong> used for my PhD research on robot learning and human-robot interaction. To be noted, Jiaying Wei and Sam Shun played a critical role in the building process."
 
 - name: "Black Proton"
-  img: "../assets/img/robot/proto.png"
-  img2: "../assets/img/robot/proto2.png"
-  img3: "../assets/img/robot/proto3.png"
+  images:
+    - "../assets/img/robot/black-proton/1.png"
+    - "../assets/img/robot/black-proton/2.png"
+    - "../assets/img/robot/black-proton/3.png"
   desc: "This cute little one is hacked entirely by me at home. It's adapted from a <strong>Tamiya 4WD remote control car (yes, a toy car)</strong>, and is intended to be a mini version of Husky. Black Proton is a prototyping robot that I try all my reinforcement learning algorithms on. It is equipped with a Jetson Nano, a 2D LiDAR, and an RGB-D camera. After the heavy algorithm testing duty, Black Proton now serves as the <strong>Cat Detection, Tracking & Chasing (CDTC) robot</strong> in the family. I'm sure my cats love it."
 
 - name: "Rocky"
-  img: "../assets/img/robot/rocky.png"
+  images:
+    - "../assets/img/robot/rocky/1.png"
   desc: "Rocky is a home-made, omnidirectional robot built by students from the Robotics Institute. It came to us after Fetch decided to sleep forever, and has been nicely rennovated by Sam Shun from NREC. However it is not so safe to work with. Our lab still has some drifting tire mark left by it on the floor. Once Rocky decides to go crazy, we have exactly 30s to catch it and press stop. Otherwise it's gone for good. <strong>Its heart is definitely in racing</strong>, not in HRI. Play safe next time, Rocky!"
 
 - name: "Fetch"
-  img: "../assets/img/robot/fetch.jpg"
+  images:
+    - "../assets/img/robot/fetch/1.jpg"
   desc: 'The Fetch robot is the first member of the robotically supported collaborative work research. It came to us with a broken arm (gripper/end-effector), a malfunctioning 2D LiDAR, and eventually a <strong>"sleeping beauty"</strong> mainboard that is no longer awake. We tried very hard to fix it, but luck is not on our side. I love you still, Fetch.'
 
 - name: "Pixhawk"
-  img: "../assets/img/robot/pixhawk.png"
+  images:
+    - "../assets/img/robot/pixhawk/1.png"
   desc: "This drone was <strong>the star in the RL-driven multi-drone project</strong>. My teammate finished its initial building for carrying blocks using magnets. I must say I am not good at flying real drones. But I am really good at training drones with RL in simulation environments, e.g. Unity+MLAgents, NVIDIA Omniverse Isaac Gym. Pixhawk is now retired, and is always waiting for a chance to get a spin outdoor."

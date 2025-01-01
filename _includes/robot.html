@@ -1,52 +1,31 @@
 <div class="row" style="margin-bottom: 25px;">
-  <div class="col-12" style="padding: 0; margin-bottom: 10px;">
-    <h2 id="robot" data-toc-title="ROBOTS">LOVE, DEATH & ROBOTS (THAT I'VE HACKED WITH)</h2>
-    <!-- <p style="font-weight: 900">•</p> -->
-  </div>
-
-  <div class="card-deck" style="padding: 0 10px;">
-    {% for item in site.data.robot %}
-    <div class="card" style="padding: 0; border-radius: 0; margin: 5px;">
-      <!-- <img class="card-img-top" style="border-radius: 0;" src="{{ item.img }}" alt="Card image cap"> -->
-
-      <!-- Start Carousel for each robot -->
-      <div id="carousel-{{ item.name | slugify }}" class="carousel slide" data-ride="carousel" data-interval="2000">
-        <div class="carousel-inner">
-          <!-- First Image (Active) -->
-          <div class="carousel-item active">
-            <img class="d-block w-100 card-img-top" style="border-radius: 0;" src="{{ item.img }}" alt="Card image cap">
-          </div>
-          <!-- Optional Second Image -->
-          {% if item.img2 %}
-          <div class="carousel-item">
-            <img class="d-block w-100 card-img-top" style="border-radius: 0;" src="{{ item.img2 }}"
-              alt="Card image cap">
-          </div>
-          {% endif %}
-          <!-- Optional Third Image -->
-          {% if item.img3 %}
-          <div class="carousel-item">
-            <img class="d-block w-100 card-img-top" style="border-radius: 0;" src="{{ item.img3 }}"
-              alt="Card image cap">
-          </div>
-          {% endif %}
-        </div>
-
-
-      </div>
-      <!-- End Carousel -->
-
-
-      <div class="card-body" style="padding: 10px;">
-        <h3 id="robot-{{ item.name | slugify }}" class="card-title" style="margin: 0;">{{ item.name }}
-        </h3>
-        <p class="card-text"><small>{{ item.desc }}</small></p>
-      </div>
-      <!-- <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div> -->
+    <div class="col-12" style="padding: 0; margin-bottom: 10px;">
+        <h2 id="robot" data-toc-title="ROBOTS">LOVE, DEATH & ROBOTS (THAT I'VE HACKED WITH)</h2>
     </div>
-    {% endfor %}
-  </div>
 
+    <div class="card-deck" style="padding: 0 10px;">
+        {% for item in site.data.robot %}
+        <div class="card" style="padding: 0; border-radius: 0; margin: 5px;">
+
+            <!-- Start Carousel for each robot -->
+            <div id="carousel-{{ item.name | slugify }}" class="carousel slide" data-ride="carousel"
+                data-interval="2000">
+                <div class="carousel-inner">
+                    {% for image in item.images %}
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                        <img class="d-block w-100 card-img-top" style="border-radius: 0;" src="{{ image }}"
+                            alt="Card image cap">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- End Carousel -->
+
+            <div class="card-body" style="padding: 10px;">
+                <h3 id="robot-{{ item.name | slugify }}" class="card-title" style="margin: 0;">{{ item.name }}</h3>
+                <p class="card-text"><small>{{ item.desc }}</small></p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
