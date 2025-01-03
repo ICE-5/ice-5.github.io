@@ -12,7 +12,10 @@ module.exports = {
         publicPath: '/assets/js/', // Match the URL path where your assets will be served
     },
     mode: 'development', // Set to 'production' for optimized builds
-    watch: true, // Automatically rebuild when files change
+    performance: {
+        hints: false, // Turn off size warnings
+    },
+    // watch: isDevelopment, // Automatically rebuild when files change
     module: {
         rules: [
             {
