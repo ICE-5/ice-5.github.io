@@ -1,0 +1,73 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master  # Trigger the workflow on pushes to the 'master' branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Ruby for Jekyll with caching
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1 # Adjust to match your Ruby version
+          bundler-cache: true
+
+      # Step 3: Cache Ruby gems
+      - name: Cache Ruby Gems
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gem-cache-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gem-cache-
+
+      # Step 4: Install dependencies for Jekyll
+      - name: Install Jekyll Dependencies
+        run: |
+          bundle install
+
+      # Step 5: Build Jekyll site
+      - name: Build Jekyll Site
+        run: |
+          bundle exec jekyll build
+
+      # Step 6: Set up Node.js for Webpack with caching
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '23.5.0' # Use the Node.js version matching your local setup
+
+      # Step 7: Cache npm dependencies
+      - name: Cache npm Dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-cache-
+
+      # Step 8: Install npm dependencies
+      - name: Install npm Dependencies
+        run: |
+          npm install
+
+      # Step 9: Build assets with Webpack
+      - name: Build Assets with Webpack
+        run: |
+          npx webpack --mode production
+
+      # Step 10: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
