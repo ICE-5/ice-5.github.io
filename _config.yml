@@ -4,3 +4,9 @@ plugins:
 
 include:
   - node_modules
+
+exclude:
+  - assets/js/*.js
+
+keep_files:
+  - assets/js/*.js

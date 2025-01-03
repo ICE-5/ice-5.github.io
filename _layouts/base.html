@@ -17,23 +17,19 @@
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/svg" href="/assets/img/favicon.png">
 
+    <!-- Bundled JS by Webpack -->
+    <script src="/assets/js/main.bundle.js"></script>
+
+    <!-- (Optional) Customized font -->
+
     <!-- Bootstrap CSS (local) -->
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    
-    <!-- Local npm CSS -->
-    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="/node_modules/tocbot/dist/tocbot.css">
 
 </head>
 
 <body>
     {{ content }}
     {% include footer.html %}
-
-    <!-- Local npm JavaScript -->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/node_modules/tocbot/dist/tocbot.min.js"></script>
     
     <!-- Tocbot initialization for left TOC -->
     <script>
