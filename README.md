@@ -17,8 +17,6 @@ For customization of the workflow, please refer to the `package.json` file, unde
     npm run build
     ```
 
-
-
 * Serve the website locally, preview **without** hot-reloading enabled. Just a static serving of `_site/`
     ```bash
     npm run serve
@@ -33,3 +31,9 @@ For customization of the workflow, please refer to the `package.json` file, unde
     ```bash
     npm run jekyll:watch
     ```
+
+## Customized Github Actions Workflow for Deployment
+The deployment process is automated using Github Actions. 
+* The workflow is defined in `.github/workflows/deploy.yml`. 
+* In the settings of the repository, the source of Github Pages is set to Github Actions. 
+* The workflow is triggered by pushing to the `master` branch.
