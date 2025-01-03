@@ -64,8 +64,12 @@ jobs:
       - name: Build Assets with Webpack
         run: |
           npx webpack --mode production
+      
+      # Step 10: Debug - List files in _site to make sure the bundle JS is there
+      - name: Debug - List files in _site
+        run: ls -R _site
 
-      # Step 10: Deploy to GitHub Pages
+      # Step 11: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
