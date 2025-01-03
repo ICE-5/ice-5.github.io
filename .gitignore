@@ -1,6 +1,8 @@
 .vscode/
 .jekyll-cache
 
+_site/
+
 # Node.js-related files
 node_modules/
 package-lock.json
