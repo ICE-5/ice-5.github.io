@@ -15,7 +15,7 @@ module.exports = {
     performance: {
         hints: false, // Turn off size warnings
     },
-    watch: true, // Automatically rebuild when files change
+    // watch: isDevelopment, // Automatically rebuild when files change
     module: {
         rules: [
             {

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "webpack:watch": "webpack --watch --mode development",
-    "webpack:build": "webpack --mode production && exit 0",
+    "webpack:build": "webpack --mode production",
     "jekyll:build": "bundle exec jekyll build",
     "jekyll:watch": "bundle exec jekyll serve",
     "serve": "bundle exec jekyll serve --no-watch --skip-initial-build",
