@@ -1,15 +1,11 @@
-<header class="masthead"" style=" background-color: white;">
-
-    {% include carousel.html %}
-</header>
-
-<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav"
+    style="color: {{ include.font_color | default: 'white' }};">
     <div class="container">
-        <a class="navbar-brand" href="/index.html">
-            <!-- <img src="/assets/img/favicon.png" alt="logo" width="25" height="25"> -->
+        <a class="navbar-brand" style="color: inherit; padding: 0;" href="/index.html">
             <p style="font-size: 12px; line-height: 0.75; font-weight: 900;">YUNING WU</p>
             <p style="font-size: 12px; font-weight: 500;">AI+ROBOTICS RESEARCHER / ARCHITECT OF THINGS</p>
-        </a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler"
+        </a>
+        <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars"></i>
         </button>
@@ -17,7 +13,7 @@
             <ul class="nav navbar-nav ml-auto">
                 {% for item in site.data.nav %}
                 <li class="nav-item" role="presentation">
-                    <a href="{{ item.link }}" class="nav-link" style="font-size: 12px;">
+                    <a href="{{ item.link }}" class="nav-link" style="color: inherit;">
                         {{ item.name }}
                     </a>
                 </li>

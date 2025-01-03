@@ -1,14 +1,18 @@
 ---
-layout: default
+layout: main_carousel
 title: YUNING WU
-header-bgimg: assets/img/home-bg.png
-header-title: 'BUILD SMARTER'
-header-subtitle: How can AI help us build a graceful, humane cyber-future, both virtually and concretely?
 ---
 
 
 
 <div class="container text-left">
+      <!-- Avatar -->
+      <div style="position: absolute; top: -100px; left: 0px; z-index: 2; ">
+            <img src="assets/img/avatar/avatar.png" class="rounded-circle" style="width: 150px;"
+                  onmouseover="this.src='assets/img/avatar/avatar_hover_1.jpg'"
+                  onmouseout="this.src='assets/img/avatar/avatar.png'" alt="Avatar" />
+      </div>
+
       {% include intro.html %}
       {% include robot.html %}
       {% include update.html %}

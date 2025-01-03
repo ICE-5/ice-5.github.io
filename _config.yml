@@ -1,3 +1,6 @@
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+include:
+  - node_modules

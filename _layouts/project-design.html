@@ -1,21 +1,16 @@
 ---
-layout: blank
+layout: main_simple
 ---
 
-<div class="container">
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.description }}</h2>
-    <p style="margin-bottom: 20px">
-        {{ page.studio }} <br>
-        {{ page.designer }}
-    </p>
-    <p> Back to:
-        <a href="{{ site.baseurl }}/index.html" class="badge badge-dark"><strong>SIDE-A: AI+ROBOTICS
-                RESEARCHER</strong></a> |
-        <a href="{{ site.baseurl }}/portfolio.html" class="badge badge-dark"><strong>SIDE-B: ARCHITECT OF
-                THINGS</strong></a>
-    </p>
-    <p style="margin-bottom: 20px;">
+<div>
+    <h1> {{ page.title }} </h1>
+    <h2 class="text-bold"> {{ page.description }} </h2>
+    <p class="text-bold"> {{ page.studio }} </p>
+    <p> {{ page.designer }} </p>
+
+
+
+    <p style="margin-top: 20px;">
         <small>
             Please contact me in advanced if you'd like to cite, refer, mention, or adapt
             this work. All rights reserved &nbsp;©&nbsp;Yuning Wu.
@@ -27,5 +22,4 @@ layout: blank
         <img src="{{ image }}" alt="{{ page.title }}" style="width: 100%; margin-bottom: 20px;">
         {% endfor %}
     </div>
-
 </div>
