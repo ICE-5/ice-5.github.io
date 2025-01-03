@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: customized-build-deployment
 
 on:
   push:
