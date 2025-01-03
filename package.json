@@ -5,8 +5,9 @@
   "scripts": {
     "webpack:watch": "webpack --watch --mode development",
     "webpack:build": "webpack --mode production",
-    "jekyll:serve": "bundle exec jekyll serve",
     "jekyll:build": "bundle exec jekyll build",
+    "jekyll:watch": "bundle exec jekyll serve",
+    "serve": "bundle exec jekyll serve --no-watch --skip-initial-build",
     "build": "npm run jekyll:build && npm run webpack:build",
     "deploy": "./deploy.sh"
   },
