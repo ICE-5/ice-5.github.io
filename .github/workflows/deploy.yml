@@ -63,7 +63,7 @@ jobs:
       # Step 9: Build assets with Webpack
       - name: Build Assets with Webpack
         run: |
-          npx webpack --mode production || exit 1
+          npx webpack --mode production
 
       # Step 10: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
