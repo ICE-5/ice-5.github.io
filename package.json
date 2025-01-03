@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "webpack:watch": "webpack --watch",
+    "webpack:watch": "webpack --watch --mode development",
+    "webpack:build": "webpack --mode production",
+    "jekyll:serve": "bundle exec jekyll serve",
     "jekyll:build": "bundle exec jekyll build",
-    "jekyll:serve": "bundle exec jekyll serve"
+    "build": "npm run jekyll:build && npm run webpack:build",
+    "deploy": "./deploy.sh"
   },
   "repository": {
     "type": "git",
