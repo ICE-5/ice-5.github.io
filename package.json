@@ -8,8 +8,7 @@
     "jekyll:build": "bundle exec jekyll build",
     "jekyll:watch": "bundle exec jekyll serve",
     "serve": "bundle exec jekyll serve --no-watch --skip-initial-build",
-    "build": "npm run jekyll:build && npm run webpack:build",
-    "deploy": "./deploy.sh"
+    "build": "npm run jekyll:build && npm run webpack:build"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "babel-loader": "^9.2.1",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^4.5.0",
     "jquery": "^3.7.1",
     "simplex-noise": "^4.0.3",
     "stats.js": "^0.17.0",
