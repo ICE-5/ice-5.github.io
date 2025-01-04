@@ -1,9 +1,8 @@
-<nav class="navbar navbar-expand-lg fixed-top" id="mainNav"
-    style="color: {{ include.font_color | default: 'white' }};">
+<nav class="navbar navbar-expand-lg fixed-top {{ include.option | default: 'black' }}" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" style="color: inherit; padding: 0;" href="/index.html">
-            <p style="font-size: 12px; line-height: 0.75; font-weight: 900;">YUNING WU</p>
-            <p style="font-size: 12px; font-weight: 500;">AI+ROBOTICS RESEARCHER / ARCHITECT OF THINGS</p>
+        <a class="navbar-brand" href="/index.html">
+            <p class="brand-title">YUNING WU</p>
+            <p class="brand-subtitle">AI+ROBOTICS RESEARCHER / ARCHITECT OF THINGS</p>
         </a>
         <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +12,7 @@
             <ul class="nav navbar-nav ml-auto">
                 {% for item in site.data.nav %}
                 <li class="nav-item" role="presentation">
-                    <a href="{{ item.link }}" class="nav-link" style="color: inherit;">
+                    <a href="{{ item.link }}" class="nav-link">
                         {{ item.name }}
                     </a>
                 </li>
@@ -22,3 +21,59 @@
         </div>
     </div>
 </nav>
+
+<style>
+    /* Common styles for the navbar */
+    #mainNav {
+        background: transparent;
+        text-decoration: none;
+    }
+
+    #mainNav.white {
+        color: white;
+    }
+
+    #mainNav.black {
+        color: black;
+    }
+
+    #mainNav .navbar-brand {
+        padding: 0;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    #mainNav .navbar-brand .brand-title {
+        font-size: 12px;
+        line-height: 0.75;
+        font-weight: 900;
+    }
+
+    #mainNav .navbar-brand .brand-subtitle {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #mainNav .nav-link {
+        text-decoration: none;
+    }
+
+    #mainNav .nav-link:hover {
+        text-decoration: underline;
+    }
+
+    /* Ensure buttons like togglers inherit the color */
+    #mainNav .navbar-toggler {
+        color: inherit !important;
+    }
+
+    /* Ensure collapsible menu items inherit styles */
+    #mainNav .navbar-collapse .nav-item .nav-link {
+        color: inherit !important;
+    }
+
+    #mainNav a:hover {
+        color: inherit;
+        background-color: transparent;
+    }
+</style>

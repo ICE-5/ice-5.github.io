@@ -20,48 +20,16 @@
     <!-- Bundled JS by Webpack -->
     <script src="/assets/js/main.bundle.js"></script>
 
-    <!-- (Optional) Customized font -->
+    <!-- (Optional) Customized font here -->
 
-    <!-- Bootstrap CSS (local) -->
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <!-- Local, customized CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
 </head>
 
 <body>
     {{ content }}
     {% include footer.html %}
-    
-    <!-- Tocbot initialization for left TOC -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            tocbot.init({
-                tocSelector: '#toc',
-                contentSelector: 'body',
-                headingSelector: 'h2, h3',
-                scrollSmooth: true,
-                scrollSmoothOffset: 200,  // Adjust for a smoother experience
-                collapseDepth: 6,
-            });
-        });
-    </script>
-
-    <!-- Scroll effect for TOC -->
-    <script>
-        window.addEventListener('scroll', function () {
-            var tocContainer = document.getElementById('toc-container');
-            var scrollPosition = window.scrollY || window.pageYOffset;
-            var carouselHeight = 650; // Set the height of your carousel or the offset point
-            var stickyPosition = 150; // The position you want ToC to stick to
-
-            if (scrollPosition > carouselHeight) {
-                tocContainer.style.position = 'fixed';
-                tocContainer.style.top = stickyPosition + 'px';
-            } else {
-                tocContainer.style.position = 'absolute';
-                tocContainer.style.top = carouselHeight + stickyPosition + 'px'; // Original position below the carousel
-            }
-        });
-    </script>
 </body>
 
 </html>

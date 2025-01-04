@@ -26,7 +26,7 @@
         bottom: 0;
         left: 0;
         width: 0;
-        background-color: #ddd;
+        background-color: transparent;
     }
 
     .toc-list {
@@ -44,7 +44,7 @@
     .toc-list-item .toc-list-item {
         /* font-size: smaller; */
         font-weight: var(--font-weight-medium);
-        line-height: 1.0;
+        line-height: 1.35;
         margin-left: 10px;
         margin-top: 5px;
         margin-bottom: 10px;
@@ -52,8 +52,7 @@
 
     .toc-link {
         color: #212529;
-        background-color: white;
-        text-decoration: none;
+        text-decoration: underline;
         transition: color 0.2s;
         width: 0;
     }
@@ -64,6 +63,7 @@
 
     .toc-link:hover {
         color: white;
+        background-color: black;
     }
 
     .toc-link::before {

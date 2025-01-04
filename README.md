@@ -36,8 +36,7 @@ For customization of the workflow, please refer to the `package.json` file, unde
 The deployment process is automated using Github Actions. 
 
 ### My `cutomized-build-deployment` workflow
-* The workflow is defined in `.github/workflows/deploy.yml`. 
-* In the settings of the repository, the source of Github Pages is set to Github Actions. 
+* The workflow is defined in `.github/workflows/deploy.yml`.
 * The workflow is triggered by pushing to the `master` branch.
 * The result is a built `_site` directory that is pushed to the root of `gh-pages` branch.
 
