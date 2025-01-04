@@ -208,19 +208,18 @@ sup {
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: white;
+  background-color: black;
 }
 
 a:not([href]),
 a:not([href]):hover {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 code,
