@@ -22,11 +22,6 @@ For customization of the workflow, please refer to the `package.json` file, unde
     npm run serve
     ```
 
-* (Beta) Deploy the website to GitHub Pages
-    ```bash
-    npm run deploy
-    ```
-
 * Serve the website locally, preview **with** hot-reloading enabled. But be wary of the `jekyll` rebuilding process, which can purge the `_site/assets/js` directory, removing things built by `webpack`.
     ```bash
     npm run jekyll:watch
