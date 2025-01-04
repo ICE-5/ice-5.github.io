@@ -1,16 +1,15 @@
-<div class="row" style="margin-bottom: 25px">
-  <div>
-    <h2>SERVICE</h2>
-    <!-- <p style="font-weight: 900">•</p> -->
-    <div style="margin-top: 5px;">
+<div style="margin-bottom: 25px">
+  <h2>SERVICE</h2>
+  <!-- <p style="font-weight: 900">•</p> -->
+  <div style="margin-top: 5px;">
     {% for item in site.data.service %}
     <p>
       <strong><tt>{{ item.time }} </tt></strong>
 
       {% if item.priority %}
-        <span style="font-weight: 500;">{{ item.content }}</span>
+      <span style="font-weight: 500;">{{ item.content }}</span>
       {% else %}
-        <span>{{ item.content }}</span>
+      <span>{{ item.content }}</span>
       {% endif %}
 
       {% if item.link %}
@@ -18,6 +17,5 @@
       {% endif %}
     </p>
     {% endfor %}
-  </div>
   </div>
 </div>
