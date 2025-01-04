@@ -56,7 +56,7 @@
   resources:
     - type: "PDF"
       link: "https://rdcu.be/d3Xws"
-    - type: "Springer Nature"
+    - type: "Springer"
       link: "https://link.springer.com/article/10.1007/s41693-024-00144-8"
     - type: "BibTeX"
       link: "../assets/project/cr25-robot-in-the-loop/citation.bib"

@@ -1,11 +1,15 @@
 - time: "2024.12"
-  content: Our journal article on "Robot in the Loop" and human-centered robotics and AI is accepted for publication.
+  content: Our journal article on “Robot in the Loop” and human-centered AI and robotics has been published.
+  link-text: Springer
+  link: https://link.springer.com/article/10.1007/s41693-024-00144-8
 
 - time: "2024.10"
-  content: We presented our research on "work companion robot" at IROS 2024 in Abu Dhabi, UAE. The paper is accepted for publication.
+  content: We presented our research on the "Work Companion Robot" at IROS 2024 in Abu Dhabi, UAE.
+  link-text: IEEE Xplore
+  link: https://ieeexplore.ieee.org/abstract/document/10802698
 
 - time: "2024.06"
-  content: Our paper on the "work companion robot" and human-robot work collaboration is accepted to IROS 2024!
+  content: Our paper on the "Work Companion Robot" and human-robot work collaboration is accepted to IROS 2024!
 
 - time: "2023.07"
   content: I am honored to receive another year of CMU Presidential Fellowship.
