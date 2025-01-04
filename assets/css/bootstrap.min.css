@@ -10,8 +10,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -496,6 +494,7 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .small,
@@ -2040,6 +2039,7 @@ pre code {
   padding: 0.75rem 0;
   vertical-align: top;
   border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .table thead th {

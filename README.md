@@ -22,7 +22,7 @@ For customization of the workflow, please refer to the `package.json` file, unde
     npm run serve
     ```
 
-* Serve the website locally, preview **with** hot-reloading enabled. But be wary of the `jekyll` rebuilding process, which can purge the `_site/assets/js` directory, removing things built by `webpack`.
+* Serve the website locally, preview **with** hot-reloading enabled. But be wary of the `jekyll` rebuilding process, which can purge the `_site/assets/js` directory, removing things built by `webpack`. It is useful for tuning visual elements.
     ```bash
     npm run jekyll:watch
     ```
