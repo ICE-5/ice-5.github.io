@@ -25,17 +25,17 @@ title: YUNING WU
     <tbody>
       {% for project in site.data.portfolio.projects %}
       <tr>
+        <td style="padding: 10px 10px 10px 0;">
+
+          <h2><a href="{{ project.permalink }}">{{ project.title }}</a></h2>
+          <p class="text-bold">{{ project.description }}</p>
+          <p><small>{{ project.studio }}</small></p>
+          <p><small>{{ project.designer }}</small></p>
+        </td>
         <td style="width: 50%; padding: 10px 0">
           <a href="{{ project.permalink }}">
             <img src="{{ project.cover }}" alt="cover" width="100%" />
           </a>
-        </td>
-        <td style="padding: 10px;">
-          
-            <h2><a href="{{ project.permalink }}">{{ project.title }}</a></h2>
-          <p class="text-bold">{{ project.description }}</p>
-          <p><small>{{ project.studio }}</small></p>
-          <p><small>{{ project.designer }}</small></p>
         </td>
       </tr>
       {% endfor %}
