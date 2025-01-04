@@ -81,7 +81,7 @@
         const videos = carousel.querySelectorAll("video");
         videos.forEach((video, index) => {
             video.addEventListener("loadedmetadata", () => {
-                const duration = video.duration * 1000; // Convert seconds to milliseconds
+                const duration = (video.duration * 1000) - 500; // Convert seconds to milliseconds
                 const indicator = carousel.querySelectorAll(".carousel-indicators li")[index];
                 const item = carousel.querySelectorAll(".carousel-item")[index];
 
