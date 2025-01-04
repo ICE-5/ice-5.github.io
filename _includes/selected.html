@@ -22,46 +22,49 @@
 
           <!-- Text -->
           <td style="padding: 10px 0;">
-            <p>
-              <!-- Title -->
+
+            <!-- Title -->
             <h4 id="selected-{{ item.title | slugify }}" style="margin: 0">
               {{ item.title }}
             </h4>
 
-            <!-- Authors -->
-            {% if item.authors %}
-            {% for person in item.authors %}
-            {% if person == "Yuning Wu" or person == "Yuning Wu*" %}
-            <b class="text-medium">{{ person }}</b>
-            {% else %}
-            {{ person }}
-            {% endif %}
-            {% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-            {% endif %}
-            </br>
-
-            <!-- Occasion -->
-            {% if item.occasion %}
-            <span class="badge badge-dark">{{ item.occasion.badge }}</span> {{ item.occasion.name }}
-            {% endif %}
-            </br>
-
-            <!-- Links -->
-            <small>
-              {% if item.resources %}
-              {% for resource in item.resources %}
-              <a href="{{ resource.link }}" target="_blank" style="text-decoration: underline;">{{ resource.type }}</a>
-              {% unless forloop.last %} | {% endunless %}
+            <p>
+              <!-- Authors -->
+              {% if item.authors %}
+              {% for person in item.authors %}
+              {% if person == "Yuning Wu" or person == "Yuning Wu*" %}
+              <b class="text-medium">{{ person }}</b>
+              {% else %}
+              {{ person }}
+              {% endif %}
+              {% unless forloop.last %}, {% endunless %}
               {% endfor %}
               {% endif %}
-            </small>
+              <br>
+
+              <!-- Occasion -->
+              {% if item.occasion %}
+              <span class="badge badge-dark">{{ item.occasion.badge }}</span> {{ item.occasion.name }}
+              {% endif %}
+              <br>
+
+              <!-- Links -->
+              <small>
+                {% if item.resources %}
+                {% for resource in item.resources %}
+                <a href="{{ resource.link }}" target="_blank" style="text-decoration: underline;">{{ resource.type
+                  }}</a>
+                {% unless forloop.last %} | {% endunless %}
+                {% endfor %}
+                {% endif %}
+              </small>
             </p>
 
             <!-- Summary -->
             <p>
               {% if item.summary %}
-              <span class="small"><br>{{ item.summary }}</span>
+              <br>
+              <span class="small">{{ item.summary }}</span>
               {% endif %}
             </p>
           </td>
