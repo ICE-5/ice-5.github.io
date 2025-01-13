@@ -51,6 +51,7 @@
     - "Daniel Cardoso Llach"
   occasion:
     name: "Construction Robotics, Springer Nature, 2025."
+    badge: "Journal"
   summary: >
     TL;DR: This paper explores how robotics can be integrated into manual construction work, leveraging ethnography insights to inform the technology design of a robot prototype designed to assist construction workers driven by deep reinforcement learning approaches for adaptive social compliance and comfort. The study advocates for AI and robotic technology that supports, rather than replaces, skilled human labor.
   resources:
