@@ -53,7 +53,7 @@ const sources = [
         position: new THREE.Vector3(-0.118, -0.432, -1.673), 
         weight: 1.0, 
         id: "4",
-        text: "EXPLORER OF FUNDAMENTAL, ELEGANT INTELLIGENCE", 
+        text: "EXPLORER OF FUNDAMENTAL, ELEGANT FORMS OF INTELLIGENCE", 
         href: '#',
         link: null
     },
@@ -101,6 +101,11 @@ sources.forEach((source) => {
     link.href = `${source.href}`;
     link.className = 'source-link';
     link.style.position = 'absolute';
+
+    if (source.href === "#") {
+        link.style.textDecoration = 'none';
+    }
+
     linkContainer.appendChild(link);
 
     // Store the link reference for updating position later
@@ -112,10 +117,13 @@ style.innerHTML = `
     .source-link {
         position: absolute;
         color: #ffffff;
-        text-decoration: none;
+        text-decoration: underline;
         font-weight: bold;
         z-index: 10;
         pointer-events: auto;
+        width: 100px;
+        max-width: 200px;
+        text-align: left;
     }
 
     .source-link:hover {
@@ -397,6 +405,8 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.25;
 controls.autoRotate = true;
+controls.autoRotateSpeed = 1.0;
+controls.enableZoom = true;
 
 // Particle system setup
 const particles = ((points) => {
