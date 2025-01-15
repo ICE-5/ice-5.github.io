@@ -9,9 +9,6 @@
  * 
  * Author: Yuning Wu
  * Date: 2025.1
- *     // { position: new THREE.Vector3(-1.5, 0.0, 0.0), weight: 0.8 },
-    // { position: new THREE.Vector3(1.0, 0.5, 0.0), weight: 2.8 },
-    // { position: new THREE.Vector3(0.0, 0.25, 0.5), weight: 1.2 },
  */
 
 import * as THREE from 'three';
@@ -61,6 +58,16 @@ const sources = [
         link: null
     },
 ];
+
+const sourcePositions = new Float32Array(sources.length * 3);
+const sourceWeights = new Float32Array(sources.length);
+
+sources.forEach((source, index) => {
+    sourcePositions[index * 3] = source.position.x;
+    sourcePositions[index * 3 + 1] = source.position.y;
+    sourcePositions[index * 3 + 2] = source.position.z;
+    sourceWeights[index] = source.weight;
+});
 
 // Extension factor for edges
 const EDGE_EXTENSION = 1.15;
