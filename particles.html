@@ -1,0 +1,84 @@
+---
+layout: main_simple_black
+title: YUNING WU
+---
+
+
+
+<script src="/assets/js/particles.bundle.js"></script>
+
+<div class="container" style="position: relative; top: 80px; color: darkgrey; z-index: 1029;">
+    <div class="row">
+        <div class="col-4 text-left">
+            <p style="margin-bottom: 10px;">
+                <small>
+                    I am a thinker driven by the pursuit of fundamental truths—those elegant, graceful principles that
+                    underlie
+                    complexity. My perspectives are shaped by a fusion of disciplines: a deep understanding of AI, a
+                    designer’s
+                    3D spatial intuition, and the rigor of mathematical thought. These different facets of me flow
+                    seamlessly,
+                    inspiring a constant interplay of ideas. Whether exploring the depths of intelligence, crafting
+                    systems with
+                    elegance, or envisioning creative solutions, my approach is a convergence of curiosity and clarity,
+                    where
+                    each perspective fuels and complements the others.</small>
+            </p>
+
+            <p>
+                <small>
+                    Critical sources:
+                    <br>
+                    <a href="https://codepen.io/timseverien/pen/EmJNOR" target="_blank" style="color: darkgrey;">
+                        "Curl noise and fluid particle simulation" by Tim Severien
+                    </a>
+                    <br>
+                    <a href="https://dl.acm.org/doi/10.1145/566654.566636" target="_blank"
+                        style="color: darkgrey;">
+                        "Improving Noise" by Ken Perlin, ACM Transactions on Graphics
+                    </a>
+                    <br>
+                    <a href="https://github.com/cabbibo/glsl-curl-noise" target="_blank"
+                        style="color: darkgrey;">
+                        GLSL implementation of curl noise by Cabbibo
+                    </a>
+
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<style>
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /* Ensure it stays behind content */
+    }
+
+    #canvas-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /* Canvas stays behind content */
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        /* Content stays on top of canvas */
+        padding: 2rem;
+    }
+</style>
