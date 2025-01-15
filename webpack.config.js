@@ -3,8 +3,7 @@ const path = require('path');
 module.exports = {
     entry: {
         main: './assets/js/main.js',   // Entry point for main scripts
-        wave: './assets/js/wave.js', // Entry point for waves
-        cube: './assets/js/cube.js',   // Entry point for cube
+        particles: './assets/js/particles.js',   // Entry point for cube
     },
     output: {
         filename: '[name].bundle.js', // Output bundle name

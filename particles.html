@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37BK7GVGK2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-37BK7GVGK2');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>YUNING WU</title>
+    <link rel="icon" type="image/svg" href="/assets/img/favicon.png">
+
+    <!-- Bundled JS by Webpack -->
+    <script src="/assets/js/main.bundle.js"></script>
+
+    <!-- Customized font here -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Local, customized CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="color: white;">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html">
+            <p class="brand-title">YUNING WU</p>
+            <p class="brand-subtitle">AI+ROBOTICS RESEARCHER / ARCHITECT OF THINGS</p>
+        </a>
+        <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto">
+                
+                <li class="nav-item" role="presentation">
+                    <a href="/index.html" class="nav-link">
+                        SIDA-A
+                    </a>
+                </li>
+                
+                <li class="nav-item" role="presentation">
+                    <a href="/portfolio.html" class="nav-link">
+                        SIDE-B
+                    </a>
+                </li>
+                
+                <li class="nav-item" role="presentation">
+                    <a href="/particles.html" class="nav-link">
+                        SIDE-C
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+    /* Common styles for the navbar */
+    #mainNav {
+        background: transparent;
+        text-decoration: none;
+    }
+
+    #mainNav .navbar-brand {
+        padding: 0;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    #mainNav .navbar-brand:hover {
+        color: inherit;
+    }
+
+
+    #mainNav .navbar-brand .brand-title {
+        font-size: 12px;
+        line-height: 0.75;
+        font-weight: 900;
+    }
+
+    #mainNav .navbar-brand .brand-subtitle {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #mainNav .nav-link {
+        text-decoration: none;
+    }
+
+    #mainNav .nav-link:hover {
+        text-decoration: underline;
+    }
+
+    /* Ensure buttons like togglers inherit the color */
+    #mainNav .navbar-toggler {
+        color: inherit !important;
+    }
+
+    /* Ensure collapsible menu items inherit styles */
+    #mainNav .navbar-collapse .nav-item .nav-link {
+        color: inherit !important;
+    }
+
+    #mainNav a:hover {
+        color: inherit;
+        background-color: transparent;
+    }
+</style>
+
+<script src="/assets/js/particles.bundle.js"></script>
+
+<div class="container" style="position: relative; top: 80px; color: darkgrey; z-index: 1029;">
+    <div class="row">
+        <div class="col-4 text-left">
+            <p style="margin-bottom: 10px;">
+                <small>
+                    I am a thinker driven by the pursuit of fundamental truths—those elegant, graceful principles that
+                    underlie
+                    complexity. My perspectives are shaped by a fusion of disciplines: a deep understanding of AI, a
+                    designer’s
+                    3D spatial intuition, and the rigor of mathematical thought. These different facets of me flow
+                    seamlessly,
+                    inspiring a constant interplay of ideas. Whether exploring the depths of intelligence, crafting
+                    systems with
+                    elegance, or envisioning creative solutions, my approach is a convergence of curiosity and clarity,
+                    where
+                    each perspective fuels and complements the others.</small>
+            </p>
+
+            <p>
+                <small>
+                    Critical sources:
+                    <br>
+                    <a href="https://codepen.io/timseverien/pen/EmJNOR" target="_blank" style="color: darkgrey;">
+                        "Curl noise and fluid particle simulation" by Tim Severien
+                    </a>
+                    <br>
+                    <a href="https://dl.acm.org/doi/10.1145/566654.566636" target="_blank"
+                        style="color: darkgrey;">
+                        "Improving Noise" by Ken Perlin, ACM Transactions on Graphics
+                    </a>
+                    <br>
+                    <a href="https://github.com/cabbibo/glsl-curl-noise" target="_blank"
+                        style="color: darkgrey;">
+                        GLSL implementation of curl noise by Cabbibo
+                    </a>
+
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<style>
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /* Ensure it stays behind content */
+    }
+
+    #canvas-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /* Canvas stays behind content */
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        /* Content stays on top of canvas */
+        padding: 2rem;
+    }
+</style>
+
+
+<style>
+    body {
+        background-color: black;
+    }
+</style>
+
+</body>
+
+</html>
