@@ -3,7 +3,7 @@ import * as THREE from 'three';
 export const sources = [
     {
         position: new THREE.Vector3(0.0, 0.0, 0.0),
-        weight: 1.5,
+        weight: 1.8,
         id: "0",
     },
     {
@@ -32,7 +32,7 @@ export const simulationParam = {
     TEXTURE_SIZE: 512,
     PARTICLE_MASS: 1.0,
     VELOCITY_TERMINAL: 0.01,
-    CURL_RADIUS: 0.5,
+    CURL_RADIUS: 0.7,
     MAX_SOURCES: 10,
     SOURCE_EDGE_EXT: 1.15,
     SOURCE_RADIUS: 0.02

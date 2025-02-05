@@ -1,4 +1,4 @@
-// src/SceneManager.js
+// Adapted from: https://codepen.io/timseverien/pen/EmJNOR
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
@@ -6,7 +6,7 @@ export class SceneManager {
     constructor() {
         this.scene = new THREE.Scene();
 
-        // Set up camera – note the far plane is very distant
+        // Create camera
         this.camera = new THREE.PerspectiveCamera(
             45,
             window.innerWidth / window.innerHeight,
@@ -25,7 +25,7 @@ export class SceneManager {
         this.controls.enableDamping = true;
         this.controls.dampingFactor = 0.25;
         this.controls.autoRotate = true;
-        this.controls.autoRotateSpeed = 1.0;
+        this.controls.autoRotateSpeed = 1.5;
         this.controls.enableZoom = true;
     }
 

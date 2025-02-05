@@ -1,9 +1,10 @@
-#pragma glslify: snoise = require('./simplexNoise.glsl')
+#pragma glslify:snoise=require('./simplexNoise.glsl')
 
+// From: https://github.com/cabbibo/glsl-curl-noise
 vec3 snoiseVec3(vec3 x){
     float s=snoise(x);
-    float s1=snoise(vec3(x.y-19.1,x.z+33.4,x.x+47.2));
-    float s2=snoise(vec3(x.z+74.2,x.x-124.5,x.y+99.4));
+    float s1=snoise(vec3(x.y-20.3,x.z+32.7,x.x+48.1));
+    float s2=snoise(vec3(x.z+75.8,x.x-126.2,x.y+97.6));
     return vec3(s,s1,s2);
 }
 
@@ -28,4 +29,4 @@ vec3 curlNoise(vec3 p){
     return normalize(vec3(x,y,z)*divisor);
 }
 
-#pragma glslify: export(curlNoise);
+#pragma glslify:export(curlNoise);
