@@ -1,0 +1,17 @@
+- title: EXP.1 Shaping Macrostructure within Diffusive Flows
+  description: >
+    This series of particle systems is designed to visualize my sparks, ideas, and computational thinking in AI/ML research. In this experiment, <tt><strong>EXP.1</strong></tt>, the continuous flow emerges from the collective behavior of homogeneous discrete particles. The experiment visualizes how adding gravitational forces can shape—or “tame”—a seemingly complex and diffusive spatial system into a temporarily stable state with subtle macrostructural flows.
+  references:
+    - name: "Ken Perlin. <i>Improving noise.</i> ACM Transactions on Graphics, 2002."
+      link: "https://dl.acm.org/doi/10.1145/566654.566636"
+    - name: "Tim Severien. <i>Stable curl noise particles.</i>"
+      link: "https://codepen.io/timseverien/pen/EmJNOR"
+    - name: "Isaac Cohen. <i>GLSL implementation of curl noise.</i>"
+      link: "https://github.com/cabbibo/glsl-curl-noise"
+    - name: "Patricio Gonzalez Vivo. <i>GLSL implementation of simplex noise.</i>"
+      link: "https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83#simplex-noise"
+    - name: "The Book of Shaders. <i>Chapter 11. Noise.</i>"
+      link: "https://thebookofshaders.com/11/"
+    - name: "NVIDIA Developer. <i>Geometry instancing on GPU.</i>"
+      link: "https://developer.nvidia.com/gpugems/gpugems2/part-i-geometric-complexity/chapter-3-inside-geometry-instancing"
+

@@ -38,6 +38,9 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
+    "webpack-dev-server": "^5.2.0",
+    "raw-loader": "^4.0.2",
+    "glslify": "^7.1.1",
+    "glslify-loader": "^2.0.0"
   }
 }

@@ -3,55 +3,41 @@ layout: main_simple_black
 title: YUNING WU
 ---
 
-
-
 <script src="/assets/js/particles.bundle.js"></script>
 
-<div class="container" style="position: relative; top: 80px; color: rgba(255, 255, 255, 0.85); z-index: 1029;">
+<div class="container" style="position: relative; top: 80px; z-index: 1029; color: rgba(255, 255, 255, 0.85)">
     <div class="row">
         <div class="col-4 text-left">
-            <p style="margin-bottom: 10px;">
+            <p style="margin-bottom: 125px; color: rgba(255, 255, 255, 0.5)">
                 <small>
                     I am a thinker and practitioner driven by the pursuit of fundamental truths—elegant, graceful
                     principles that reveal beauty within complexity. My perspective is shaped by a fusion of
                     disciplines: a deep understanding of AI/ML, a designer’s 3D spatial intuition, and the rigor of
-                    mathematical thought. These facets harmonize seamlessly, inspiring a dynamic interplay of ideas.
-                    Whether exploring intelligence, crafting systems and agents, or envisioning creative solutions, my
-                    approach converges curiosity and clarity, where each perspective enhances the others.</small>
+                    mathematical thought. These facets harmonizes and inspires a dynamic interplay of ideas.
+                </small>
             </p>
+
+            {% for item in site.data.particles %}
+            <h2 style="font-family: monospace; margin-bottom: 10px;">
+                {{ item.title }}
+            </h2>
 
             <p style="margin-bottom: 10px;">
                 <small>
-                    These particle systems are crafted to help visualize my thinking in AI/ML research.
+                    {{ item.description }}
                 </small>
             </p>
 
             <p style="font-size: 7.5pt;">
-                References and credits: 
-                
+                References and credits:
+                {% for ref in item.references %}
                 <br>
-                <a href="https://dl.acm.org/doi/10.1145/566654.566636" target="_blank" style="color: rgba(255, 255, 255, 0.85);">
-                    Ken Perlin. <i>Improving noise.</i> ACM Transactions on Graphics, 2002. <i class="fa fa-external-link" aria-hidden="true"></i>
+                <a href="{{ ref.link }}" target="_blank" style="color: rgba(255, 255, 255, 0.85);">
+                    {{ ref.name }} <i class="fa fa-external-link" aria-hidden="true"></i>
                 </a>
-                <br>
-                <a href="https://codepen.io/timseverien/pen/EmJNOR" target="_blank" style="color: rgba(255, 255, 255, 0.85);">
-                    Tim Severien. <i>Stable curl noise particles.</i> <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-                <br>
-                <a href="https://github.com/cabbibo/glsl-curl-noise" target="_blank" style="color: rgba(255, 255, 255, 0.85);">
-                    Isaac Cohen. <i>GLSL implementation of curl noise.</i> <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-                <br>
-                <a href="https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83#simplex-noise"
-                    target="_blank" style="color: rgba(255, 255, 255, 0.85);">
-                    Patricio Gonzalez Vivo. <i>GLSL implementation of simplex noise.</i> <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-                <br>
-                <a href="https://developer.nvidia.com/gpugems/gpugems2/part-i-geometric-complexity/chapter-3-inside-geometry-instancing"
-                    target="_blank" style="color: rgba(255, 255, 255, 0.85);">
-                    NVIDIA Developer. <i>Geometry instancing on GPU.</i> <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
+                {% endfor %}
             </p>
+            {% endfor %}
         </div>
     </div>
 </div>
