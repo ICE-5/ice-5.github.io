@@ -1,29 +1,63 @@
 const path = require('path');
+const WebpackObfuscator = require('webpack-obfuscator');
 
 module.exports = {
     entry: {
-        main: './assets/js/main.js',   // Entry point for main scripts
-        // particles: './assets/js/particles.js',
+        main: './assets/js/main.js',
         particles: './assets/js/curl-noise/main.js',
     },
     output: {
-        filename: '[name].bundle.js', // Output bundle name
-        path: path.resolve(__dirname, '_site/assets/js'), // Output to Jekyll's _site directory
-        publicPath: '/assets/js/', // Match the URL path where your assets will be served
-        clean: true, // Clear out the output directory before building
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, '_site/assets/js'),
+        publicPath: '/assets/js/',
+        clean: true,
     },
-    mode: 'development', // Set to 'production' for optimized builds
+    mode: "production",
     performance: {
-        hints: false, // Turn off size warnings
+        hints: false,
     },
-    // watch: isDevelopment, // Automatically rebuild when files change
+    optimization: {
+        minimize: true,
+    },
+    plugins: [
+        new WebpackObfuscator(
+            {
+                rotateStringArray: true,
+                stringArray: true,
+                stringArrayThreshold: 0.75,
+                compact: true,
+                controlFlowFlattening: true,
+                controlFlowFlatteningThreshold: 0.75,
+                deadCodeInjection: true,
+                deadCodeInjectionThreshold: 0.4,
+                debugProtection: true,
+                debugProtectionInterval: true,
+                disableConsoleOutput: true,
+                selfDefending: true,
+                reservedStrings: [
+                    "/**",
+                    " * @license",
+                    " * Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+                    " * Copyright 2025 - [Your Name]",
+                    " * Portions of this code reference publicly available GitHub Gists and code snippets.",
+                    " * See source files for attribution details.",
+                    " * You must provide attribution when using this work.",
+                    " * Non-commercial use only.",
+                    " * Derivative works must be licensed under CC BY-NC-SA 4.0.",
+                    " * Full License: https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    " */"
+                ]
+            },
+            ["*.bundle.js"]
+        ),
+    ],
     module: {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader', // Add Babel if needed for ES6+
+                    loader: 'babel-loader',
                 },
             },
             {
