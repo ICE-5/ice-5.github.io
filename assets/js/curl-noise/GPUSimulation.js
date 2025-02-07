@@ -101,4 +101,38 @@ export class GPUSimulation {
     getPositionTexture() {
         return this.gpuCompute.getCurrentRenderTarget(this.variablePosition).texture;
     }
+
+    getVelocityTexture() {
+        return this.gpuCompute.getCurrentRenderTarget(this.variableVelocity).texture;
+    }
+
+    getMaxFromTarget(target="velocity") {
+        
+        let rt;
+        if (target === "velocity") {
+            rt = this.gpuCompute.getCurrentRenderTarget(this.variableVelocity);
+        }
+        else if (target === "position") {
+            rt = this.gpuCompute.getCurrentRenderTarget(this.variablePosition);
+        }
+        else {
+            console.error("Invalid target");
+            return;
+        }
+        const width = rt.width;
+        const height = rt.height;
+        const size = width * height * 4;
+        const buffer = new Float32Array(size);
+        this.renderer.readRenderTargetPixels(rt, 0, 0, width, height, buffer);
+
+        let max = 0;
+        for (let i = 0; i < size; i += 4) {
+            const x = buffer[i];
+            const y = buffer[i + 1];
+            const z = buffer[i + 2];
+            const magnitude = Math.sqrt(x * x + y * y + z * z);
+            max = Math.max(max, magnitude);
+        }
+        return max;
+    }
 }

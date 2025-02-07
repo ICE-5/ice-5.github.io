@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import shaderPointFragment from './shaders/pointFragment.glsl';
 import shaderPointVertex from './shaders/pointVertex.glsl';
+import { simulationParam } from './config';
 
 export class ParticleSystem {
     constructor(textureWidth, textureHeight) {
@@ -27,6 +28,8 @@ export class ParticleSystem {
         const material = new THREE.ShaderMaterial({
             uniforms: {
                 texturePosition: { value: null },
+                textureVelocity: { value: null },
+                maxForce: { value: simulationParam.MAX_FORCE },
             },
             fragmentShader: shaderPointFragment,
             vertexShader: shaderPointVertex,
@@ -41,7 +44,8 @@ export class ParticleSystem {
         return new THREE.Points(geometry, material);
     }
 
-    updateTexture(texture) {
-        this.material.uniforms.texturePosition.value = texture;
+    updateTexture(positionTexture, velocityTexture) {
+        this.material.uniforms.texturePosition.value = positionTexture;
+        this.material.uniforms.textureVelocity.value = velocityTexture;
     }
 }

@@ -68,7 +68,7 @@ export class StableCurlNoiseSimulation {
 
         // Update the simulation and refresh the particle system texture
         this.simulation.compute(delta);
-        this.particleSystem.updateTexture(this.simulation.getPositionTexture());
+        this.particleSystem.updateTexture(this.simulation.getPositionTexture(), this.simulation.getVelocityTexture());
 
         // Update DOM link positions (for the overlaid source links)
         this.sourceManager.updateLabelPositions();
@@ -76,6 +76,9 @@ export class StableCurlNoiseSimulation {
         // Update orbit controls and render the scene
         this.sceneManager.controls.update();
         this.sceneManager.renderer.render(this.sceneManager.scene, this.sceneManager.camera);
+
+        // DEBUG: Log the velocity
+        // console.log(this.simulation.getMaxFromTarget("velocity"));
     }
 }
 

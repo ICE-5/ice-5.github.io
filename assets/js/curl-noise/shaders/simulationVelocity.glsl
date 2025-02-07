@@ -1,6 +1,5 @@
 #pragma glslify:curlNoise=require('./curlNoise.glsl')
 
-
 uniform vec3 sourcePositions[10];
 uniform float sourceWeights[10];
 
@@ -25,6 +24,6 @@ void main(){
         totalPull+=min(pullForce,VELOCITY_TERMINAL)*normalize(direction);
     }
     
-    vec3 newVelocity=velocity+curlVelocity*curlForce+totalPull*7.;
+    vec3 newVelocity=velocity+curlVelocity*curlForce+totalPull*8.;
     gl_FragColor=vec4(newVelocity,1.);
 }
