@@ -8,6 +8,9 @@ uniform float PARTICLE_MASS;
 uniform float VELOCITY_TERMINAL;
 uniform float CURL_RADIUS;
 
+uniform vec3 impulsePosition;
+uniform float impulseStrength;
+
 void main(){
     vec2 uv=gl_FragCoord.xy/resolution.xy;
     vec3 position=texture2D(texturePosition,uv).xyz;
@@ -23,7 +26,11 @@ void main(){
         float pullForce=abs((sourceWeights[i]*PARTICLE_MASS)/(distance*distance));
         totalPull+=min(pullForce,VELOCITY_TERMINAL)*normalize(direction);
     }
+
+    vec3 impulseDirection=impulsePosition-position;
+    float impulseDistance=length(impulseDirection) + 0.0001;
+    vec3 impulseForce=impulseStrength*normalize(impulseDirection)/(impulseDistance*impulseDistance);
     
-    vec3 newVelocity=velocity+curlVelocity*curlForce+totalPull*8.;
+    vec3 newVelocity=velocity+curlVelocity*curlForce+totalPull*8.+impulseForce*0.5;
     gl_FragColor=vec4(newVelocity,1.);
 }

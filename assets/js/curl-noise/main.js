@@ -27,7 +27,7 @@ export class StableCurlNoiseSimulation {
         this.sceneManager = new SceneManager();
 
         // Set up the simulation (GPUComputationRenderer and simulation textures)
-        this.simulation = new GPUSimulation(this.sceneManager.renderer);
+        this.simulation = new GPUSimulation(this.sceneManager.renderer, this.sceneManager.camera);
 
         // Create the particle system; note that the simulation textures determine the total particle count.
         this.particleSystem = new ParticleSystem(

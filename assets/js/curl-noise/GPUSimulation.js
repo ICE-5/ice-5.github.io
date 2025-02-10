@@ -5,8 +5,9 @@ import shaderSimulationVelocity from './shaders/simulationVelocity.glsl';
 import { sources, simulationParam } from './config';
 
 export class GPUSimulation {
-    constructor(renderer) {
+    constructor(renderer, camera) {
         this.renderer = renderer;
+        this.camera = camera;
 
         // Texture dimensions determine the number of particles.
         this.TEXTURE_SIZE = simulationParam.TEXTURE_SIZE;
@@ -24,6 +25,8 @@ export class GPUSimulation {
         if (error) {
             console.error('GPUComputationRenderer error:', error);
         }
+
+        window.addEventListener("click", (event) => this._handleMouseClick(event));
     }
 
     _initTextures() {
@@ -81,6 +84,10 @@ export class GPUSimulation {
         this.variableVelocity.material.uniforms.sourcePositions = { value: sourcePositionsArray };
         this.variableVelocity.material.uniforms.sourceWeights = { value: sourceWeightsArray };
 
+        // Set impulse effect uniforms
+        this.variableVelocity.material.uniforms.impulsePosition = { value: new THREE.Vector3(0, 0, 0) };
+        this.variableVelocity.material.uniforms.impulseStrength = { value: 0.0 };
+
         // Set variable dependencies (so that each shader has access to both textures)
         this.gpuCompute.setVariableDependencies(this.variableVelocity, [this.variableVelocity, this.variablePosition]);
         this.gpuCompute.setVariableDependencies(this.variablePosition, [this.variableVelocity, this.variablePosition]);
@@ -90,6 +97,25 @@ export class GPUSimulation {
         this.variablePosition.wrapT = THREE.RepeatWrapping;
         this.variableVelocity.wrapS = THREE.RepeatWrapping;
         this.variableVelocity.wrapT = THREE.RepeatWrapping;
+    }
+
+    _handleMouseClick(event) {
+        const mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+        const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+        const impulseStrength = 10.0; // Adjust based on effect strength
+    
+        // Convert screen-space click to world-space
+        const vector = new THREE.Vector3(mouseX, mouseY, 0.5);
+        vector.unproject(this.camera);  // Assuming `this.camera` exists
+    
+        // Update uniforms with impulse force
+        this.variableVelocity.material.uniforms.impulsePosition.value.copy(vector);
+        this.variableVelocity.material.uniforms.impulseStrength.value = impulseStrength;
+    
+        // Reset impulse effect after a short delay to avoid continuous perturbation
+        setTimeout(() => {
+            this.variableVelocity.material.uniforms.impulseStrength.value = 0.0;
+        }, 100);
     }
 
     compute(delta) {
