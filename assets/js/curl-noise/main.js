@@ -5,7 +5,7 @@
  * https://codepen.io/timseverien/pen/EmJNOR
  * 
  * Significant modifications and optimizations may have been made by me, including:
- * - Additional features such as gravity, damping, and source links
+ * - Additional features such as gravity, damping, forces, gradients, pertubation, etc.
  * - Project structure and modularity
  * - GLSL shader optimization
  * - Code refactoring
