@@ -64,7 +64,10 @@ export class GPUSimulation {
 
         this.variableVelocity.material.uniforms.PARTICLE_MASS = { value: simulationParam.PARTICLE_MASS };
         this.variableVelocity.material.uniforms.VELOCITY_TERMINAL = { value: simulationParam.VELOCITY_TERMINAL };
-        this.variableVelocity.material.uniforms.CURL_RADIUS = { value: simulationParam.CURL_RADIUS };
+        this.variableVelocity.material.uniforms.CURL_RADIUS_MIN = { value: simulationParam.CURL_RADIUS_MIN };
+        this.variableVelocity.material.uniforms.CURL_RADIUS_DELTA = { value: simulationParam.CURL_RADIUS_DELTA };
+        this.variableVelocity.material.uniforms.CURL_NOISE_SPEEDUP = { value: simulationParam.CURL_NOISE_SPEEDUP };
+        this.variableVelocity.material.uniforms.time = { value: 0.0 };
 
         const numSources = sources.length;
         this.variableVelocity.material.uniforms.NUM_SOURCES = { value: numSources };
@@ -121,6 +124,7 @@ export class GPUSimulation {
     compute(delta) {
         // Limit delta so that the simulation doesn’t “explode”
         this.variablePosition.material.uniforms.delta.value = Math.min(delta, 0.5);
+        this.variableVelocity.material.uniforms.time.value += delta;
         this.gpuCompute.compute();
     }
 

@@ -2,12 +2,44 @@ import * as THREE from 'three';
 import shaderPointFragment from './shaders/pointFragment.glsl';
 import shaderPointVertex from './shaders/pointVertex.glsl';
 import { simulationParam } from './config';
+import { texture } from 'three/tsl';
+import { init } from 'tocbot';
 
 export class ParticleSystem {
     constructor(textureWidth, textureHeight) {
         this.textureWidth = textureWidth;
         this.textureHeight = textureHeight;
+        this.initRadius = simulationParam.INIT_RADIUS;
+        this.initFromZero = simulationParam.INIT_FROM_ZERO;
         this.points = this._createPoints();
+    }
+
+    _createEmptyTexture() {
+        const size = this.textureWidth * this.textureHeight;
+        const data = new Float32Array(size * 4).fill(0);
+
+        const texture = new THREE.DataTexture(
+            data, this.textureWidth, this.textureHeight, THREE.RGBAFormat, THREE.FloatType
+        );
+        texture.needsUpdate = false;
+        return texture;
+    }
+
+    _createRandomTexture() {
+        const size = this.textureWidth * this.textureHeight;
+        const data = new Float32Array(size * 4).fill(0);
+
+        for (let i = 0; i < size; i++) {
+            data[i * 4] = (Math.random() - 0.5) * this.initRadius * 2;
+            data[i * 4 + 1] = (Math.random() - 0.5) * this.initRadius * 2;
+            data[i * 4 + 2] = (Math.random() - 0.5) * this.initRadius * 2;
+        }
+
+        const texture = new THREE.DataTexture(
+            data, this.textureWidth, this.textureHeight, THREE.RGBAFormat, THREE.FloatType
+        );
+        texture.needsUpdate = false;
+        return texture;
     }
 
     _createPoints() {
@@ -25,9 +57,14 @@ export class ParticleSystem {
         geometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
         geometry.setAttribute('reference', new THREE.BufferAttribute(references, 2));
 
+        const initialPositionTexture = null;
+        if (!this.initFromZero) {
+            const initialPositionTexture = this._createRandomTexture();
+        } 
+
         const material = new THREE.ShaderMaterial({
             uniforms: {
-                texturePosition: { value: null },
+                texturePosition: { value: initialPositionTexture },
                 textureVelocity: { value: null },
                 maxForce: { value: simulationParam.MAX_FORCE },
             },

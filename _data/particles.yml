@@ -1,6 +1,7 @@
-- title: EXP.1 Shaping Macrostructure within Diffusive Flows
+- title: "Fluidity vs. Stability: Shaping Macrostructure in Diffusive Flows"
+  exp: 1
   description: >
-    This series of particle systems is designed to visualize my sparks, ideas, and computational thinking in AI/ML research. In this experiment, <tt><strong>EXP.1</strong></tt>, the continuous flow emerges from the collective behavior of homogeneous discrete particles. The experiment visualizes how adding gravitational forces can shape—or “tame”—a seemingly complex and diffusive spatial system into a temporarily stable state with subtle macrostructural flows.
+    This series of particle systems is designed to visualize my sparks, ideas, and computational thinking in AI/ML research. In this experiment, <tt><strong>EXP-1</strong></tt>, the continuous flow emerges from the collective behavior of homogeneous discrete particles. The experiment aims to how adding gravitational forces can shape—or “tame”—a seemingly complex and diffusive system into a temporarily stable state with subtle macrostructures.
   references:
     - name: "Ken Perlin. <i>Improving noise.</i> ACM Transactions on Graphics, 2002."
       link: "https://dl.acm.org/doi/10.1145/566654.566636"
