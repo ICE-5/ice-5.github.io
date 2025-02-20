@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         main: './assets/js/main.js',
         particles: './assets/js/curl-noise/main.js',
+        // neurons: './assets/js/mlp3d/main.js',
     },
     output: {
         filename: '[name].bundle.js',
@@ -38,7 +39,7 @@ module.exports = {
                     "/**",
                     " * @license",
                     " * Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
-                    " * Copyright 2025 - [Your Name]",
+                    " * Copyright 2025 - Yuning Wu",
                     " * Portions of this code reference publicly available GitHub Gists and code snippets.",
                     " * See source files for attribution details.",
                     " * You must provide attribution when using this work.",
