@@ -1,0 +1,17 @@
+/**
+ * @license
+ * Copyright 2010-2024 Three.js Authors
+ * SPDX-License-Identifier: MIT
+ */
+
+/**
+ * @license
+ * Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+ * Copyright 2025 - Yuning Wu
+ * Portions of this code reference publicly available GitHub Gists and code snippets.
+ * See source files for attribution details.
+ * You must provide attribution when using this work.
+ * Non-commercial use only.
+ * Derivative works must be licensed under CC BY-NC-SA 4.0.
+ * Full License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+ */
