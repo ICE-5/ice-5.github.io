@@ -5,7 +5,7 @@ module.exports = {
     entry: {
         main: './assets/js/main.js',
         particles: './assets/js/curl-noise/main.js',
-        neurons: './assets/js/mlp3d/main.js',
+        // neurons: './assets/js/mlp3d/main.js',
     },
     output: {
         filename: '[name].bundle.js',
