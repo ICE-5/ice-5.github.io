@@ -8,34 +8,40 @@ title: YUNING WU
 <div class="container" style="position: relative; top: 80px; z-index: 1029; color: rgba(255, 255, 255, 0.85)">
     <div class="row">
         <div class="col-5 text-left">
-            <p style="margin-bottom: 100px; color: rgba(255, 255, 255, 0.5)">
-                <small>
-                    I am a thinker and practitioner driven by the pursuit of fundamental truths—elegant, graceful
-                    principles that reveal beauty within complexity. My perspective is shaped by a fusion of
-                    disciplines: a deep understanding of AI/ML, a designer’s 3D spatial intuition, and the rigor of
-                    mathematical thought. These facets harmonizes and inspires a dynamic interplay of ideas.
-                </small>
+            <p class="text-normal">
+                I am a researcher, designer, and practitioner driven by the pursuit of fundamental truths—elegant,
+                universal principles that reveal beauty within complexity. My perspective is shaped by a fusion of
+                disciplines: a deep understanding of AI/ML, a well-honed spatial intuition, and the rigor of
+                mathematical thought. These facets harmonize, sparking a dynamic interplay of ideas. My work is a
+                continuous synthesis of art and science, a dance of creativity and logic, a journey of discovery and
+                invention.
+            </p>
+
+            <p class="text-small" style="margin-top: 10px; margin-bottom: 100px">
+                <strong>
+                    CREATIVE TECHNOLOGIST ｜
+                    <a href="index.html">AI+ROBOTICS RESEARCHER</a> |
+                    <a href="portfolio.html">ARCHITECT OF SPACES AND SYSTEMS</a>
+                </strong>
             </p>
 
             {% for item in site.data.particles %}
-            <p style="font-size: 7pt;">
+            <p class="text-small">
                 PARTICLES LAB ｜ <strong>EXP-{{ item.exp }}</strong>
             </p>
-            <h2 style="font-family: monospace; font-size: 15px; margin-bottom: 10px;">
+            <h2 class="text-large" style="font-family: monospace;">
                 {{ item.title }}
             </h2>
 
-            <p style="margin-bottom: 10px;">
-                <small>
-                    {{ item.description }}
-                </small>
+            <p class="text-normal" style="margin-top: 10px;">
+                {{ item.description }}
             </p>
 
-            <p style="font-size: 7pt;">
+            <p class="text-small" style="margin-top: 10px;">
                 References
                 {% for ref in item.references %}
                 <br>
-                <a href="{{ ref.link }}" target="_blank" style="color: rgba(255, 255, 255, 0.85);">
+                <a href="{{ ref.link }}" target="_blank">
                     {{ ref.name }} <i class="fa fa-external-link" aria-hidden="true"></i>
                 </a>
                 {% endfor %}
@@ -50,11 +56,10 @@ title: YUNING WU
     canvas {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 150px;
         width: 100%;
         height: 100%;
         z-index: -1;
-        /* Ensure it stays behind content */
     }
 
     #canvas-container {
@@ -64,13 +69,27 @@ title: YUNING WU
         width: 100%;
         height: 100%;
         z-index: -1;
-        /* Canvas stays behind content */
     }
 
     .content {
         position: relative;
         z-index: 1;
-        /* Content stays on top of canvas */
         padding: 2rem;
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .text-small {
+        font-size: 9px;
+    }
+
+    .text-normal {
+        font-size: 11px;
+    }
+
+    .text-large {
+        font-size: 15px;
     }
 </style>
