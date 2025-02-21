@@ -5,7 +5,7 @@ module.exports = {
     entry: {
         main: './assets/js/main.js',
         particles: './assets/js/curl-noise/main.js',
-        heat: './assets/js/heat/main.js',
+        // heat: './assets/js/heat/main.js',
     },
     output: {
         filename: '[name].bundle.js',
