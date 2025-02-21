@@ -20,9 +20,6 @@ export class SceneManager {
         this.renderer.setPixelRatio(window.devicePixelRatio);
         this.renderer.setSize(window.innerWidth, window.innerHeight);
 
-        this.renderer.domElement.style.width = "100vw";
-        this.renderer.domElement.style.height = "100vh";
-
         // Create orbit controls for the camera
         this.controls = new OrbitControls(this.camera, this.renderer.domElement);
         this.controls.enableDamping = true;

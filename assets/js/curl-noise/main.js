@@ -1,11 +1,11 @@
 /**
- * Particle Simulation: Stable Curl Noise Flow
+ * Particles Lab: Fluidity vs. Stability: Shaping Dynamic Macrostructure Within Diffusive Flows
  * 
- * This code is based on the original work by Tim Severien, available at:
+ * Part of this code is based on the original work by Tim Severien, available at:
  * https://codepen.io/timseverien/pen/EmJNOR
  * 
- * Significant modifications and optimizations may have been made by me, including:
- * - Additional features such as gravity, damping, forces, gradients, pertubation, etc.
+ * Significant features and refactoring have been made by me, including:
+ * - Features such as gravity, damping, forces, gradients, pertubation, etc.
  * - Project structure and modularity
  * - GLSL shader optimization
  * - Code refactoring
