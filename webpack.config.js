@@ -1,4 +1,5 @@
 const path = require('path');
+const { mod } = require('three/tsl');
 const WebpackObfuscator = require('webpack-obfuscator');
 
 module.exports = {
@@ -14,12 +15,15 @@ module.exports = {
         clean: true,
     },
     mode: "production",
+    // mode: "development",
     performance: {
         hints: false,
     },
     optimization: {
         minimize: true,
+        // minimize: false,
     },
+    // devtool: 'source-map',
     plugins: [
         new WebpackObfuscator(
             {

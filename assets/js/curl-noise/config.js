@@ -30,8 +30,6 @@ export const sources = [
 
 export const simulationParam = {
     TEXTURE_SIZE: 512,
-    INIT_RADIUS: 1.0,
-    INIT_FROM_ZERO: false,
     PARTICLE_MASS: 1.0,
     VELOCITY_TERMINAL: 0.01,
     CURL_RADIUS_MIN: 0.55,

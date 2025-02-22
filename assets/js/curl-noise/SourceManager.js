@@ -9,6 +9,8 @@ export class SourceManager {
         this.scene = scene;
         this.sources = sources;
         this._createLabelContainer();
+        this.addSources();
+        this.addEdges();
     }
 
     _createLabelContainer() {
@@ -18,7 +20,6 @@ export class SourceManager {
         this.labelContainer.style.top = '0';
         this.labelContainer.style.left = '0';
         this.labelContainer.style.pointerEvents = 'none';
-
 
         document.body.appendChild(this.labelContainer);
         this._createLabels();

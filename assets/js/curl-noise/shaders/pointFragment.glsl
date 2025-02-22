@@ -13,5 +13,5 @@ void main() {
 
     vec3 particleColor = mix(colorA, colorB, normalizedForce);
 
-    gl_FragColor = vec4(particleColor, 0.15);
+    gl_FragColor = vec4(particleColor, 0.25);
 }

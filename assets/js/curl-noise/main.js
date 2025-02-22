@@ -23,28 +23,20 @@ import { SourceManager } from './SourceManager.js';
 
 export class StableCurlNoiseSimulation {
     constructor() {
-        // Set up the scene (renderer, camera, controls, etc.)
+        // Scene setup (renderer, camera, controls, etc.)
         this.sceneManager = new SceneManager();
 
-        // Set up the simulation (GPUComputationRenderer and simulation textures)
+        // GPU simulation
         this.simulation = new GPUSimulation(this.sceneManager.renderer, this.sceneManager.camera);
 
-        // Create the particle system; note that the simulation textures determine the total particle count.
-        this.particleSystem = new ParticleSystem(
-            this.simulation.TEXTURE_WIDTH,
-            this.simulation.TEXTURE_HEIGHT
-        );
+        // Particle system
+        this.particleSystem = new ParticleSystem();
         this.sceneManager.scene.add(this.particleSystem.points);
 
-        // Create the sources (spheres, edges, and DOM links)
+        // Sources (spheres, edges, and DOM links)
         this.sourceManager = new SourceManager(this.sceneManager.camera, this.sceneManager.scene);
-        this.sourceManager.addSources();
-        this.sourceManager.addEdges();
 
-        // Append the renderer’s DOM element
-        document.body.appendChild(this.sceneManager.renderer.domElement);
-
-        // Set up window resizing
+        // Window resizing
         window.addEventListener('resize', () => this.onResize());
         this.onResize();
 
@@ -62,7 +54,7 @@ export class StableCurlNoiseSimulation {
     animate() {
         requestAnimationFrame(() => this.animate());
 
-        const now = Date.now() / 1000;
+        const now = Date.now() / 1000;;
         const delta = now - this.previousFrame;
         this.previousFrame = now;
 
@@ -76,9 +68,6 @@ export class StableCurlNoiseSimulation {
         // Update orbit controls and render the scene
         this.sceneManager.controls.update();
         this.sceneManager.renderer.render(this.sceneManager.scene, this.sceneManager.camera);
-
-        // DEBUG: Log the velocity
-        // console.log(this.simulation.getMaxFromTarget("velocity"));
     }
 }
 

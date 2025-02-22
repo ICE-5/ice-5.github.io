@@ -10,11 +10,10 @@ export class GPUSimulation {
         this.camera = camera;
 
         // Texture dimensions determine the number of particles.
-        this.TEXTURE_SIZE = simulationParam.TEXTURE_SIZE;
-        this.TEXTURE_HEIGHT = this.TEXTURE_SIZE;
-        this.TEXTURE_WIDTH = this.TEXTURE_SIZE * 2;
+        this.textureSize = simulationParam.TEXTURE_SIZE;
+        this.particleCount = this.textureSize * this.textureSize;
 
-        this.gpuCompute = new GPUComputationRenderer(this.TEXTURE_WIDTH, this.TEXTURE_HEIGHT, this.renderer);
+        this.gpuCompute = new GPUComputationRenderer(this.textureSize, this.textureSize, this.renderer);
         this.dataPosition = this.gpuCompute.createTexture();
         this.dataVelocity = this.gpuCompute.createTexture();
 
@@ -30,7 +29,7 @@ export class GPUSimulation {
     }
 
     _initTextures() {
-        const textureArraySize = this.TEXTURE_WIDTH * this.TEXTURE_HEIGHT * 4;
+        const textureArraySize = this.particleCount * 4;
         for (let i = 0; i < textureArraySize; i += 4) {
             const radius = (1 - Math.pow(Math.random(), 3)) * 1;
             const azimuth = Math.random() * Math.PI;
