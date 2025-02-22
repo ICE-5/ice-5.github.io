@@ -131,10 +131,16 @@
 </nav>
 
 <style>
-    /* Common styles for the navbar */
     #mainNav {
         background: transparent;
         text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    @media (max-width: 991px) {
+        #mainNav {
+            background: rgba(0, 0, 0, 0.75);
+        }
     }
 
     #mainNav .navbar-brand {
@@ -268,7 +274,7 @@
         position: absolute;
         top: 0;
         left: 0px;
-        width: 100% !important;
+        width: 100vw !important;
         z-index: -1;
     }
 

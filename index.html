@@ -353,10 +353,16 @@
 </nav>
 
 <style>
-    /* Common styles for the navbar */
     #mainNav {
         background: transparent;
         text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    @media (max-width: 991px) {
+        #mainNav {
+            background: none;
+        }
     }
 
     #mainNav .navbar-brand {
