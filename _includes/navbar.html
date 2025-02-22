@@ -91,10 +91,16 @@
 </nav>
 
 <style>
-    /* Common styles for the navbar */
     #mainNav {
         background: transparent;
         text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    @media (max-width: 991px) {
+        #mainNav {
+            background: {{ include.nav-bg | default: 'rgba(0, 0, 0, 0.75)' }};
+        }
     }
 
     #mainNav .navbar-brand {

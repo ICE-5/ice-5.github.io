@@ -17,7 +17,9 @@ export class SourceManager {
         this.labelContainer.style.position = 'absolute';
         this.labelContainer.style.top = '0';
         this.labelContainer.style.left = '0';
-        this.labelContainer.style.pointerEvents = 'none'; // Allow clicks to pass through
+        this.labelContainer.style.pointerEvents = 'none';
+
+
         document.body.appendChild(this.labelContainer);
         this._createLabels();
         this._injectStyles();
@@ -27,13 +29,10 @@ export class SourceManager {
         // Create a DOM element (e.g. a <div>) for each source.
         this.sources.forEach((source) => {
             const label = document.createElement('div');
-            // Customize the label text as needed.
-            // For example, show the source id and its weight:
             label.innerHTML = `<strong>Gravity Source ${source.id}</strong><br>Coord: (${source.position.x.toFixed(2)}, ${source.position.y.toFixed(2)}, ${source.position.z.toFixed(2)})<br>Weight: ${source.weight}`;
             label.className = 'source-label';
             label.style.position = 'absolute';
             this.labelContainer.appendChild(label);
-            // Save a reference to the label on the source object.
             source.label = label;
         });
     }
