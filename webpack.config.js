@@ -5,8 +5,8 @@ const WebpackObfuscator = require('webpack-obfuscator');
 module.exports = {
     entry: {
         main: './assets/js/main.js',
-        particles: './assets/js/curl-noise/main.js',
-        // heat: './assets/js/heat/main.js',
+        fluidity: './assets/js/curl-noise/main.js',
+        heat: './assets/js/heat/main.js',
     },
     output: {
         filename: '[name].bundle.js',
@@ -23,7 +23,7 @@ module.exports = {
         minimize: true,
         // minimize: false,
     },
-    // devtool: 'source-map',
+    devtool: 'source-map',
     plugins: [
         new WebpackObfuscator(
             {
