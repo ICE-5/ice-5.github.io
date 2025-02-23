@@ -1,18 +1,36 @@
-- title: "Fluidity vs. Stability: Shaping Dynamic Macrostructure Within Diffusive Flows"
-  exp: 1
-  description: >
-    This series of particle systems is designed to visualize my sparks, inspirations, ideas, and computational thinking in AI/ML research. In this experiment, <strong>EXP-1</strong>, a seemingly continuous flow emerges from the collective behavior of homogeneous discrete particles. The experiment explores how certain universal principles can shape—or “tame”—a highly diffusive system into a temporarily semi-stable state with subtle macrostructures.
-  references:
-    - name: "Ken Perlin. <i>Improving noise.</i> ACM Transactions on Graphics, 2002."
-      link: "https://dl.acm.org/doi/10.1145/566654.566636"
-    - name: "Tim Severien. <i>Stable curl noise particles.</i>"
-      link: "https://codepen.io/timseverien/pen/EmJNOR"
-    - name: "Isaac Cohen. <i>GLSL implementation of curl noise.</i>"
-      link: "https://github.com/cabbibo/glsl-curl-noise"
-    - name: "Patricio Gonzalez Vivo. <i>GLSL implementation of simplex noise.</i>"
-      link: "https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83#simplex-noise"
-    - name: "The Book of Shaders. <i>Chapter 11. Noise.</i>"
-      link: "https://thebookofshaders.com/11/"
-    - name: "NVIDIA Developer. <i>Geometry instancing on GPU.</i>"
-      link: "https://developer.nvidia.com/gpugems/gpugems2/part-i-geometric-complexity/chapter-3-inside-geometry-instancing"
+particles:
+  - title: "Fluidity vs. Stability: Shaping Dynamic Macrostructure Within Diffusive Flows"
+    id: 0
+    src: "/assets/js/fluidity.bundle.js"
+    permalink: "particles.html"
+    description: >
+      This series of particle systems visualizes my sparks, inspirations, and computational thinking in AI/ML research. <strong>EXP-0</strong> demonstrates how a seemingly continuous flow emerges from the collective behavior of homogeneous discrete particles. The experiment explores how universal principles can shape—or “tame”—a highly diffusive system into a temporarily semi-stable state with subtle macrostructures.
+    references:
+      - name: "Ken Perlin. <i>Improving noise.</i> ACM Transactions on Graphics, 2002."
+        link: "https://dl.acm.org/doi/10.1145/566654.566636"
+      - name: "Tim Severien. <i>Stable curl noise particles.</i>"
+        link: "https://codepen.io/timseverien/pen/EmJNOR"
+      - name: "Isaac Cohen. <i>GLSL implementation of curl noise.</i>"
+        link: "https://github.com/cabbibo/glsl-curl-noise"
+      - name: "Patricio Gonzalez Vivo. <i>GLSL implementation of simplex noise.</i>"
+        link: "https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83#simplex-noise"
+      - name: "The Book of Shaders. <i>Chapter 11. Noise.</i>"
+        link: "https://thebookofshaders.com/11/"
+      - name: "NVIDIA Developer. <i>Geometry instancing on GPU.</i>"
+        link: "https://developer.nvidia.com/gpugems/gpugems2/part-i-geometric-complexity/chapter-3-inside-geometry-instancing"
+    
+
+  - title: "Laplace Operator, Convolution, and the Propagation of Heat"
+    id: 1
+    src: "/assets/js/heat.bundle.js"
+    permalink: "heat.html"
+    description: >
+      <strong>EXP-1</strong> is inspired by the heat equilibrium equation and the Laplace operator. It demonstrates how heat propagation through a 2D surface can be efficiently batch-computed using a grid-based convolution operation, which serves as an effective approximation to continuous gradient solvers.
+    references:
+      - name: "Daniel F. Styer. <i>The geometrical significance of the Laplacian</i>. American Journal of Physics, 2015."
+        link: "https://www2.oberlin.edu/physics/dstyer/Electrodynamics/Laplacian.pdf"
+      - name: "Yann LeCun. <i>Convolutional networks for images, speech, and time series.</i> The handbook of brain theory and neural networks, 1995."
+        link: "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=e26cc4a1c717653f323715d751c8dea7461aa105"
+      - name: "Blewitt et al. <i>Applicability of GPGPU Computing to Real-Time AI Solutions in Games</i>. IEEE Transactions on Computational Intelligence and AI in Games, 2013."
+        link: "https://ieeexplore.ieee.org/abstract/document/6502211"
 
