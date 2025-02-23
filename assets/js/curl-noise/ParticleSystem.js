@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import shaderPointFragment from './shaders/pointFragment.glsl';
 import shaderPointVertex from './shaders/pointVertex.glsl';
 import { simulationParam } from './config';
+import { time } from 'three/tsl';
 
 export class ParticleSystem {
     constructor() {
@@ -31,7 +32,10 @@ export class ParticleSystem {
             uniforms: {
                 texturePosition: { value: null },
                 textureVelocity: { value: null },
+                prevMu: { value: 0 },
+                time: { value: 0.0 },
                 maxForce: { value: simulationParam.MAX_FORCE },
+                alpha: { value: simulationParam.EMA_ALPHA },
             },
             fragmentShader: shaderPointFragment,
             vertexShader: shaderPointVertex,
@@ -49,5 +53,9 @@ export class ParticleSystem {
     updateTexture(positionTexture, velocityTexture) {
         this.material.uniforms.texturePosition.value = positionTexture;
         this.material.uniforms.textureVelocity.value = velocityTexture;
+    }
+
+    updatePrevMu(prevMu) {
+        this.material.uniforms.prevMu.value = prevMu;
     }
 }

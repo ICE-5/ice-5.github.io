@@ -3,12 +3,13 @@
 uniform vec3 sourcePositions[10];
 uniform float sourceWeights[10];
 
-uniform int NUM_SOURCES;
 uniform float PARTICLE_MASS;
 uniform float VELOCITY_TERMINAL;
 uniform float CURL_RADIUS_MIN;
 uniform float CURL_RADIUS_DELTA;
 uniform float CURL_NOISE_SPEEDUP;
+
+uniform int numSources;
 uniform float time;
 
 uniform vec3 impulsePosition;
@@ -24,7 +25,7 @@ void main(){
     vec3 curlVelocity=curlNoise(position)-velocity;
     
     vec3 totalPull=vec3(0.);
-    for(int i=0;i<NUM_SOURCES;i++){
+    for(int i=0;i<numSources;i++){
         vec3 direction=sourcePositions[i]-position;
         float distance=length(direction);
         float pullForce=abs((sourceWeights[i]*PARTICLE_MASS)/(distance*distance));

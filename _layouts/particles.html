@@ -46,22 +46,23 @@ title: YUNING WU
             {% endfor %}
         </p>
 
-        <p class="text-normal" style="margin-top: 25px;">
+        <p class="text-normal" style="margin-top: 50px;">
             {% assign next_id = page.id | plus: 1 %}
-            {% if next_id < site.data.particles.particles.size %}
-            <a href="/particles/exp-{{ next_id }}">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i> <strong>EXP-{{ next_id }}</strong>: {{ site.data.particles.particles[next_id].title }}
-            </a>
-            {% endif %}
+            {% if next_id < site.data.particles.particles.size %} <a href="/particles/exp-{{ next_id }}">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> <strong>EXP-{{ next_id }}</strong>:
+                {{ site.data.particles.particles[next_id].title }}
+                </a>
+                {% endif %}
 
-            <br>
+                <br>
 
-            {% assign prev_id = page.id | minus: 1 %}
-            {% if page.id > 0 %}
-            <a href="/particles/exp-{{ prev_id }}">
-                <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-{{ prev_id }}</strong>: {{ site.data.particles.particles[prev_id].title }}
-            </a>
-            {% endif %}
+                {% assign prev_id = page.id | minus: 1 %}
+                {% if page.id > 0 %}
+                <a href="/particles/exp-{{ prev_id }}">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-{{ prev_id }}</strong>: {{
+                    site.data.particles.particles[prev_id].title }}
+                </a>
+                {% endif %}
         </p>
     </div>
 </div>

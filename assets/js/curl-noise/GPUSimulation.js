@@ -47,31 +47,15 @@ export class GPUSimulation {
     }
 
     _addVariables() {
-        this.variableVelocity = this.gpuCompute.addVariable(
-            'textureVelocity',
-            shaderSimulationVelocity,
-            this.dataVelocity
-        );
-        this.variablePosition = this.gpuCompute.addVariable(
-            'texturePosition',
-            shaderSimulationPosition,
-            this.dataPosition
-        );
+        // Add GPU compute variables
+        this.variableVelocity = this.gpuCompute.addVariable('textureVelocity', shaderSimulationVelocity, this.dataVelocity);
+        this.variablePosition = this.gpuCompute.addVariable('texturePosition', shaderSimulationPosition, this.dataPosition);
 
-        // Set uniforms used by the simulation shaders
+        // Initialize position uniforms
         this.variablePosition.material.uniforms.delta = { value: 0 };
 
-        this.variableVelocity.material.uniforms.PARTICLE_MASS = { value: simulationParam.PARTICLE_MASS };
-        this.variableVelocity.material.uniforms.VELOCITY_TERMINAL = { value: simulationParam.VELOCITY_TERMINAL };
-        this.variableVelocity.material.uniforms.CURL_RADIUS_MIN = { value: simulationParam.CURL_RADIUS_MIN };
-        this.variableVelocity.material.uniforms.CURL_RADIUS_DELTA = { value: simulationParam.CURL_RADIUS_DELTA };
-        this.variableVelocity.material.uniforms.CURL_NOISE_SPEEDUP = { value: simulationParam.CURL_NOISE_SPEEDUP };
-        this.variableVelocity.material.uniforms.time = { value: 0.0 };
-
+        // Prepare source arrays for shader uniforms
         const numSources = sources.length;
-        this.variableVelocity.material.uniforms.NUM_SOURCES = { value: numSources };
-
-        // Create arrays to hold source positions and weights for shader uniforms
         const MAX_SOURCES = simulationParam.MAX_SOURCES;
         const sourcePositionsArray = new Float32Array(MAX_SOURCES * 3).fill(0);
         const sourceWeightsArray = new Float32Array(MAX_SOURCES).fill(0);
@@ -83,12 +67,27 @@ export class GPUSimulation {
             sourcePositionsArray[i * 3 + 2] = pos.z;
             sourceWeightsArray[i] = sources[i].weight;
         }
-        this.variableVelocity.material.uniforms.sourcePositions = { value: sourcePositionsArray };
-        this.variableVelocity.material.uniforms.sourceWeights = { value: sourceWeightsArray };
 
-        // Set impulse effect uniforms
-        this.variableVelocity.material.uniforms.impulsePosition = { value: new THREE.Vector3(0, 0, 0) };
-        this.variableVelocity.material.uniforms.impulseStrength = { value: 0.0 };
+        // Populate source arrays
+        sources.forEach((source, index) => {
+            const { position: pos, weight } = source;
+            sourcePositionsArray.set([pos.x, pos.y, pos.z], index * 3);
+            sourceWeightsArray[index] = weight;
+        });
+
+        // Configure velocity uniforms
+        const velocityUniforms = this.variableVelocity.material.uniforms;
+        Object.assign(velocityUniforms, {
+            sourcePositions: { value: sourcePositionsArray },
+            sourceWeights: { value: sourceWeightsArray },
+            impulsePosition: { value: new THREE.Vector3(0, 0, 0) },
+            impulseStrength: { value: 0.0 },
+            ...this._getSimulationParams(),
+            numSources: { value: numSources },
+            time: { value: 0.0 },
+            impulsePosition: { value: new THREE.Vector3(0, 0, 0) },
+            impulseStrength: { value: 0.0 },
+        });
 
         // Set variable dependencies (so that each shader has access to both textures)
         this.gpuCompute.setVariableDependencies(this.variableVelocity, [this.variableVelocity, this.variablePosition]);
@@ -99,25 +98,25 @@ export class GPUSimulation {
         this.variablePosition.wrapT = THREE.RepeatWrapping;
         this.variableVelocity.wrapS = THREE.RepeatWrapping;
         this.variableVelocity.wrapT = THREE.RepeatWrapping;
+
     }
 
-    _handleMouseClick(event) {
-        const mouseX = (event.clientX / window.innerWidth) * 2 - 1;
-        const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
-        const impulseStrength = 10.0; // Adjust based on effect strength
-    
-        // Convert screen-space click to world-space
-        const vector = new THREE.Vector3(mouseX, mouseY, 0.5);
-        vector.unproject(this.camera);  // Assuming `this.camera` exists
-    
-        // Update uniforms with impulse force
-        this.variableVelocity.material.uniforms.impulsePosition.value.copy(vector);
-        this.variableVelocity.material.uniforms.impulseStrength.value = impulseStrength;
-    
-        // Reset impulse effect after a short delay to avoid continuous perturbation
-        setTimeout(() => {
-            this.variableVelocity.material.uniforms.impulseStrength.value = 0.0;
-        }, 100);
+    _getSimulationParams() {
+        const {
+            PARTICLE_MASS,
+            VELOCITY_TERMINAL,
+            CURL_RADIUS_MIN,
+            CURL_RADIUS_DELTA,
+            CURL_NOISE_SPEEDUP,
+        } = simulationParam;
+
+        return {
+            PARTICLE_MASS: { value: PARTICLE_MASS },
+            VELOCITY_TERMINAL: { value: VELOCITY_TERMINAL },
+            CURL_RADIUS_MIN: { value: CURL_RADIUS_MIN },
+            CURL_RADIUS_DELTA: { value: CURL_RADIUS_DELTA },
+            CURL_NOISE_SPEEDUP: { value: CURL_NOISE_SPEEDUP },
+        };
     }
 
     compute(delta) {
@@ -135,8 +134,8 @@ export class GPUSimulation {
         return this.gpuCompute.getCurrentRenderTarget(this.variableVelocity).texture;
     }
 
-    getMaxFromTarget(target="velocity") {
-        
+    getMaxFromTarget(target = "velocity") {
+
         let rt;
         if (target === "velocity") {
             rt = this.gpuCompute.getCurrentRenderTarget(this.variableVelocity);

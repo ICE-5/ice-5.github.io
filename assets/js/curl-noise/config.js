@@ -39,4 +39,6 @@ export const simulationParam = {
     SOURCE_EDGE_EXT: 1.15,
     SOURCE_RADIUS: 0.02,
     MAX_FORCE: 2.0,
+    SIGMOID_STEEPNESS: 5.,
+    EMA_ALPHA: 0.15,
 };

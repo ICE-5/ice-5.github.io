@@ -59,8 +59,12 @@ export class StableCurlNoiseSimulation {
         this.previousFrame = now;
 
         // Update the simulation and refresh the particle system texture
+        this.particleSystem.updatePrevMu(this.simulation.getMaxFromTarget("velocity"));
+        this.particleSystem.material.uniforms.time.value += delta;
         this.simulation.compute(delta);
         this.particleSystem.updateTexture(this.simulation.getPositionTexture(), this.simulation.getVelocityTexture());
+        
+
 
         // Update DOM link positions (for the overlaid source links)
         this.sourceManager.updateLabelPositions();

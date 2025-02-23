@@ -14,5 +14,5 @@ void main(){
     #include <project_vertex>
     
     // gl_PointSize=(1./-mvPosition.z)*5.;
-    gl_PointSize=50.*pow(force, 2.0)/pow(mvPosition.z, 2.0);
+    gl_PointSize=50.*pow(force, 3.0)/pow(mvPosition.z, 2.0);
 }
