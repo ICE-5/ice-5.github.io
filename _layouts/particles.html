@@ -6,62 +6,76 @@ title: YUNING WU
 <script src="{{ page.src }}"></script>
 
 <div class="container" style="position: relative; top: 80px; z-index: 1029; color: rgba(255, 255, 255, 0.85)">
-    <div class="col-5 text-left">
-        <p class="text-normal">
-            I am a researcher, designer, and practitioner driven by the pursuit of fundamental truths—elegant,
-            universal principles that reveal beauty within complexity. My perspective is shaped by a fusion of
-            disciplines: a deep understanding of AI/ML, a well-honed spatial intuition, and the rigor of
-            mathematical thought. These facets intertwine, constantly sparking a dynamic interplay of ideas.
-        </p>
+    <div class="row">
+        <div class="col-5 text-left">
+            <p class="text-normal">
+                I am a researcher, designer, and practitioner driven by the pursuit of fundamental truths—elegant,
+                universal principles that reveal beauty within complexity. My perspective is shaped by a fusion of
+                disciplines: a deep understanding of AI/ML, a well-honed spatial intuition, and the rigor of
+                mathematical thought. These facets intertwine, constantly sparking a dynamic interplay of ideas.
+            </p>
 
-        <p class="text-small" style="margin-top: 10px; margin-bottom: 100px">
-            <strong>
-                <a href="index.html">AI+ROBOTICS RESEARCHER</a> |
-                <a href="portfolio.html">ARCHITECT OF SPACES AND SYSTEMS</a> |
-                CREATIVE TECHNOLOGIST
-            </strong>
-        </p>
+            <p class="text-small" style="margin-top: 10px; margin-bottom: 150px">
+                <strong>
+                    <a href="index.html">AI+ROBOTICS RESEARCHER</a> |
+                    <a href="portfolio.html">ARCHITECT OF SPACES AND SYSTEMS</a> |
+                    CREATIVE TECHNOLOGIST
+                </strong>
+            </p>
 
 
-        <p class="text-small">
-            PARTICLES LAB ｜ <strong>EXP-{{ page.id }}</strong>
-        </p>
-        <h2 class="text-large" style="font-family: monospace;">
-            {{ page.title }}
-        </h2>
+            <p class="text-small">
+                PARTICLES LAB ｜ <strong>EXP-{{ page.id }}</strong>
+            </p>
+            <h2 class="text-large" style="font-family: monospace;">
+                {{ page.title }}
+            </h2>
 
-        <p class="text-normal" style="margin-top: 10px;">
-            {{ page.description }}
-        </p>
+            <p class="text-normal" style="margin-top: 10px;">
+                {{ page.description }}
+            </p>
 
-        <p class="text-small" style="margin-top: 10px;">
-            References
-            {% for ref in page.references %}
-            <br>
-            <a href="{{ ref.link }}" target="_blank">
-                {{ ref.name }} <i class="fa fa-external-link" aria-hidden="true"></i>
-            </a>
-            {% endfor %}
-        </p>
-
-        <p class="text-normal" style="margin-top: 50px;">
-            {% assign next_id = page.id | plus: 1 %}
-            {% if next_id < site.data.particles.particles.size %} <a href="/particles/exp-{{ next_id }}">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i> <strong>EXP-{{ next_id }}</strong>:
-                {{ site.data.particles.particles[next_id].title }}
-                </a>
-                {% endif %}
-
+            <p class="text-small" style="margin-top: 10px;">
+                References
+                {% for ref in page.references %}
                 <br>
-
-                {% assign prev_id = page.id | minus: 1 %}
-                {% if page.id > 0 %}
-                <a href="/particles/exp-{{ prev_id }}">
-                    <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-{{ prev_id }}</strong>: {{
-                    site.data.particles.particles[prev_id].title }}
+                <a href="{{ ref.link }}" target="_blank">
+                    {{ ref.name }} <i class="fa fa-external-link" aria-hidden="true"></i>
                 </a>
-                {% endif %}
-        </p>
+                {% endfor %}
+            </p>
+        </div>
+
+        <div class="col-7 text-right align-self-end">
+            <p class="text-normal">
+                {% assign next_id = page.id | plus: 1 %}
+                {% if next_id < site.data.particles.particles.size %} <a href="/particles/exp-{{ next_id }}">
+                    <span style="text-decoration: none">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i> <strong>EXP-{{ next_id }}</strong>
+                    </span>
+                    <br>
+                    <span class="text-small">
+                        {{ site.data.particles.particles[next_id].title }}
+                    </span>
+                    </a>
+                    {% endif %}
+
+                    <br>
+
+                    {% assign prev_id = page.id | minus: 1 %}
+                    {% if page.id > 0 %} <a href="/particles/exp-{{ prev_id }}">
+                        <span style="text-decoration: none">
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-{{ prev_id }}</strong>
+                        </span>
+                        <br>
+                        <span class="text-small">
+                            {{ site.data.particles.particles[prev_id].title }}
+                        </span>
+                    </a>
+                    {% endif %}
+            </p>
+        </div>
+
     </div>
 </div>
 
