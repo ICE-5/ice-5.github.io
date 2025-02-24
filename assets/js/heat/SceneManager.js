@@ -53,7 +53,7 @@ export class SceneManager {
         // Create a grid helper
         const gridSize = simulationParam.GRID_LENGTH;  // Adjust to match your simulation grid
         const gridDivisions = simulationParam.GRID_SIZE;  // Number of grid lines
-        const gridHelper = new THREE.GridHelper(gridSize, gridDivisions, 0x333333, 0x333333);
+        const gridHelper = new THREE.GridHelper(gridSize, gridDivisions, 0x1a1a1a, 0x1a1a1a);
         gridHelper.position.y -= 0.5;
         this.scene.add(gridHelper);
     }

@@ -25,7 +25,7 @@ particles:
     src: "/assets/js/heat.bundle.js"
     permalink: "heat.html"
     description: >
-      <strong>EXP-1</strong> is inspired by the heat equilibrium equation and the Laplace operator. It demonstrates how heat propagation through a 2D surface can be efficiently batch-computed using a grid-based convolution operation, which serves as an effective approximation to continuous gradient solvers.
+      <strong>EXP-1</strong> draws inspiration from the heat equilibrium equation and the Laplace operator. It showcases how heat propagation across a 2D surface can be efficiently batch-computed through a grid-based convolution operation, offering a practical approximation to continuous gradient solvers. This approach brings inherent advantages, including parallelism, computational efficiency, and adaptability for downstream tasks like identifying global maxima. Unlike continuous gradient-based solvers, which often scale at <strong>O(N<sup>2</sup>)</strong> or higher due to global dependencies, the computational complexity of this grid-based method typically scales at <strong>O(N)</strong>.
     references:
       - name: "Daniel F. Styer. <i>The geometrical significance of the Laplacian</i>. American Journal of Physics, 2015."
         link: "https://www2.oberlin.edu/physics/dstyer/Electrodynamics/Laplacian.pdf"
