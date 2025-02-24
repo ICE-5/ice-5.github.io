@@ -33,4 +33,15 @@ particles:
         link: "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=e26cc4a1c717653f323715d751c8dea7461aa105"
       - name: "Blewitt et al. <i>Applicability of GPGPU Computing to Real-Time AI Solutions in Games</i>. IEEE Transactions on Computational Intelligence and AI in Games, 2013."
         link: "https://ieeexplore.ieee.org/abstract/document/6502211"
+  - title: "Simulated Annealing, Energy Minimization, and the Travelling Salesman Problem"
+    id: 2
+    src: "/assets/js/heat.bundle.js"
+    permalink: "simulated-annealing.html"
+    description: >
+      <strong>EXP-2</strong> is inspired by the simulated annealing algorithm and the travelling salesman problem. It demonstrates how a discrete optimization problem can be efficiently solved using a stochastic search algorithm that mimics the physical process of annealing. It is quite useful (and elegant) in finding global optima among large numbers of local optima. This experiment is currently WIP, and is associated with an ongoing research project.
+    references:
+      - name: "Kirkpatrick et al. <i>Optimization by simulated annealing</i>. Science, 1983."
+        link: "https://science.sciencemag.org/content/220/4598/671"
+      - name: "CMU CS. <i>What is Simulated Annealing?</i>."
+        link: "https://www.cs.cmu.edu/afs/cs.cmu.edu/project/learn-43/lib/photoz/.g/web/glossary/anneal.html"
 

@@ -59,20 +59,19 @@ title: YUNING WU
                     </span>
                     </a>
                     {% endif %}
-
+            </p>
+            <p class="text-normal" style="margin-top: 10px;">
+                {% assign prev_id = page.id | minus: 1 %}
+                {% if page.id > 0 %} <a href="/particles/exp-{{ prev_id }}">
+                    <span style="text-decoration: none">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-{{ prev_id }}</strong>
+                    </span>
                     <br>
-
-                    {% assign prev_id = page.id | minus: 1 %}
-                    {% if page.id > 0 %} <a href="/particles/exp-{{ prev_id }}">
-                        <span style="text-decoration: none">
-                            <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-{{ prev_id }}</strong>
-                        </span>
-                        <br>
-                        <span class="text-small">
-                            {{ site.data.particles.particles[prev_id].title }}
-                        </span>
-                    </a>
-                    {% endif %}
+                    <span class="text-small">
+                        {{ site.data.particles.particles[prev_id].title }}
+                    </span>
+                </a>
+                {% endif %}
             </p>
         </div>
 
