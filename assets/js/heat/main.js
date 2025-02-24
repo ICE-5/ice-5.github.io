@@ -3,26 +3,22 @@ import { GPUSimulation } from './GPUSimulation.js';
 // import { SourceManager } from './SourceManager.js';
 import { SceneManager } from './SceneManager.js';
 import { simulationParam } from './config.js';
+import { customGlobalTransform } from './utils.js';
 
 
 export class Heat {
     constructor() {
         // Scene setup (renderer, camera, controls, etc.)
         this.sceneManager = new SceneManager();
+        this.sceneManager.addGridHelper();
 
         // GPGPU setup
-        this.simulation = new GPUSimulation(this.sceneManager.renderer, this.sceneManager.camera);
+        this.simulation = new GPUSimulation(this.sceneManager.renderer, this.sceneManager.camera, this.sceneManager.scene);
 
         // Particle system
         this.particleSystem = new ParticleSystem();
+        customGlobalTransform(this.particleSystem.points)
         this.sceneManager.scene.add(this.particleSystem.points);
-        // Z-axis positive up
-        this.particleSystem.points.rotation.x = -Math.PI / 2;
-        // Move all points up by 1.0
-        this.particleSystem.points.position.y -= 0.5;
-
-        // TODO: Source manager
-
 
         // Window resizing
         window.addEventListener('resize', () => this.onResize());

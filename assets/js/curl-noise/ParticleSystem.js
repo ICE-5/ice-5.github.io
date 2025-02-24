@@ -32,7 +32,7 @@ export class ParticleSystem {
             uniforms: {
                 texturePosition: { value: null },
                 textureVelocity: { value: null },
-                prevMu: { value: 0 },
+                prevMu: { value: 0.0 },
                 time: { value: 0.0 },
                 maxForce: { value: simulationParam.MAX_FORCE },
                 alpha: { value: simulationParam.EMA_ALPHA },

@@ -1,4 +1,3 @@
-// src/SourceManager.js
 import * as THREE from 'three';
 import { toScreenPosition } from './utils.js';
 import { sources, simulationParam } from './config.js';

@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { simulationParam } from './config';
 
 export class SceneManager {
     constructor() {
@@ -46,5 +47,14 @@ export class SceneManager {
         this.camera.top = 1;
         this.camera.bottom = -1;
         this.camera.updateProjectionMatrix();
+    }
+
+    addGridHelper() {
+        // Create a grid helper
+        const gridSize = simulationParam.GRID_LENGTH;  // Adjust to match your simulation grid
+        const gridDivisions = simulationParam.GRID_SIZE;  // Number of grid lines
+        const gridHelper = new THREE.GridHelper(gridSize, gridDivisions, 0x333333, 0x333333);
+        gridHelper.position.y -= 0.5;
+        this.scene.add(gridHelper);
     }
 }

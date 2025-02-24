@@ -2,21 +2,25 @@ import * as THREE from 'three';
 import { GPUComputationRenderer } from 'three/examples/jsm/misc/GPUComputationRenderer.js';
 import shaderSimulationPosition from './shaders/simulationPosition.glsl';
 import { simulationParam } from './config';
+import { SourceManager } from './SourceManager';
 
 export class GPUSimulation {
-    constructor(renderer, camera) {
+    constructor(renderer, camera, scene) {
         this.renderer = renderer;
         this.camera = camera;
+        this.scene = scene;
 
         this.textureSize = simulationParam.GRID_SIZE;
         this.particleCount = this.textureSize * this.textureSize;
 
         this.gridLength = simulationParam.GRID_LENGTH;
-
         this.gridSpacing = this.gridLength / this.textureSize;
 
         this.frameCounter = 0;
 
+        
+        this.sourceManager = new SourceManager(this.camera, this.scene);
+        this.sourceMax = null;
         this.sourcePosition = new THREE.Vector2(-1.0, -1.0);
         this.sourceWeight = 0.;
 
@@ -37,15 +41,12 @@ export class GPUSimulation {
         const textureArraySize = this.particleCount * 4;
         const data = new Float32Array(textureArraySize);
 
-        // this.gridSpacing = simulationParam.GRID_LENGTH / this.textureSize;
-        const gridLength = simulationParam.GRID_LENGTH;
-
         for (let i = 0; i < this.particleCount; i++) {
             const x = (i % this.textureSize) / this.textureSize;
             const y = Math.floor(i / this.textureSize) / this.textureSize;
-            const worldX = (x - 0.5) * gridLength;
-            const worldY = (y - 0.5) * gridLength;
-            const worldZ = Math.random(); // Initial temperature
+            const worldX = (x - 0.5) * this.gridLength;
+            const worldY = (y - 0.5) * this.gridLength;
+            const worldZ = Math.random();
 
             const index = i * 4;
             data[index] = worldX;
@@ -103,16 +104,14 @@ export class GPUSimulation {
         } else {
             this._addRandomSource(-0.25)
         }
-        if (this.frameCounter % simulationParam.INTERVAL === 0) {
-            // if (this.frameCounter % (simulationParam.INTERVAL * 2) === 0) {
-            //     this._addRandomSource(0.25);
-            // } else {
-            //     this._addRandomSource(-0.25)
-            // }
-            if (this.frameCounter % (simulationParam.INTERVAL * 10) === 0) {
-                this.getMaxTemperature();
-                this.frameCounter = 0;
-            }
+
+        if (this.frameCounter % (simulationParam.INTERVAL * 10) === 0) {
+            this.getMaxTemperature();
+            this.frameCounter = 0;
+        }
+
+        if (this.sourceMax) {
+            this.sourceManager.updateLabelPosition(this.sourceMax);
         }
 
         this.variablePosition.material.uniforms.sourcePosition.value.copy(this.sourcePosition);
@@ -148,8 +147,14 @@ export class GPUSimulation {
             let x = (maxIndex / 4) % this.textureSize / this.textureSize;
             let y = Math.floor((maxIndex / 4) / this.textureSize) / this.textureSize;
             this.sourcePosition.set(x, y);
-            this.sourceWeight = simulationParam.SOURCE_WEIGHT;
-            console.log(`Max temperature: ${maxTemp}, ${this.sourceWeight} at (${x}, ${y})`);
+            this.sourceWeight = Math.max(maxTemp * simulationParam.SOURCE_AMPLIFY, 1.0)
+            console.log(`Max temperature: ${maxTemp} at (${x}, ${y})`);
+
+            // Calculate the world position of the source
+            const worldX = (x - 0.5) * this.gridLength;
+            const worldY = (y - 0.5) * this.gridLength;
+            this.sourceMax = new THREE.Vector3(worldX, worldY, maxTemp);
+            this.sourceManager.addSource(this.sourceMax);
         } else {
             console.error("Max temperature not found");
         }
@@ -183,5 +188,4 @@ export class GPUSimulation {
         // TODO: Placeholder for adding heat sources
         console.log("Click detected, add heat source here");
     }
-
 }

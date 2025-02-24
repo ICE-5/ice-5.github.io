@@ -5,6 +5,8 @@ export const simulationParam = {
     GRID_LENGTH: 2.0,
     DELTA: 0.00001,
     INTERVAL: 50,
-    SOURCE_WEIGHT: 0.75,
-    SOURCE_AMPLIFY: 1.2,
+    SOURCE_WEIGHT: 1.0,
+    SOURCE_AMPLIFY: 1.15,
+    SOURCE_EDGE_EXT: 1.1,
+    SOURCE_RADIUS: 0.05,
 };
