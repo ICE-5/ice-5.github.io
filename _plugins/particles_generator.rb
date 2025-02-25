@@ -1,18 +1,18 @@
 module Jekyll
-    class DynamicDataPageGenerator < Generator
+    class ParticlesPageGenerator < Generator
         safe true
 
         def generate(site)
             if site.data['particles']
                 particles = site.data['particles']['particles']
                 particles.each do |project|
-                    site.pages << DataPage.new(site, site.source, project)
+                    site.pages << ParticlesDataPage.new(site, site.source, project)
             end
         end
         end
     end
 
-    class DataPage < Page
+    class ParticlesDataPage < Page
         def initialize(site, base, project)
         @site = site
         @base = base

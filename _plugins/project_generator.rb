@@ -1,5 +1,5 @@
 module Jekyll
-  class DynamicDataPageGenerator < Generator
+  class ProjectPageGenerator < Generator
     safe true
 
     def generate(site)
@@ -23,13 +23,13 @@ module Jekyll
           # puts "Images: #{project['images'].join(', ')}"
 
           # Generate the page
-          site.pages << DataPage.new(site, site.source, project)
+          site.pages << ProjectDataPage.new(site, site.source, project)
         end
       end
     end
   end
 
-  class DataPage < Page
+  class ProjectDataPage < Page
     def initialize(site, base, project)
       @site = site
       @base = base
