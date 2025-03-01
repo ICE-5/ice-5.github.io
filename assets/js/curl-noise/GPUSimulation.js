@@ -31,13 +31,22 @@ export class GPUSimulation {
     _initTextures() {
         const textureArraySize = this.particleCount * 4;
         for (let i = 0; i < textureArraySize; i += 4) {
-            const radius = (1 - Math.pow(Math.random(), 3)) * 1;
-            const azimuth = Math.random() * Math.PI;
-            const inclination = Math.random() * Math.PI * 2;
 
-            this.dataPosition.image.data[i] = radius * Math.sin(azimuth) * Math.cos(inclination);
-            this.dataPosition.image.data[i + 1] = radius * Math.cos(azimuth);
-            this.dataPosition.image.data[i + 2] = radius * Math.sin(azimuth) * Math.sin(inclination);
+            // Randomize the initial position of each particle
+            // const radius = (1 - Math.pow(Math.random(), 3)) * 1;
+            // const azimuth = Math.random() * Math.PI;
+            // const inclination = Math.random() * Math.PI * 2;
+
+            // this.dataPosition.image.data[i] = radius * Math.sin(azimuth) * Math.cos(inclination);
+            // this.dataPosition.image.data[i + 1] = radius * Math.cos(azimuth);
+            // this.dataPosition.image.data[i + 2] = radius * Math.sin(azimuth) * Math.sin(inclination);
+
+            // Randomize from afar
+            const scale = 5.0;
+            this.dataPosition.image.data[i] = (Math.random() * 2 - 1) * scale;
+            this.dataPosition.image.data[i + 1] = (Math.random() * 2 - 1) * scale;
+            this.dataPosition.image.data[i + 2] = (Math.random() * 2 - 1) * scale;
+            this.dataPosition.image.data[i + 3] = 1;
 
             this.dataVelocity.image.data[i] = 0;
             this.dataVelocity.image.data[i + 1] = 0;
