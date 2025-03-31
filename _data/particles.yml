@@ -1,5 +1,5 @@
 particles:
-  - title: "Fluidity vs. Stability: Shaping Dynamic Macrostructure Within Diffusive Flows"
+  - title: "Fluidity vs. Stability: Shaping Dynamic Macrostructure Within Diffusion"
     id: 0
     src: "/assets/js/fluidity.bundle.js"
     permalink: "particles.html"
@@ -8,6 +8,8 @@ particles:
     references:
       - name: "Ken Perlin. <i>Improving noise.</i> ACM Transactions on Graphics, 2002."
         link: "https://dl.acm.org/doi/10.1145/566654.566636"
+      - name: "Jonathan Ho et al. <i>Denoising Diffusion Probabilistic Models.</i> Arxiv, 2020."
+        link: "https://hojonathanho.github.io/diffusion/"
       - name: "Tim Severien. <i>Stable curl noise particles.</i>"
         link: "https://codepen.io/timseverien/pen/EmJNOR"
       - name: "Isaac Cohen. <i>GLSL implementation of curl noise.</i>"
