@@ -36,6 +36,6 @@ void main(){
     float impulseDistance=length(impulseDirection)+.0001;
     vec3 impulseForce=impulseStrength*normalize(impulseDirection)/(impulseDistance*impulseDistance);
     
-    vec3 newVelocity=velocity+curlVelocity*curlForce+totalPull*8.+impulseForce*.5;
+    vec3 newVelocity=velocity+curlVelocity*curlForce+totalPull*8.+impulseForce*1.0;
     gl_FragColor=vec4(newVelocity,1.);
 }
