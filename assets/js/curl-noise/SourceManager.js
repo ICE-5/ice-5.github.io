@@ -16,7 +16,7 @@ export class SourceManager {
         // Create a container for all the text labels.
         this.labelContainer = document.createElement('div');
         this.labelContainer.style.zIndex = '10';
-        this.labelContainer.style.position = 'absolute';
+        this.labelContainer.style.position = 'fixed';
         this.labelContainer.style.top = '0';
         this.labelContainer.style.left = '0';
         this.labelContainer.style.pointerEvents = 'none';

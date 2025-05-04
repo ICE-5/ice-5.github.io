@@ -42,7 +42,7 @@ export class GPUSimulation {
             // this.dataPosition.image.data[i + 2] = radius * Math.sin(azimuth) * Math.sin(inclination);
 
             // Randomize from afar
-            const scale = 5.0;
+            const scale = 3.5;
             this.dataPosition.image.data[i] = (Math.random() * 2 - 1) * scale;
             this.dataPosition.image.data[i + 1] = (Math.random() * 2 - 1) * scale;
             this.dataPosition.image.data[i + 2] = (Math.random() * 2 - 1) * scale;
