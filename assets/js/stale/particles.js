@@ -37,7 +37,7 @@ const sources = [
         position: new THREE.Vector3(0.046, -1.437, 0.966), 
         weight: 1.0, 
         id: "2",
-        text: "ARCHITECT OF SPACES AND SYSTEMS", 
+        text: "ARCHITECT OF SYSTEMS AND SPACES", 
         href: "/portfolio.html",
         link: null
     },
