@@ -20,6 +20,9 @@ export class SourceManager {
         this.labelContainer.style.top = '0';
         this.labelContainer.style.left = '0';
         this.labelContainer.style.pointerEvents = 'none';
+        this.labelContainer.style.width = '100vw';
+        this.labelContainer.style.height = '100vh';
+        this.labelContainer.style.overflow = 'hidden';
 
         document.body.appendChild(this.labelContainer);
         this._createLabels();

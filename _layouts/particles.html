@@ -16,21 +16,55 @@ title: YUNING WU
                 mathematical thought. These facets intertwine, constantly sparking a dynamic interplay of ideas.
             </p>
 
-            <p class="text-normal" style="margin-top: 10px; margin-bottom: 125px">
+            <p class="text-normal; badge-group" style="margin-top: 10px; margin-bottom: 125px;">
                 <strong>
-                    <a href="/research.html" target=”_blank” class="badge badge-light">AI/ML RESEARCHER</a> 
+                    <a href="/research.html" target=”_blank” class="badge badge-light">AI/ML RESEARCHER</a>
                     <a href="/portfolio.html" class="badge badge-light">ARCHITECT OF SYSTEMS AND SPACES</a>
                 </strong>
             </p>
+        </div>
+    </div>
 
-
+    <div class="row justify-content-between">
+        <div class="col-5 text-left">
             <p class="text-small">
                 <strong>PARTICLES LAB</strong> ｜ EXP-{{ page.id }}
             </p>
             <h2 class="text-large" style="font-family: monospace;">
                 {{ page.exp-title }}
             </h2>
+        </div>
 
+        <div class="col-3 text-right">
+            <p class="text-normal">
+                {% assign next_id = page.id | plus: 1 %}
+                {% if next_id < site.data.particles.particles.size %} <a href="/particles/exp-{{ next_id }}">
+                    <span class="text-small" style="text-decoration: none">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i> <strong>EXP-{{ next_id }}</strong>
+                    </span>
+                    <br>
+                    <span class="text-small">
+                        {{ site.data.particles.particles[next_id].exp-title }}
+                    </span>
+                    </a>
+                    {% endif %}
+            </p>
+            <p class="text-normal" style="margin-top: 10px;">
+                {% assign prev_id = page.id | minus: 1 %}
+                {% if page.id > 0 %} <a href="/particles/exp-{{ prev_id }}">
+                    <span class="text-small" style="text-decoration: none">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-{{ prev_id }}</strong>
+                    </span>
+                    <br>
+                    <span class="text-small">
+                        {{ site.data.particles.particles[prev_id].exp-title }}
+                    </span>
+                </a>
+                {% endif %}
+            </p>
+        </div>
+
+        <div class="col-5 text-left">
             <p class="text-normal" style="margin-top: 10px;">
                 {{ page.description }}
             </p>
@@ -46,53 +80,34 @@ title: YUNING WU
             </p>
         </div>
 
-        <div class="col-7 text-right align-self-end">
-            <p class="text-normal">
-                {% assign next_id = page.id | plus: 1 %}
-                {% if next_id < site.data.particles.particles.size %} <a href="/particles/exp-{{ next_id }}">
-                    <span style="text-decoration: none">
-                        <i class="fa fa-arrow-right" aria-hidden="true"></i> <strong>EXP-{{ next_id }}</strong>
-                    </span>
-                    <br>
-                    <span class="text-small">
-                        {{ site.data.particles.particles[next_id].exp-title }}
-                    </span>
-                    </a>
-                    {% endif %}
-            </p>
-            <p class="text-normal" style="margin-top: 10px;">
-                {% assign prev_id = page.id | minus: 1 %}
-                {% if page.id > 0 %} <a href="/particles/exp-{{ prev_id }}">
-                    <span style="text-decoration: none">
-                        <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-{{ prev_id }}</strong>
-                    </span>
-                    <br>
-                    <span class="text-small">
-                        {{ site.data.particles.particles[prev_id].exp-title }}
-                    </span>
-                </a>
-                {% endif %}
-            </p>
-        </div>
+
 
     </div>
 </div>
 
 
 <style>
-    html,
     body {
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
+        /* margin: 0;
+        padding: 0; */
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     canvas {
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0px;
+        left: 0;
         width: 100vw !important;
+        height: 100vh !important;
         z-index: -1;
+    }
+
+    .badge-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
     .content {
@@ -114,6 +129,6 @@ title: YUNING WU
     }
 
     .text-large {
-        font-size: 15px;
+        font-size: 13.5px;
     }
 </style>
