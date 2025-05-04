@@ -12,7 +12,7 @@
       link: "https://kilthub.cmu.edu/articles/thesis/A_Human-Centered_Reinforcement_Learning_Driven_Robotic_Framework_For_Assisting_Construction_Workers/27304317"
     - type: "BibTeX"
       link: "../assets/project/phd-dissertation/citation.bib"
-  theme: "How to design intelligent robots that support and understand humans?"
+  theme: "How to build AI systems that align with human behavior, intent, and values?"
 
 - title: "Towards Human-Centered Construction Robotics: A Reinforcement Learning-Driven Companion Robot For Contextually Assisting Carpentry Workers"
   images:
@@ -37,7 +37,7 @@
       link: "../assets/project/iros24-work-companion-robot/slides.pdf"
     - type: "BibTeX"
       link: "../assets/project/iros24-work-companion-robot/citation.bib"
-  theme: "How to design intelligent robots that support and understand humans?"
+  theme: "How to build AI systems that align with human behavior, intent, and values?"
 
 - title: "Robot in the Loop: A Human-Centered Approach to Contextualizing AI and Robotics in Construction"
   images:
@@ -61,7 +61,7 @@
       link: "https://link.springer.com/article/10.1007/s41693-024-00144-8"
     - type: "BibTeX"
       link: "../assets/project/cr25-robot-in-the-loop/citation.bib"
-  theme: "How to design intelligent robots that support and understand humans?"
+  theme: "How to build AI systems that align with human behavior, intent, and values?"
 
 - title: "Learning Dense Reward with Temporal Variant Self-Supervision"
   images:
@@ -85,7 +85,7 @@
       link: "https://github.com/ICE-5/dense-reward-partial-obs/tree/robosuite"
     - type: "BibTeX"
       link: "../assets/project/icra22-learning-dense-reward/citation.bib"
-  theme: "How to design intelligent robots that support and understand humans?"
+  theme: "How to build AI systems that align with human behavior, intent, and values?"
 
 - title: "Towards a Distributed, Robotically Assisted Construction Framework: Using Reinforcement Learning to Support Scalable Multi-Drone
 Construction in Dynamic Environments"
@@ -110,7 +110,7 @@ Construction in Dynamic Environments"
       link: "../assets/project/acadia20-multi-drone-construction/slides.pdf"
     - type: "BibTeX"
       link: "../assets/project/acadia20-multi-drone-construction/citation.bib"
-  theme: "How to design intelligent robots that support and understand humans?"
+  theme: "How to build AI systems that align with human behavior, intent, and values?"
 
 
 

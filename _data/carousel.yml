@@ -1,30 +1,30 @@
 - index: 0
   video: "../assets/carousel/demo_1_clean.mp4"
   poster: "../assets/carousel/demo_1_poster.png"
-  title: "Design Intelligent Robots that Support and Understand Humans"
-  subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
-  text: 'The "work companion robot" prototype developed in ReAC project, evaluated on an actual construction work site. &copy; Yuning Wu.'
+  title: "Designing Embodied Agents That Adapt to Human Behavior and Intent"
+  subtitle: "Advancing adaptive and context-aware AI systems for human-centered collaboration"
+  text: 'Husky, the “work companion robot” prototype, deployed in dynamic, real-world field conditions. &copy; Yuning Wu.'
 - index: 1
   video: "../assets/carousel/demo_2_clean.mp4"
   poster: "../assets/carousel/demo_2_poster.png"
-  title: "Design Intelligent Robots that Support and Understand Humans"
-  subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
-  text: 'The "work companion robot" prototype developed in ReAC project, evaluated on an actual construction work site. &copy; Yuning Wu.'
+  title: "Designing Embodied Agents That Adapt to Human Behavior and Intent"
+  subtitle: "Advancing adaptive and context-aware AI systems for human-centered collaboration"
+  text: 'Husky, the “work companion robot” prototype, deployed in dynamic, real-world field conditions. &copy; Yuning Wu.'
 - index: 2
   video: "../assets/carousel/loam_clean.mp4"
   poster: "../assets/carousel/loam_poster.png"
-  title: "Design Intelligent Robots that Support and Understand Humans"
-  subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
-  text: 'LiDAR-based robot mapping and localization on unstructured and dynamic work site in the ReAC project. &copy; Yuning Wu.'
+  title: "Designing Embodied Agents That Adapt to Human Behavior and Intent"
+  subtitle: "Advancing adaptive and context-aware AI systems for human-centered collaboration"
+  text: 'LiDAR-based robot mapping and localization. &copy; Yuning Wu.'
 - index: 3
   video: "../assets/carousel/pdt_clean.mp4"
   poster: "../assets/carousel/pdt_poster.png"
-  title: "Design Intelligent Robots that Support and Understand Humans"
-  subtitle: "Advancing adaptive, ethical, and context-aware AI/ML-driven robots for human-centered collaboration"
-  text: 'Real-time people detection and tracking in the ReAC project. &copy; Yuning Wu.'
+  title: "Designing Embodied Agents That Adapt to Human Behavior and Intent"
+  subtitle: "Advancing adaptive and context-aware AI systems for human-centered collaboration"
+  text: 'Real-time people detection and tracking in fuzzy environment. &copy; Yuning Wu.'
 - index: 4
   video: "../assets/carousel/drone_clean.mp4"
   poster: "../assets/carousel/drone_poster.png"
-  title: "Design Intelligent Robots that Support and Understand Humans"
-  subtitle: "Towards scalable, efficient, and robust AI/ML-driven robots in constrained and dynamic environments"
-  text: 'Reinforcement learning-based multi-drone navigation for collectively building complex-shaped geometry. Video by Zhihao Fang.'
+  title: "Multi-Agent Reinforcement Learning for Multi-Drone Collaborative Navigation"
+  subtitle: "Advancing adaptive and context-aware AI systems for human-centered collaboration"
+  text: 'Reinforcement learning-based multi-drone navigation for collectively building complex-shaped geometry alongside humans. Video by Zhihao Fang.'

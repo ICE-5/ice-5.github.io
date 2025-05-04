@@ -1,5 +1,5 @@
 <div id="homeCarousel" class="carousel slide" data-ride="carousel"
-    style="height: 550px; position: relative; overflow: hidden;">
+    style="height: 350px; position: relative; overflow: hidden;">
 
     <!-- Indicators -->
     <ol class="carousel-indicators"
@@ -30,10 +30,10 @@
             </div>
 
             <!-- Responsive Overlay Text Container -->
-            <div class="container text-left" style="position: absolute; bottom: 20%; left: 0; right: 0; z-index: 4;">
-                <h1 class="text-white text-shadow">{{ item.title }}</h1>
-                <p class="text-white text-shadow text-bold">{{ item.subtitle }}</p>
-                <p class="text-white text-shadow">{{ item.text }}</p>
+            <div class="container text-left" style="position: absolute; bottom: 25%; left: 0; right: 0; z-index: 4;">
+                <!-- <h1 class="text-white text-shadow" style="font-size: 20px; font-weight: 600;">{{ item.title }}</h1> -->
+                <p class="text-white text-shadow text-bold">{{ item.title }}</p>
+                <p class="text-white text-shadow"><small>{{ item.text }}</small></p>
             </div>
         </div>
         {% endfor %}

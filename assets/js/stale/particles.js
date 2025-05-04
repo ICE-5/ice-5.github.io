@@ -29,7 +29,7 @@ const sources = [
         position: new THREE.Vector3(1.447, 0.916, 0.259), 
         weight: 1.0, 
         id: "1",
-        text: "AI+ROBOTICS RESEARCHER", 
+        text: "AI/ML RESEARCHER", 
         href: "/index.html",
         link: null
     },
