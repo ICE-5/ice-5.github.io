@@ -4,7 +4,7 @@ particles:
     src: "/assets/js/fluidity.bundle.js"
     permalink: "particles.html"
     description: >
-      This series of particle systems visualizes my sparks, inspirations, and computational thinking in AI/ML research. <strong>EXP-0</strong> demonstrates how a seemingly continuous flow emerges from the collective behavior of homogeneous discrete particles. The experiment explores how universal principles can shape—or “tame”—a highly diffusive system into a temporarily semi-stable state with subtle macrostructures.
+      <strong>EXP-0</strong> demonstrates how a seemingly continuous flow emerges from the collective behavior of homogeneous discrete particles. The experiment explores how universal principles can shape—or “tame”—a highly diffusive system into a temporarily semi-stable state with subtle macrostructures.
     references:
       - name: "Ken Perlin. <i>Improving noise.</i> ACM Transactions on Graphics, 2002."
         link: "https://dl.acm.org/doi/10.1145/566654.566636"
