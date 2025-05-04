@@ -1,5 +1,5 @@
 particles:
-  - title: "Fluidity vs. Stability: Shaping Dynamic Macrostructure Within Diffusion"
+  - exp-title: "Fluidity vs. Stability: Shaping Dynamic Macrostructure Within Diffusion"
     id: 0
     src: "/assets/js/fluidity.bundle.js"
     permalink: "particles.html"
@@ -22,7 +22,7 @@ particles:
         link: "https://developer.nvidia.com/gpugems/gpugems2/part-i-geometric-complexity/chapter-3-inside-geometry-instancing"
     
 
-  - title: "Laplace Operator, Convolution, and the Propagation of Heat"
+  - exp-title: "Laplace Operator, Convolution, and the Propagation of Heat"
     id: 1
     src: "/assets/js/heat.bundle.js"
     permalink: "heat.html"
@@ -35,7 +35,7 @@ particles:
         link: "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=e26cc4a1c717653f323715d751c8dea7461aa105"
       - name: "Blewitt et al. <i>Applicability of GPGPU Computing to Real-Time AI Solutions in Games</i>. IEEE Transactions on Computational Intelligence and AI in Games, 2013."
         link: "https://ieeexplore.ieee.org/abstract/document/6502211"
-  - title: "Simulated Annealing, Energy Minimization, and the Travelling Salesman Problem"
+  - exp-title: "Simulated Annealing, Energy Minimization, and the Travelling Salesman Problem"
     id: 2
     src: "/assets/js/heat.bundle.js"
     permalink: "simulated-annealing.html"

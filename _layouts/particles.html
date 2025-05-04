@@ -5,19 +5,20 @@ title: YUNING WU
 
 <script src="{{ page.src }}"></script>
 
+
 <div class="container" style="position: relative; top: 80px; z-index: 1029; color: rgba(255, 255, 255, 0.85)">
     <div class="row">
         <div class="col-5 text-left">
             <p class="text-normal">
-                I am a researcher, designer, and practitioner driven by the pursuit of fundamental truths—elegant,
+                I am a researcher, designer, and builder driven by the pursuit of fundamental truths—elegant,
                 universal principles that reveal beauty within complexity. My perspective is shaped by a fusion of
                 disciplines: a deep understanding of AI/ML, a well-honed spatial intuition, and the rigor of
                 mathematical thought. These facets intertwine, constantly sparking a dynamic interplay of ideas.
             </p>
 
-            <p class="text-small" style="margin-top: 10px; margin-bottom: 125px">
+            <p class="text-normal" style="margin-top: 10px; margin-bottom: 125px">
                 <strong>
-                    <a href="/research.html" target=”_blank” class="badge badge-light">AI/ML RESEARCHER</a> | 
+                    <a href="/research.html" target=”_blank” class="badge badge-light">AI/ML RESEARCHER</a> 
                     <a href="/portfolio.html" class="badge badge-light">ARCHITECT OF SYSTEMS AND SPACES</a>
                 </strong>
             </p>
@@ -27,7 +28,7 @@ title: YUNING WU
                 <strong>PARTICLES LAB</strong> ｜ EXP-{{ page.id }}
             </p>
             <h2 class="text-large" style="font-family: monospace;">
-                {{ page.title }}
+                {{ page.exp-title }}
             </h2>
 
             <p class="text-normal" style="margin-top: 10px;">
@@ -54,7 +55,7 @@ title: YUNING WU
                     </span>
                     <br>
                     <span class="text-small">
-                        {{ site.data.particles.particles[next_id].title }}
+                        {{ site.data.particles.particles[next_id].exp-title }}
                     </span>
                     </a>
                     {% endif %}
@@ -67,7 +68,7 @@ title: YUNING WU
                     </span>
                     <br>
                     <span class="text-small">
-                        {{ site.data.particles.particles[prev_id].title }}
+                        {{ site.data.particles.particles[prev_id].exp-title }}
                     </span>
                 </a>
                 {% endif %}
@@ -79,6 +80,13 @@ title: YUNING WU
 
 
 <style>
+    html,
+    body {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
     canvas {
         position: absolute;
         top: 0;

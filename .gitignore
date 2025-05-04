@@ -3,6 +3,11 @@
 
 _site/
 
+# WIP/stale project
+assets/js/mlp3d
+assets/js/ripple
+assets/js/stale
+
 # Node.js-related files
 node_modules/
 package-lock.json

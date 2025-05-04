@@ -21,7 +21,7 @@ module Jekyll
 
         self.process(@name)
         self.read_yaml(File.join(base, '_layouts'), 'particles.html')
-        self.data['title'] = project['title']
+        self.data['exp-title'] = project['exp-title']
         self.data['id'] = project['id']
         self.data['src'] = project['src']
         self.data['description'] = project['description']

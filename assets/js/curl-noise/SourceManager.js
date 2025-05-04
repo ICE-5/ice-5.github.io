@@ -15,6 +15,7 @@ export class SourceManager {
     _createLabelContainer() {
         // Create a container for all the text labels.
         this.labelContainer = document.createElement('div');
+        this.labelContainer.style.zIndex = '10';
         this.labelContainer.style.position = 'absolute';
         this.labelContainer.style.top = '0';
         this.labelContainer.style.left = '0';
@@ -42,7 +43,7 @@ export class SourceManager {
         style.innerHTML = `
             .source-label {
                 position: absolute;
-                color: #ffffff77;
+                color: #ffffff85;
                 font-family: monospace;
                 font-size: 9px;
                 line-height: 1.15;
