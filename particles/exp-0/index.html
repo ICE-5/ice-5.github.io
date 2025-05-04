@@ -138,7 +138,7 @@
 
     @media (max-width: 991px) {
         #mainNav {
-            background: rgba(0, 0, 0, 0.75);
+            background: rgba(0, 0, 0, 0.85);
         }
     }
 
@@ -208,21 +208,46 @@
                 mathematical thought. These facets intertwine, constantly sparking a dynamic interplay of ideas.
             </p>
 
-            <p class="text-normal" style="margin-top: 10px; margin-bottom: 125px">
+            <p class="text-normal; badge-group" style="margin-top: 10px; margin-bottom: 125px;">
                 <strong>
-                    <a href="/research.html" target=”_blank” class="badge badge-light">AI/ML RESEARCHER</a> 
+                    <a href="/research.html" target=”_blank” class="badge badge-light">AI/ML RESEARCHER</a>
                     <a href="/portfolio.html" class="badge badge-light">ARCHITECT OF SYSTEMS AND SPACES</a>
                 </strong>
             </p>
+        </div>
+    </div>
 
-
+    <div class="row justify-content-between">
+        <div class="col-5 text-left">
             <p class="text-small">
                 <strong>PARTICLES LAB</strong> ｜ EXP-0
             </p>
             <h2 class="text-large" style="font-family: monospace;">
                 Fluidity vs. Stability: Shaping Dynamic Macrostructure Within Diffusion
             </h2>
+        </div>
 
+        <div class="col-3 text-right">
+            <p class="text-normal">
+                
+                 <a href="/particles/exp-1">
+                    <span class="text-small" style="text-decoration: none">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i> <strong>EXP-1</strong>
+                    </span>
+                    <br>
+                    <span class="text-small">
+                        Laplace Operator, Convolution, and the Propagation of Heat
+                    </span>
+                    </a>
+                    
+            </p>
+            <p class="text-normal" style="margin-top: 10px;">
+                
+                
+            </p>
+        </div>
+
+        <div class="col-5 text-left">
             <p class="text-normal" style="margin-top: 10px;">
                 This series of particle systems visualizes my sparks, inspirations, and computational thinking in AI/ML research. <strong>EXP-0</strong> demonstrates how a seemingly continuous flow emerges from the collective behavior of homogeneous discrete particles. The experiment explores how universal principles can shape—or “tame”—a highly diffusive system into a temporarily semi-stable state with subtle macrostructures.
 
@@ -269,44 +294,34 @@
             </p>
         </div>
 
-        <div class="col-7 text-right align-self-end">
-            <p class="text-normal">
-                
-                 <a href="/particles/exp-1">
-                    <span style="text-decoration: none">
-                        <i class="fa fa-arrow-right" aria-hidden="true"></i> <strong>EXP-1</strong>
-                    </span>
-                    <br>
-                    <span class="text-small">
-                        Laplace Operator, Convolution, and the Propagation of Heat
-                    </span>
-                    </a>
-                    
-            </p>
-            <p class="text-normal" style="margin-top: 10px;">
-                
-                
-            </p>
-        </div>
+
 
     </div>
 </div>
 
 
 <style>
-    html,
     body {
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
+        /* margin: 0;
+        padding: 0; */
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     canvas {
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0px;
+        left: 0;
         width: 100vw !important;
+        height: 100vh !important;
         z-index: -1;
+    }
+
+    .badge-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
     .content {
@@ -328,7 +343,7 @@
     }
 
     .text-large {
-        font-size: 15px;
+        font-size: 13.5px;
     }
 </style>
 

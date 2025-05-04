@@ -138,7 +138,7 @@
 
     @media (max-width: 991px) {
         #mainNav {
-            background: rgba(0, 0, 0, 0.75);
+            background: rgba(0, 0, 0, 0.85);
         }
     }
 
@@ -208,21 +208,46 @@
                 mathematical thought. These facets intertwine, constantly sparking a dynamic interplay of ideas.
             </p>
 
-            <p class="text-normal" style="margin-top: 10px; margin-bottom: 125px">
+            <p class="text-normal; badge-group" style="margin-top: 10px; margin-bottom: 125px;">
                 <strong>
-                    <a href="/research.html" target=”_blank” class="badge badge-light">AI/ML RESEARCHER</a> 
+                    <a href="/research.html" target=”_blank” class="badge badge-light">AI/ML RESEARCHER</a>
                     <a href="/portfolio.html" class="badge badge-light">ARCHITECT OF SYSTEMS AND SPACES</a>
                 </strong>
             </p>
+        </div>
+    </div>
 
-
+    <div class="row justify-content-between">
+        <div class="col-5 text-left">
             <p class="text-small">
                 <strong>PARTICLES LAB</strong> ｜ EXP-2
             </p>
             <h2 class="text-large" style="font-family: monospace;">
                 Simulated Annealing, Energy Minimization, and the Travelling Salesman Problem
             </h2>
+        </div>
 
+        <div class="col-3 text-right">
+            <p class="text-normal">
+                
+                
+            </p>
+            <p class="text-normal" style="margin-top: 10px;">
+                
+                 <a href="/particles/exp-1">
+                    <span class="text-small" style="text-decoration: none">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-1</strong>
+                    </span>
+                    <br>
+                    <span class="text-small">
+                        Laplace Operator, Convolution, and the Propagation of Heat
+                    </span>
+                </a>
+                
+            </p>
+        </div>
+
+        <div class="col-5 text-left">
             <p class="text-normal" style="margin-top: 10px;">
                 <strong>EXP-2</strong> is inspired by the simulated annealing algorithm and the travelling salesman problem. It demonstrates how a discrete optimization problem can be efficiently solved using a stochastic search algorithm that mimics the physical process of annealing. It is quite useful (and elegant) in finding global optima among large numbers of local optima. This experiment is currently WIP, and is associated with an ongoing research project.
 
@@ -244,44 +269,34 @@
             </p>
         </div>
 
-        <div class="col-7 text-right align-self-end">
-            <p class="text-normal">
-                
-                
-            </p>
-            <p class="text-normal" style="margin-top: 10px;">
-                
-                 <a href="/particles/exp-1">
-                    <span style="text-decoration: none">
-                        <i class="fa fa-arrow-left" aria-hidden="true"></i> <strong>EXP-1</strong>
-                    </span>
-                    <br>
-                    <span class="text-small">
-                        Laplace Operator, Convolution, and the Propagation of Heat
-                    </span>
-                </a>
-                
-            </p>
-        </div>
+
 
     </div>
 </div>
 
 
 <style>
-    html,
     body {
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
+        /* margin: 0;
+        padding: 0; */
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     canvas {
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0px;
+        left: 0;
         width: 100vw !important;
+        height: 100vh !important;
         z-index: -1;
+    }
+
+    .badge-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
     .content {
@@ -303,7 +318,7 @@
     }
 
     .text-large {
-        font-size: 15px;
+        font-size: 13.5px;
     }
 </style>
 
