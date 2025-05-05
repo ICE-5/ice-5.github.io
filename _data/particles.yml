@@ -4,7 +4,7 @@ particles:
     src: "/assets/js/fluidity.bundle.js"
     permalink: "particles.html"
     description: >
-      <strong>EXP-0</strong> demonstrates how a seemingly continuous flow emerges from the collective behavior of homogeneous discrete particles. The experiment explores how universal principles can shape—or “tame”—a highly diffusive system into a temporarily semi-stable state with subtle macrostructures.
+      <strong>EXP-0</strong> explores how structure can emerge from stochasticity—how simple, universal principles guide the collective dynamics of homogeneous particles into coherent, transient macrostructures. While grounded in physical simulation, the experiment echoes ideas in modern generative modeling and signal processing, including diffusion models and flow matching.
     references:
       - name: "Ken Perlin. <i>Improving noise.</i> ACM Transactions on Graphics, 2002."
         link: "https://dl.acm.org/doi/10.1145/566654.566636"
